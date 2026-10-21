@@ -5,8 +5,8 @@ const PUBLIC = new Set(["/login", "/api/login"]);
 
 export async function middleware(req: NextRequest) {
   const { pathname, search } = req.nextUrl;
-  if (PUBLIC.has(pathname)) return NextResponse.next();
-  // MCP checks its own Bearer token and must never fall back to the cookie.
+  if (PUBLIC.has(pathname) || pathname.startsWith("/.well-known/") || pathname.startsWith("/oauth/")) return NextResponse.next();
+  // MCP checks its own Bearer (MOLDES_TOKEN or OAuth access token) and must never fall back to the cookie.
   if (pathname === "/api/mcp") return NextResponse.next();
 
   const machine = pathname.startsWith("/api/") || pathname.startsWith("/llms");
