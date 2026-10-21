@@ -13,6 +13,7 @@
 - `content/moldes/*.json` é o que o app lê; tudo valida em `lib/schema.ts`. Para criar/alterar moldes em lote, edite `scripts/seed/` e rode `pnpm seed`.
 - Lógica fica em `lib/`; rotas REST e tools MCP só chamam `lib/`.
 - Demos: HTML/CSS próprios, sem JS (o iframe não roda script). Use as vars `--bg --surface --fg --muted --accent --accent-fg --line --font --mono`. Telas (`pattern`) usam `rem` (1rem = 1/52 da largura).
+- Auth do MCP: Bearer `MOLDES_TOKEN` ou OAuth 2.1 stateless (`lib/oauth.ts`, JWT HS256 com chave derivada do token; DCR + PKCE S256). Não adicionar banco para isso.
 - Segredos só em `.env.local` (modelo em `.env.example`). Nunca imprimir `MOLDES_TOKEN`.
 - Nenhum serviço pago. Push/deploy já liberados; dependência paga ou mudança de escopo: perguntar.
 
