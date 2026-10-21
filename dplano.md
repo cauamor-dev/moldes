@@ -1,4 +1,4 @@
-# Plano de Produto — "Moldes" · Biblioteca de Design consultável por agentes (Axial)
+ocs/# Plano de Produto — "Moldes" · Biblioteca de Design consultável por agentes (Axial)
 
 ## 1. Conceito
 É um app estilo Pinterest em que cada **molde** é um registro estruturado e legível por máquina. Humanos navegam por masonry. Agentes (Claude Code, Cursor, Grok Bots) consultam via **MCP, REST e llms.txt** e recebem tokens, regras e código prontos.
