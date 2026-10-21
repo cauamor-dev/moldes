@@ -1,0 +1,99 @@
+{
+  "slug": "serifa-macia",
+  "title": "Serifa macia",
+  "summary": "Serifa arredondada e quente com sans simples. Acolhedor sem ser infantil.",
+  "category": "humano",
+  "tags": [
+    "quente",
+    "artesanal",
+    "serifa"
+  ],
+  "sectors": [
+    "café",
+    "padaria",
+    "bem-estar"
+  ],
+  "boldness": 2,
+  "when_to_use": [
+    "Orgânico/quente",
+    "Gastronomia"
+  ],
+  "avoid_when": [
+    "Tech"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [
+    "organico-quente"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Young Serif",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Figtree",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "DM Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      500
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.333,
+    "base_px": 16,
+    "steps": [
+      12,
+      16,
+      21.3,
+      28.4,
+      37.9,
+      50.5,
+      67.3
+    ]
+  },
+  "sample": {
+    "headline": "Pão de fermentação natural, todo dia às 7h",
+    "body": "Young Serif tem terminais redondos que lembram letreiro pintado à mão. Combina com tons de barro."
+  }
+}

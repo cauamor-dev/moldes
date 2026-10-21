@@ -1,0 +1,50 @@
+{
+  "slug": "tabela-de-especificacao",
+  "title": "Tabela de especificação",
+  "summary": "Tabela técnica de duas colunas, rótulos em mono e valores alinhados à direita com números tabulares.",
+  "category": "dados",
+  "tags": [
+    "tabela",
+    "técnico",
+    "especificação"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Ficha técnica de produto",
+    "Industrial"
+  ],
+  "avoid_when": [
+    "Comparar mais de 3 produtos (use tabela larga)"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [
+    "industrial-mineiro"
+  ],
+  "component_refs": [
+    "@shadcn/table"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<table class=\"t\"><tr><th>CAPACIDADE</th><td>40 t/turno</td></tr><tr><th>POTÊNCIA</th><td>220 kW</td></tr><tr><th>PESO</th><td>12.400 kg</td></tr><tr><th>GARANTIA</th><td>24 meses</td></tr></table>",
+    "css": ".t{width:calc(100% - 2rem);margin:1rem;border-collapse:collapse;font:400 .95rem var(--font)}\n.t th{text-align:left;font:500 .72rem var(--mono);letter-spacing:.08em;color:var(--muted);padding:.65rem 0;border-bottom:1px solid var(--line)}\n.t td{text-align:right;font-weight:700;font-variant-numeric:tabular-nums;padding:.65rem 0;border-bottom:1px solid var(--line)}.t tr:first-child>*{border-top:2px solid var(--fg)}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

@@ -1,0 +1,213 @@
+{
+  "slug": "risografia",
+  "title": "Risografia",
+  "summary": "Duas ou três tintas chapadas com sobreposição, desalinhamento leve de impressão e grão forte.",
+  "category": "gráfico",
+  "tags": [
+    "impressão",
+    "grão",
+    "duotone",
+    "cultura"
+  ],
+  "sectors": [
+    "eventos",
+    "música",
+    "editoras",
+    "festivais",
+    "café"
+  ],
+  "boldness": 4,
+  "when_to_use": [
+    "Cartazes de evento, festival, zine",
+    "Marcas independentes com pegada gráfica"
+  ],
+  "avoid_when": [
+    "Interfaces de produto com muito estado",
+    "Marcas que precisam de neutralidade"
+  ],
+  "anti_patterns": [
+    "Usar mais de 3 tintas",
+    "Grão por cima do texto pequeno",
+    "Desalinhamento em botões (parece bug)"
+  ],
+  "pairs_with": [
+    "display-gorda",
+    "riso-rosa-e-azul",
+    "grao-de-papel",
+    "sobreposicao-de-tintas",
+    "cartaz-tipografico"
+  ],
+  "component_refs": [
+    "@shadcn/badge"
+  ],
+  "references": [
+    {
+      "title": "Grainy gradients",
+      "url": "https://css-tricks.com/grainy-gradients/",
+      "author": "CSS-Tricks",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "style",
+  "tokens": {
+    "color": {
+      "bg": {
+        "$type": "color",
+        "$value": "oklch(0.95 0.015 90)"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "oklch(0.91 0.02 90)"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "oklch(0.3 0.12 260)"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "oklch(0.42 0.1 260)"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "oklch(0.66 0.21 0)"
+      },
+      "accent-fg": {
+        "$type": "color",
+        "$value": "oklch(0.2 0.08 260)"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "oklch(0.3 0.12 260)"
+      }
+    },
+    "font": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Bricolage Grotesque",
+          "sans-serif"
+        ]
+      },
+      "text": {
+        "$type": "fontFamily",
+        "$value": [
+          "Karla",
+          "sans-serif"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "Space Mono",
+          "monospace"
+        ]
+      },
+      "display-weight": {
+        "$type": "fontWeight",
+        "$value": 800
+      },
+      "tracking": {
+        "$type": "number",
+        "$value": -0.03,
+        "$description": "letter-spacing do display em em"
+      },
+      "uppercase": {
+        "$type": "number",
+        "$value": 1,
+        "$description": "1 = display em caixa alta"
+      }
+    },
+    "radius": {
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        }
+      }
+    },
+    "border": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        }
+      }
+    },
+    "space": {
+      "unit": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        }
+      }
+    },
+    "shadow": {
+      "card": {
+        "$type": "shadow",
+        "$value": {
+          "color": "oklch(0.66 0.21 0)",
+          "offsetX": {
+            "value": 3,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 3,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 0,
+            "unit": "px"
+          },
+          "spread": {
+            "value": 0,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "motion": {
+      "duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 260,
+          "unit": "ms"
+        }
+      },
+      "ease": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.7,
+          0,
+          0.3,
+          1
+        ]
+      }
+    }
+  },
+  "signature_moves": [
+    "mix-blend-mode: multiply entre duas cores",
+    "Sombra de texto deslocada 2px em outra tinta",
+    "Grão SVG por cima de imagens",
+    "Halftone em fotos"
+  ]
+}

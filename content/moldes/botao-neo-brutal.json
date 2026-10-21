@@ -1,0 +1,50 @@
+{
+  "slug": "botao-neo-brutal",
+  "title": "Botão neo-brutal",
+  "summary": "Borda de 3px, sombra dura e rótulo pesado. Hover sobe, clique afunda.",
+  "category": "botão",
+  "tags": [
+    "botão",
+    "neo-brutalismo",
+    "cta"
+  ],
+  "sectors": [],
+  "boldness": 4,
+  "when_to_use": [
+    "CTA em neo-brutalismo"
+  ],
+  "avoid_when": [
+    "Sites sóbrios"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [
+    "neo-brutalismo",
+    "botao-que-afunda"
+  ],
+  "component_refs": [
+    "@shadcn/button"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><button class=\"nb\">Quero participar</button><button class=\"nb ghost\">Ver agenda</button></div>",
+    "css": ".w{display:flex;flex-wrap:wrap;gap:12px;align-content:center;justify-content:center;height:100vh;background:oklch(0.96 0.05 95)}\n.nb{min-height:48px;font:800 1rem var(--font);padding:0 1.2rem;border:3px solid #111;border-radius:8px;background:oklch(0.72 0.19 145);color:#111;box-shadow:4px 4px 0 #111;transition:transform .12s,box-shadow .12s}\n.nb.ghost{background:#fff}.nb:hover,html.hover .nb:first-child{transform:translate(-2px,-2px);box-shadow:6px 6px 0 #111}.nb:active{transform:translate(4px,4px);box-shadow:0 0 0 #111}\n.nb:focus-visible{outline:3px solid oklch(0.55 0.2 260);outline-offset:3px}",
+    "height": 200,
+    "fonts": [],
+    "hover": true,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

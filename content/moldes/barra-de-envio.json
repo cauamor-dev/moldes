@@ -1,0 +1,47 @@
+{
+  "slug": "barra-de-envio",
+  "title": "Barra de envio de arquivo",
+  "summary": "Linha de arquivo com nome, tamanho, progresso e cancelar. Estado claro sem modal.",
+  "category": "feedback",
+  "tags": [
+    "upload",
+    "progresso",
+    "arquivo"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Upload de documentos"
+  ],
+  "avoid_when": [
+    "Arquivos que sobem em menos de 1s"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/progress"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"u\"><div class=\"row\"><b>contrato-assinado.pdf</b><span>2,4 MB · 68%</span></div><div class=\"bar\"><i></i></div></div>",
+    "css": ".u{margin:2rem 1rem;padding:.9rem;border:1px solid var(--line);border-radius:10px;font:400 .85rem var(--font)}.row{display:flex;justify-content:space-between;gap:.5rem}.row span{color:var(--muted);font-family:var(--mono);font-size:.75rem}\n.bar{height:6px;border-radius:3px;background:var(--line);margin-top:.6rem;overflow:hidden}.bar i{display:block;height:100%;width:68%;background:var(--fg);border-radius:3px;animation:up 3s ease-in-out infinite}\n@keyframes up{0%{width:10%}70%,100%{width:68%}}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

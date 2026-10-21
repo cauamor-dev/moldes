@@ -1,0 +1,66 @@
+{
+  "slug": "cartas-empilhadas",
+  "title": "Cartas empilhadas",
+  "summary": "Depoimentos ou cards empilhados com leve rotação; o de cima vai para trás do monte em ciclo.",
+  "category": "layout",
+  "tags": [
+    "cards",
+    "depoimentos",
+    "pilha"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Depoimentos",
+    "Galeria de cases no mobile"
+  ],
+  "avoid_when": [
+    "Conteúdo que precisa ser comparado lado a lado"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"st\"><article>“Entregou em uma semana.”</article><article>“O site novo dobrou os pedidos.”</article><article>“Finalmente parece a gente.”</article></div>",
+    "css": ".st{position:relative;height:100vh}.st article{position:absolute;left:12%;right:12%;top:28%;padding:1.1rem;background:var(--surface);border:1px solid var(--line);border-radius:14px;font:600 1rem/1.3 var(--font);box-shadow:0 8px 24px -12px oklch(0 0 0/.3);animation:cyc 9s cubic-bezier(.65,0,.35,1) infinite}\n.st article:nth-child(2){animation-delay:-3s}.st article:nth-child(3){animation-delay:-6s}\n@keyframes cyc{0%,28%{transform:translateY(0) rotate(0);z-index:3;opacity:1}33%,61%{transform:translateY(20px) scale(.92) rotate(-2deg);z-index:1;opacity:.8}66%,94%{transform:translateY(10px) scale(.96) rotate(2deg);z-index:2;opacity:.9}100%{transform:none;z-index:3}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "loop",
+  "duration_ms": 3000,
+  "easing": "cubic-bezier(0.65, 0, 0.35, 1)",
+  "stagger_ms": 0,
+  "props": [
+    "y",
+    "rotate",
+    "zIndex",
+    "scale"
+  ],
+  "reduced_motion": "Mostrar a pilha parada e trocar por botões.",
+  "snippet": "const [order, setOrder] = useState(cards);\nuseEffect(() => { const t = setInterval(() => setOrder(([first, ...rest]) => [...rest, first]), 3000); return () => clearInterval(t); }, []);\n{order.map((c, i) => (\n  <motion.article key={c.id} layout animate={{ y: i * 10, scale: 1 - i * 0.04, rotate: i === 0 ? 0 : (i % 2 ? 2 : -2), zIndex: order.length - i }}\n    transition={{ duration: 0.5, ease: [0.65, 0, 0.35, 1] }}>{c.quote}</motion.article>\n))}"
+}

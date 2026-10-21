@@ -1,0 +1,61 @@
+{
+  "slug": "lista-indice",
+  "title": "Lista índice",
+  "summary": "Projetos ou serviços como linhas de índice: número, nome grande, categoria e ano. Hover revela.",
+  "category": "conteúdo",
+  "tags": [
+    "portfólio",
+    "lista",
+    "índice"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Portfólio com muitos projetos",
+    "Lista de serviços"
+  ],
+  "avoid_when": [
+    "Produtos que precisam de imagem"
+  ],
+  "anti_patterns": [
+    "Grade de cards com thumbnail e título",
+    "Ícones de seta em cada linha sem hover"
+  ],
+  "pairs_with": [
+    "brutalismo",
+    "academico-arquivo",
+    "revelar-ao-passar"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"li\"><div class=\"r\"><i>01</i><b>Ateliê Barro</b><span>branding</span><span>2026</span></div><div class=\"r on\"><i>02</i><b>Café Ponto</b><span>site</span><span>2025</span></div><div class=\"r\"><i>03</i><b>Feira do Mercado</b><span>sinalização</span><span>2025</span></div><div class=\"r\"><i>04</i><b>Studio J</b><span>embalagem</span><span>2024</span></div></section>",
+    "css": ".li{padding:2rem 2.4rem}.r{display:grid;grid-template-columns:4rem 1fr 10rem 5rem;align-items:baseline;padding:1.1rem .8rem;border-top:1px solid var(--fg);font:500 1rem var(--mono);color:var(--muted)}\n.r b{font:700 2.6rem var(--font);letter-spacing:-.04em;color:var(--fg)}.r.on{background:var(--accent)}.r.on *{color:var(--accent-fg)}",
+    "height": 167,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Linhas numeradas 01, 02…",
+    "Nome em display, categoria e ano em mono",
+    "Filete entre linhas",
+    "Hover: fundo ou miniatura aparece"
+  ],
+  "wireframe": "| 01  NOME DO PROJETO GRANDE        branding  2026 |\n|--------------------------------------------------|\n| 02  OUTRO PROJETO                 site      2025 |\n|--------------------------------------------------|\n| 03  MAIS UM                       embalagem 2025 |",
+  "variations": [
+    "Miniatura seguindo o cursor",
+    "Versão com filtros por categoria no topo"
+  ]
+}

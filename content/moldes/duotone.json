@@ -1,0 +1,38 @@
+{
+  "slug": "duotone",
+  "title": "Duotone",
+  "summary": "Imagem em escala de cinza com duas cores mapeadas por mix-blend-mode. Unifica fotos de origens diferentes.",
+  "category": "imagem",
+  "tags": [
+    "foto",
+    "duotone",
+    "blend"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Fotos de equipe com qualidades diferentes",
+    "Capas"
+  ],
+  "avoid_when": [
+    "Fotos de produto (muda a cor real)"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"d\"><div class=\"ph\"></div></div>",
+    "css": ".d{position:relative;height:100vh;background:oklch(0.3 0.12 260)}\n.ph{position:absolute;inset:0;background:radial-gradient(circle at 35% 40%,#fff 0 18%,#888 30%,#222 60%),linear-gradient(#000,#fff);filter:grayscale(1) contrast(1.2);mix-blend-mode:screen;opacity:.9}\n.d::after{content:\"\";position:absolute;inset:0;background:oklch(0.66 0.21 0);mix-blend-mode:multiply}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

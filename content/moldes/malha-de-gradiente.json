@@ -1,0 +1,39 @@
+{
+  "slug": "malha-de-gradiente",
+  "title": "Malha de gradiente",
+  "summary": "Vários radial-gradient sobrepostos em tons vizinhos criam uma malha suave, sem o clichê roxo/azul.",
+  "category": "gradiente",
+  "tags": [
+    "gradiente",
+    "fundo",
+    "suave"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Fundo de hero com foto ausente",
+    "Capa de case"
+  ],
+  "avoid_when": [
+    "Atrás de texto longo"
+  ],
+  "anti_patterns": [
+    "Roxo + azul (cara de IA)",
+    "Mais de 4 cores",
+    "Saturação alta em todas as manchas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"m\"><h2>Outono<br>em casa</h2></div>",
+    "css": ".m{height:100vh;padding:1.4rem;box-sizing:border-box;background:radial-gradient(at 15% 20%,oklch(0.86 0.09 70) 0,transparent 55%),radial-gradient(at 85% 30%,oklch(0.75 0.12 40) 0,transparent 50%),radial-gradient(at 50% 90%,oklch(0.6 0.1 20) 0,transparent 55%),oklch(0.92 0.04 75)}\n.m h2{font:700 2.2rem/1 var(--font);letter-spacing:-.03em;margin:0;color:oklch(0.25 0.05 40)}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

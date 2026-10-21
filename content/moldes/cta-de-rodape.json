@@ -1,0 +1,63 @@
+{
+  "slug": "cta-de-rodape",
+  "title": "CTA de rodapé",
+  "summary": "Última dobra com frase gigante alinhada à esquerda, um botão e o contato direto ao lado. Fecha a página com convicção.",
+  "category": "cta",
+  "tags": [
+    "cta",
+    "rodapé",
+    "conversão"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Fim de qualquer landing"
+  ],
+  "avoid_when": [
+    "Páginas de app logado"
+  ],
+  "anti_patterns": [
+    "Card centralizado com 'Pronto para começar?'",
+    "Dois botões iguais",
+    "Gradiente de fundo"
+  ],
+  "pairs_with": [
+    "hero-assimetrico",
+    "suico"
+  ],
+  "component_refs": [
+    "@shadcn/button"
+  ],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"c\"><h2>Vamos fazer<br><em>o seu?</em></h2><div class=\"a\"><a class=\"p\">Pedir orçamento</a><span>ou ola@lume.studio</span></div></section><footer class=\"f\"><span>© 2026 Lume</span><span>Instagram · LinkedIn</span><span>BH, MG</span></footer>",
+    "css": ".c{display:grid;grid-template-columns:1.6fr 1fr;align-items:end;gap:2rem;padding:4rem 2.4rem 3rem;background:var(--accent);color:var(--accent-fg)}\n.c h2{font:800 5.2rem/.92 var(--font);letter-spacing:-.05em;margin:0}.c em{font-weight:400;font-style:italic}\n.a{display:grid;gap:.8rem;font:500 1rem var(--font)}.a .p{padding:1.2rem 1.6rem;background:var(--accent-fg);color:var(--accent);font-weight:700;font-size:1.2rem;text-align:center}\n.f{display:flex;justify-content:space-between;padding:1.2rem 2.4rem;font:500 .85rem var(--mono);color:var(--muted)}",
+    "height": 131,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Frase curta e direta em display gigante",
+    "Um único botão (sem 2 opções competindo)",
+    "Contato alternativo visível (e-mail, WhatsApp)",
+    "Rodapé mínimo logo abaixo"
+  ],
+  "wireframe": "|                                                  |\n| VAMOS FAZER                                      |\n| O SEU?                     [ Pedir orçamento ]   |\n|                            ou ola@estudio.com    |\n|--------------------------------------------------|\n| © 2026 · Instagram · LinkedIn          BH, MG    |",
+  "variations": [
+    "Fundo na cor de acento chapada",
+    "Frase com uma palavra em itálico serifado",
+    "Formulário de e-mail inline no lugar do botão"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "virar-cartao",
+  "title": "Virar o cartão",
+  "summary": "Cartão gira em 3D no eixo Y e mostra o verso com detalhes. Bom para equipe ou preços.",
+  "category": "interação",
+  "tags": [
+    "3d",
+    "cartão",
+    "flip"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Cartões de equipe",
+    "Comparar 'antes/depois'"
+  ],
+  "avoid_when": [
+    "Informação essencial escondida no verso"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"sc\"><div class=\"cd\"><div class=\"fr\"><b>Ana Lima</b><span>direção de arte</span></div><div class=\"bk\">10 anos fazendo marca para restaurante.</div></div></div>",
+    "css": ".sc{perspective:800px;padding:1.4rem;height:100vh;box-sizing:border-box}.cd{position:relative;height:150px;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.4,0,.2,1);animation:fl 4s cubic-bezier(.4,0,.2,1) infinite}\n.fr,.bk{position:absolute;inset:0;backface-visibility:hidden;border-radius:14px;padding:1.1rem;display:flex;flex-direction:column;justify-content:flex-end;font:400 .95rem var(--font)}\n.fr{background:var(--accent);color:var(--accent-fg)}.fr b{font-size:1.4rem}.bk{background:var(--fg);color:var(--bg);transform:rotateY(180deg)}\nhtml.hover .cd,.sc:hover .cd{animation:none;transform:rotateY(180deg)}\n@keyframes fl{0%,35%{transform:none}50%,85%{transform:rotateY(180deg)}100%{transform:none}}",
+    "height": 220,
+    "fonts": [],
+    "hover": true,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "hover",
+  "duration_ms": 600,
+  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+  "stagger_ms": 0,
+  "props": [
+    "rotateY"
+  ],
+  "reduced_motion": "Trocar frente e verso com fade.",
+  "snippet": "<motion.div style={{ transformStyle: \"preserve-3d\" }} animate={{ rotateY: flipped ? 180 : 0 }} transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}>\n  <div style={{ backfaceVisibility: \"hidden\" }}>Frente</div>\n  <div style={{ backfaceVisibility: \"hidden\", transform: \"rotateY(180deg)\", position: \"absolute\", inset: 0 }}>Verso</div>\n</motion.div>"
+}

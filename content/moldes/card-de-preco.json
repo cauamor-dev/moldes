@@ -1,0 +1,50 @@
+{
+  "slug": "card-de-preco",
+  "title": "Card de preço honesto",
+  "summary": "Preço grande, o que inclui em lista curta, e uma linha dizendo para quem não é.",
+  "category": "card",
+  "tags": [
+    "preço",
+    "plano",
+    "card"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Página de preços",
+    "Serviços de freelancer"
+  ],
+  "avoid_when": [
+    "Mais de 3 planos lado a lado no mobile"
+  ],
+  "anti_patterns": [
+    "Riscar preço 'de/por' falso",
+    "Lista de 15 itens com check",
+    "Plano do meio com glow"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/card",
+    "@shadcn/button"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"p\"><small>Site institucional</small><b>R$ 2.400</b><ul><li>Até 5 páginas</li><li>Publicado na Vercel</li><li>1 mês de ajustes</li></ul><em>Não é para: loja virtual.</em><button>Pedir orçamento</button></div></div>",
+    "css": ".w{padding:1rem}.p{padding:1.2rem;border:1px solid var(--fg);border-radius:4px;display:grid;gap:.4rem;font:400 .9rem var(--font)}\n.p small{font:600 .75rem var(--font);text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}.p b{font:800 2rem var(--font);letter-spacing:-.03em}\n.p ul{margin:.2rem 0;padding-left:1.1rem;line-height:1.6}.p em{color:var(--muted);font-size:.8rem}\n.p button{margin-top:.4rem;min-height:46px;border:0;background:var(--fg);color:var(--bg);font:600 .95rem var(--font)}",
+    "height": 290,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

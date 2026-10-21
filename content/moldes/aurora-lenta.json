@@ -1,0 +1,40 @@
+{
+  "slug": "aurora-lenta",
+  "title": "Aurora lenta",
+  "summary": "Faixas de cor borradas que se deslocam devagar no topo da seção. Fundo vivo e discreto.",
+  "category": "gradiente",
+  "tags": [
+    "aurora",
+    "animado",
+    "fundo"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Topo de landing escura",
+    "Tela de login"
+  ],
+  "avoid_when": [
+    "Telas de trabalho (distrai)"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@magicui/aurora-text"
+  ],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"au\"><i></i><i></i><h3>Bem-vindo de volta</h3></div>",
+    "css": ".au{position:relative;height:100vh;overflow:hidden;background:oklch(0.16 0.02 200);display:flex;align-items:flex-end;padding:1.4rem;box-sizing:border-box}\n.au i{position:absolute;top:-40%;width:80%;height:90%;border-radius:50%;filter:blur(40px);opacity:.55;animation:dr 10s ease-in-out infinite alternate}\n.au i:first-child{left:-10%;background:oklch(0.7 0.14 170)}.au i:last-child{right:-20%;background:oklch(0.75 0.13 110);animation-delay:-5s}\n.au h3{position:relative;color:#fff;font:600 1.5rem var(--font);margin:0}\n@keyframes dr{to{transform:translateX(18%) translateY(10%) scale(1.1)}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": true
+  },
+  "code": [],
+  "kind": "effect"
+}

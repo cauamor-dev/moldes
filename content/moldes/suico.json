@@ -1,0 +1,216 @@
+{
+  "slug": "suico",
+  "title": "Suíço / Internacional",
+  "summary": "Grade rígida, tipografia grotesca grande alinhada à esquerda, vermelho como único acento e muito branco ativo.",
+  "category": "clássico",
+  "tags": [
+    "grid",
+    "tipográfico",
+    "minimal",
+    "modernismo"
+  ],
+  "sectors": [
+    "arquitetura",
+    "consultoria",
+    "cultura",
+    "jurídico"
+  ],
+  "boldness": 3,
+  "when_to_use": [
+    "Marcas que querem parecer precisas e confiáveis",
+    "Sites com muito conteúdo textual hierarquizado",
+    "Portfólios de arquitetura e design"
+  ],
+  "avoid_when": [
+    "Produto infantil ou lúdico",
+    "Quando o cliente pede 'aconchegante'"
+  ],
+  "anti_patterns": [
+    "Centralizar o texto",
+    "Usar mais de um acento",
+    "Cantos arredondados grandes",
+    "Ícones decorativos sem função"
+  ],
+  "pairs_with": [
+    "grotesca-e-mono",
+    "papel-e-vermelho",
+    "revelar-em-linhas",
+    "hero-assimetrico",
+    "regua-de-numeros"
+  ],
+  "component_refs": [
+    "@shadcn/button",
+    "@shadcn/separator",
+    "@shadcn/navigation-menu"
+  ],
+  "references": [
+    {
+      "title": "Grid Systems in Graphic Design",
+      "url": "https://en.wikipedia.org/wiki/Josef_M%C3%BCller-Brockmann",
+      "author": "Josef Müller-Brockmann (verbete)",
+      "license": "CC-BY-SA 4.0",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "style",
+  "tokens": {
+    "color": {
+      "bg": {
+        "$type": "color",
+        "$value": "oklch(0.98 0.004 90)"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "oklch(0.95 0.004 90)"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "oklch(0.18 0 0)"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "oklch(0.45 0 0)"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "oklch(0.58 0.22 28)"
+      },
+      "accent-fg": {
+        "$type": "color",
+        "$value": "oklch(0.99 0 0)"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "oklch(0.18 0 0)"
+      }
+    },
+    "font": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Schibsted Grotesk",
+          "sans-serif"
+        ]
+      },
+      "text": {
+        "$type": "fontFamily",
+        "$value": [
+          "Schibsted Grotesk",
+          "sans-serif"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "IBM Plex Mono",
+          "monospace"
+        ]
+      },
+      "display-weight": {
+        "$type": "fontWeight",
+        "$value": 700
+      },
+      "tracking": {
+        "$type": "number",
+        "$value": -0.04,
+        "$description": "letter-spacing do display em em"
+      },
+      "uppercase": {
+        "$type": "number",
+        "$value": 0,
+        "$description": "1 = display em caixa alta"
+      }
+    },
+    "radius": {
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      }
+    },
+    "border": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1,
+          "unit": "px"
+        }
+      }
+    },
+    "space": {
+      "unit": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        }
+      }
+    },
+    "shadow": {
+      "card": {
+        "$type": "shadow",
+        "$value": {
+          "color": "oklch(0 0 0 / 0)",
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 0,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 0,
+            "unit": "px"
+          },
+          "spread": {
+            "value": 0,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "motion": {
+      "duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 220,
+          "unit": "ms"
+        }
+      },
+      "ease": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.2,
+          0,
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "signature_moves": [
+    "Número de seção gigante em vermelho alinhado à coluna 1",
+    "Texto corrido em 2 colunas estreitas",
+    "Filetes de 1px separando blocos",
+    "Títulos com tracking negativo"
+  ]
+}

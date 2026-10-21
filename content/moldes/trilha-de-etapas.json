@@ -1,0 +1,46 @@
+{
+  "slug": "trilha-de-etapas",
+  "title": "Trilha de etapas",
+  "summary": "Etapas numeradas ligadas por linha; a atual em destaque e as feitas com check.",
+  "category": "navegação",
+  "tags": [
+    "stepper",
+    "checkout",
+    "etapas"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Checkout",
+    "Onboarding em passos"
+  ],
+  "avoid_when": [
+    "Mais de 5 etapas"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<ol class=\"s\"><li class=\"done\"><i>✓</i>Dados</li><li class=\"on\"><i>2</i>Entrega</li><li><i>3</i>Pagamento</li></ol>",
+    "css": ".s{display:flex;list-style:none;margin:0;padding:2rem 1rem;font:600 .8rem var(--font);color:var(--muted)}\n.s li{flex:1;display:grid;justify-items:center;gap:.4rem;position:relative}.s li::before{content:\"\";position:absolute;top:16px;right:50%;width:100%;height:2px;background:var(--line);z-index:-1}.s li:first-child::before{display:none}\n.s i{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-style:normal;background:var(--bg);border:2px solid var(--line)}\n.done{color:var(--fg)}.done i{background:var(--fg);border-color:var(--fg);color:var(--bg)}.done+li::before{background:var(--fg)}.on{color:var(--fg)}.on i{border-color:var(--accent);color:var(--fg);box-shadow:0 0 0 4px color-mix(in oklch,var(--accent) 25%,transparent)}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

@@ -1,0 +1,99 @@
+{
+  "slug": "instrument-duo",
+  "title": "Instrument duo",
+  "summary": "Serifa condensada e elegante com a sans da mesma família. Moderno com um pé no editorial.",
+  "category": "editorial",
+  "tags": [
+    "moderno",
+    "editorial",
+    "estúdio"
+  ],
+  "sectors": [
+    "agências",
+    "portfólio",
+    "moda"
+  ],
+  "boldness": 3,
+  "when_to_use": [
+    "Portfólio, estúdio",
+    "Landing de produto com tom editorial"
+  ],
+  "avoid_when": [
+    "Texto display pequeno"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Instrument Serif",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400
+    ],
+    "italic": true
+  },
+  "text": {
+    "family": "Instrument Sans",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      500,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "JetBrains Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.5,
+    "base_px": 16,
+    "steps": [
+      10.7,
+      16,
+      24,
+      36,
+      54,
+      81,
+      121.5
+    ]
+  },
+  "sample": {
+    "headline": "Estúdio de marca para quem faz coisas",
+    "body": "Instrument Serif tem um itálico lindo para destacar uma palavra no título. A sans irmã cuida do resto."
+  }
+}

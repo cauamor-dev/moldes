@@ -1,0 +1,41 @@
+{
+  "slug": "borda-em-movimento",
+  "title": "Borda em movimento",
+  "summary": "Um brilho percorre a borda do card em loop. Chama atenção para um item só.",
+  "category": "borda",
+  "tags": [
+    "borda",
+    "animado",
+    "destaque"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Plano recomendado",
+    "Card de novidade"
+  ],
+  "avoid_when": [
+    "Mais de um card na tela com o efeito"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@magicui/border-beam",
+    "@magicui/shine-border"
+  ],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"c\"><small>RECOMENDADO</small><b>Pro</b><span>R$ 49/mês</span></div></div>",
+    "css": "@property --a{syntax:\"<angle>\";initial-value:0deg;inherits:false}\n.w{height:100vh;display:grid;place-items:center;background:oklch(0.16 0.005 260)}\n.c{width:62%;padding:1.2rem;border-radius:14px;color:#fff;font:400 .9rem var(--font);display:grid;gap:.2rem;border:1px solid transparent;background:linear-gradient(oklch(0.2 0.006 260),oklch(0.2 0.006 260)) padding-box,conic-gradient(from var(--a),transparent 70%,oklch(0.88 0.19 125),transparent 85%) border-box;animation:bd 4s linear infinite}\n.c small{letter-spacing:.2em;color:oklch(0.88 0.19 125)}.c b{font-size:1.6rem}\n@keyframes bd{to{--a:360deg}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": true
+  },
+  "code": [],
+  "kind": "effect"
+}

@@ -1,0 +1,96 @@
+{
+  "slug": "pixel-retro",
+  "title": "Pixel retrô",
+  "summary": "Fonte de pixel para títulos curtos e mono arredondada no texto. Fliperama sem exagero.",
+  "category": "lúdico",
+  "tags": [
+    "pixel",
+    "games",
+    "retrô"
+  ],
+  "sectors": [
+    "games",
+    "eventos",
+    "criadores"
+  ],
+  "boldness": 5,
+  "when_to_use": [
+    "Games indie",
+    "Hackathon"
+  ],
+  "avoid_when": [
+    "Qualquer coisa séria"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Silkscreen",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      700
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Space Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      700
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "VT323",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.25,
+    "base_px": 16,
+    "steps": [
+      12.8,
+      16,
+      20,
+      25,
+      31.3,
+      39.1,
+      48.8
+    ]
+  },
+  "sample": {
+    "headline": "NÍVEL 2 LIBERADO",
+    "body": "Pixel só no título, curto e grande. Texto corrido em pixel cansa em três linhas."
+  }
+}

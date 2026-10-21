@@ -1,0 +1,216 @@
+{
+  "slug": "editorial",
+  "title": "Editorial de revista",
+  "summary": "Serifa de alto contraste nos títulos, capitulares, legendas pequenas e ritmo de revista impressa.",
+  "category": "editorial",
+  "tags": [
+    "serifa",
+    "revista",
+    "leitura",
+    "elegante"
+  ],
+  "sectors": [
+    "mídia",
+    "cultura",
+    "moda",
+    "gastronomia",
+    "ONG"
+  ],
+  "boldness": 3,
+  "when_to_use": [
+    "Blogs e publicações",
+    "Marcas com história para contar",
+    "Landing de livro, evento cultural ou restaurante autoral"
+  ],
+  "avoid_when": [
+    "Dashboards densos",
+    "Ferramentas técnicas onde velocidade de leitura de dados importa mais"
+  ],
+  "anti_patterns": [
+    "Serifa no texto de interface pequeno",
+    "Linhas com mais de 75 caracteres",
+    "Fotos genéricas de banco de imagem"
+  ],
+  "pairs_with": [
+    "serifa-de-revista",
+    "tinta-e-papel",
+    "fade-de-capitular",
+    "prova-social-editorial",
+    "citacao-grande"
+  ],
+  "component_refs": [
+    "@shadcn/tabs",
+    "@shadcn/separator",
+    "@magicui/blur-fade"
+  ],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "style",
+  "tokens": {
+    "color": {
+      "bg": {
+        "$type": "color",
+        "$value": "oklch(0.97 0.012 85)"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "oklch(0.94 0.016 85)"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "oklch(0.22 0.01 60)"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "oklch(0.47 0.015 60)"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "oklch(0.45 0.12 25)"
+      },
+      "accent-fg": {
+        "$type": "color",
+        "$value": "oklch(0.97 0.012 85)"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "oklch(0.8 0.02 80)"
+      }
+    },
+    "font": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Fraunces",
+          "serif"
+        ]
+      },
+      "text": {
+        "$type": "fontFamily",
+        "$value": [
+          "Newsreader",
+          "serif"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "IBM Plex Mono",
+          "monospace"
+        ]
+      },
+      "display-weight": {
+        "$type": "fontWeight",
+        "$value": 600
+      },
+      "tracking": {
+        "$type": "number",
+        "$value": -0.02,
+        "$description": "letter-spacing do display em em"
+      },
+      "uppercase": {
+        "$type": "number",
+        "$value": 0,
+        "$description": "1 = display em caixa alta"
+      }
+    },
+    "radius": {
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        }
+      }
+    },
+    "border": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1,
+          "unit": "px"
+        }
+      }
+    },
+    "space": {
+      "unit": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        }
+      }
+    },
+    "shadow": {
+      "card": {
+        "$type": "shadow",
+        "$value": {
+          "color": "oklch(0 0 0 / 0)",
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 0,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 0,
+            "unit": "px"
+          },
+          "spread": {
+            "value": 0,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "motion": {
+      "duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 420,
+          "unit": "ms"
+        }
+      },
+      "ease": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.33,
+          1,
+          0.68,
+          1
+        ]
+      }
+    }
+  },
+  "signature_moves": [
+    "Capitular de 3 linhas no primeiro parágrafo",
+    "Legenda em caixa alta com tracking largo",
+    "Títulos em itálico misturado com romano",
+    "Filete duplo antes de seções"
+  ]
+}

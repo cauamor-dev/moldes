@@ -1,0 +1,98 @@
+{
+  "slug": "epilogue-editorial-tech",
+  "title": "Epilogue editorial tech",
+  "summary": "Epilogue pesada e compacta com Rethink Sans. Produto com voz.",
+  "category": "produto",
+  "tags": [
+    "produto",
+    "compacto",
+    "moderno"
+  ],
+  "sectors": [
+    "SaaS",
+    "criadores",
+    "mídia"
+  ],
+  "boldness": 3,
+  "when_to_use": [
+    "Landing de produto com personalidade"
+  ],
+  "avoid_when": [
+    "Luxo"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Epilogue",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Rethink Sans",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "Red Hat Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.333,
+    "base_px": 16,
+    "steps": [
+      12,
+      16,
+      21.3,
+      28.4,
+      37.9,
+      50.5,
+      67.3
+    ]
+  },
+  "sample": {
+    "headline": "Escreva menos, entregue mais",
+    "body": "Epilogue fica ótima em 800 com tracking negativo. Rethink Sans foi feita para interfaces modernas."
+  }
+}

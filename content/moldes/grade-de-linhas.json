@@ -1,0 +1,40 @@
+{
+  "slug": "grade-de-linhas",
+  "title": "Grade de linhas",
+  "summary": "Linhas finas formando grade, como papel milimetrado, com fade no topo.",
+  "category": "fundo",
+  "tags": [
+    "grid",
+    "milimetrado",
+    "técnico"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Hero técnico, arquitetura",
+    "Fundo de diagrama"
+  ],
+  "avoid_when": [
+    "Fundos de leitura"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@magicui/grid-pattern"
+  ],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"gl\"><span>planta 01 · escala 1:50</span></div>",
+    "css": ".gl{height:100vh;display:flex;align-items:flex-end;padding:1.2rem;box-sizing:border-box;background:linear-gradient(var(--line) 1px,transparent 1px) 0 0/24px 24px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/24px 24px;-webkit-mask-image:linear-gradient(transparent,#000 40%);mask-image:linear-gradient(transparent,#000 40%)}\n.gl span{font:500 .8rem var(--mono);color:var(--muted)}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

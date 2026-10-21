@@ -1,0 +1,37 @@
+{
+  "slug": "relevo-interno",
+  "title": "Relevo interno",
+  "summary": "Sombra interna sutil em campos e trilhos. Mostra que é um espaço para preencher.",
+  "category": "sombra",
+  "tags": [
+    "inset",
+    "input",
+    "profundidade"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Inputs, sliders, trilhos"
+  ],
+  "avoid_when": [
+    "Neumorfismo completo (contraste ruim)"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"in\">buscar molde…</div><div class=\"tr\"><i></i></div></div>",
+    "css": ".w{height:100vh;display:grid;align-content:center;gap:1rem;padding:1.4rem;box-sizing:border-box;background:oklch(0.95 0.005 90)}\n.in{padding:.85rem 1rem;border-radius:10px;background:oklch(0.97 0.004 90);box-shadow:inset 0 1px 3px oklch(0.3 0.01 90/.2),inset 0 0 0 1px oklch(0.3 0.01 90/.12);color:oklch(0.48 0.01 90);font:400 .95rem var(--font)}\n.tr{height:8px;border-radius:4px;background:oklch(0.9 0.005 90);box-shadow:inset 0 1px 2px oklch(0.3 0.01 90/.25)}.tr i{display:block;width:60%;height:100%;border-radius:4px;background:var(--fg)}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

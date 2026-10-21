@@ -1,0 +1,46 @@
+{
+  "slug": "gradiente-granulado",
+  "title": "Gradiente granulado",
+  "summary": "Gradiente com grão por cima: some com as faixas (banding) e parece impresso.",
+  "category": "noise",
+  "tags": [
+    "grão",
+    "gradiente",
+    "impresso"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Capas, cartazes",
+    "Fundo de hero"
+  ],
+  "avoid_when": [
+    "Fundo de texto corrido"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Grainy gradients",
+      "url": "https://css-tricks.com/grainy-gradients/",
+      "author": "CSS-Tricks",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"gg\"><b>Festival<br>Inverno 26</b></div>",
+    "css": ".gg{position:relative;height:100vh;padding:1.4rem;box-sizing:border-box;background:linear-gradient(in oklch 200deg,oklch(0.75 0.15 40),oklch(0.55 0.2 15) 50%,oklch(0.3 0.12 290))}\n.gg::after{content:\"\";position:absolute;inset:0;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\");opacity:.35;mix-blend-mode:overlay}\n.gg b{position:relative;display:block;color:#fff;font:800 2.4rem/1 var(--font);letter-spacing:-.04em;margin-top:40%}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

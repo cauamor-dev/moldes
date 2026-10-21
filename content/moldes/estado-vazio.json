@@ -1,0 +1,48 @@
+{
+  "slug": "estado-vazio",
+  "title": "Estado vazio útil",
+  "summary": "Quando não há nada: uma frase do que fazer, um botão e um exemplo. Sem ilustração genérica.",
+  "category": "feedback",
+  "tags": [
+    "empty-state",
+    "onboarding",
+    "vazio"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Listas vazias",
+    "Primeira visita"
+  ],
+  "avoid_when": [
+    "Esconder o erro real atrás de 'nada aqui'"
+  ],
+  "anti_patterns": [
+    "Ilustração de astronauta/caixa vazia",
+    "Texto 'Ops!'"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/button"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"e\"><b>Nenhum cliente ainda</b><p>Cadastre o primeiro ou importe uma planilha CSV.</p><div><button class=\"p\">Novo cliente</button><button>Importar CSV</button></div></div>",
+    "css": ".e{margin:1rem;padding:1.4rem;border:1.5px dashed var(--line);border-radius:12px;font:400 .9rem var(--font)}.e b{font-size:1.1rem}.e p{color:var(--muted);margin:.3rem 0 1rem}\n.e div{display:flex;gap:8px;flex-wrap:wrap}.e button{min-height:44px;padding:0 1rem;border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--fg);font:600 .9rem var(--font)}.e button.p{background:var(--fg);color:var(--bg);border-color:var(--fg)}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

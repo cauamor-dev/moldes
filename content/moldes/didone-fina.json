@@ -1,0 +1,102 @@
+{
+  "slug": "didone-fina",
+  "title": "Didone fina",
+  "summary": "Garamond fina e alta com sans leve. Luxo silencioso.",
+  "category": "premium",
+  "tags": [
+    "luxo",
+    "serifa",
+    "fino"
+  ],
+  "sectors": [
+    "imobiliário",
+    "joalheria",
+    "hotelaria"
+  ],
+  "boldness": 2,
+  "when_to_use": [
+    "Luxo sóbrio",
+    "Convites, hotelaria"
+  ],
+  "avoid_when": [
+    "Interfaces pequenas"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [
+    "luxo-sobrio"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Cormorant Garamond",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      500,
+      600
+    ],
+    "italic": true
+  },
+  "text": {
+    "family": "Hanken Grotesk",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      300,
+      400,
+      600
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "IBM Plex Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.5,
+    "base_px": 16,
+    "steps": [
+      10.7,
+      16,
+      24,
+      36,
+      54,
+      81,
+      121.5
+    ]
+  },
+  "sample": {
+    "headline": "Residências com vista para a serra",
+    "body": "Cormorant precisa de tamanho: use acima de 40px. A Hanken leve no texto mantém o ar sem competir."
+  }
+}

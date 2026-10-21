@@ -1,0 +1,49 @@
+{
+  "slug": "busca-com-atalho",
+  "title": "Busca com atalho",
+  "summary": "Campo de busca com ícone desenhado em CSS e atalho ⌘K à direita. Abre o comando.",
+  "category": "formulário",
+  "tags": [
+    "busca",
+    "comando",
+    "atalho"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Docs, dashboards",
+    "Apps com muitas páginas"
+  ],
+  "avoid_when": [
+    "Sites de 3 páginas"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/command",
+    "@shadcn/input"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"s\"><i></i><span>Buscar moldes…</span><kbd>⌘K</kbd></div></div>",
+    "css": ".w{padding:2rem 1rem}.s{display:flex;align-items:center;gap:.6rem;min-height:46px;padding:0 .6rem 0 .9rem;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--muted);font:400 .95rem var(--font)}\n.s i{width:12px;height:12px;border:2px solid currentColor;border-radius:50%;position:relative}.s i::after{content:\"\";position:absolute;width:2px;height:6px;background:currentColor;right:-4px;bottom:-5px;transform:rotate(-45deg)}\n.s span{flex:1}.s kbd{font:500 .72rem var(--mono);padding:.2rem .4rem;border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;background:var(--bg)}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

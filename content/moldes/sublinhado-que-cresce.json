@@ -1,0 +1,64 @@
+{
+  "slug": "sublinhado-que-cresce",
+  "title": "Sublinhado que cresce",
+  "summary": "No hover o sublinhado cresce da esquerda; ao sair, encolhe para a direita.",
+  "category": "interação",
+  "tags": [
+    "link",
+    "hover",
+    "micro"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Links de navegação",
+    "Links em texto editorial"
+  ],
+  "avoid_when": [
+    "Links dentro de parágrafos longos (use sublinhado fixo)"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<nav class=\"n\"><a>Trabalhos</a><a class=\"on\">Estúdio</a><a>Contato</a></nav>",
+    "css": ".n{display:flex;gap:1.4rem;padding:2rem 1.4rem;font:600 1.3rem var(--font)}\n.n a{position:relative;color:var(--fg)}\n.n a::after{content:\"\";position:absolute;left:0;right:0;bottom:-3px;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s cubic-bezier(.2,0,0,1)}\n.n a:hover::after,html.hover .n a.on::after{transform:scaleX(1);transform-origin:left}",
+    "height": 220,
+    "fonts": [],
+    "hover": true,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "hover",
+  "duration_ms": 300,
+  "easing": "cubic-bezier(0.2, 0, 0, 1)",
+  "stagger_ms": 0,
+  "props": [
+    "scaleX",
+    "transformOrigin"
+  ],
+  "reduced_motion": "Sublinhado aparece sem transição.",
+  "snippet": "<motion.a href=\"#\" initial=\"rest\" whileHover=\"hover\" style={{ position: \"relative\" }}>\n  Trabalhos\n  <motion.span style={{ position: \"absolute\", left: 0, right: 0, bottom: -2, height: 2, background: \"currentColor\", originX: 0 }}\n    variants={{ rest: { scaleX: 0 }, hover: { scaleX: 1 } }} transition={{ duration: 0.3, ease: [0.2, 0, 0, 1] }} />\n</motion.a>"
+}

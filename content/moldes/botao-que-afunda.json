@@ -1,0 +1,70 @@
+{
+  "slug": "botao-que-afunda",
+  "title": "Botão que afunda",
+  "summary": "No neo-brutalismo, o botão anda na direção da sombra dura e ela some, como uma tecla física.",
+  "category": "interação",
+  "tags": [
+    "botão",
+    "neo-brutalismo",
+    "feedback"
+  ],
+  "sectors": [],
+  "boldness": 4,
+  "when_to_use": [
+    "CTAs em neo-brutalismo",
+    "Botões de jogo"
+  ],
+  "avoid_when": [
+    "Interfaces sóbrias"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [
+    "neo-brutalismo",
+    "botao-neo-brutal"
+  ],
+  "component_refs": [
+    "@shadcn/button"
+  ],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><button class=\"b\">Começar agora</button></div>",
+    "css": ".w{display:grid;place-items:center;height:100vh;background:oklch(0.96 0.05 95)}\n.b{font:800 1.1rem var(--font);padding:.9rem 1.4rem;background:oklch(0.72 0.19 145);border:3px solid #111;box-shadow:5px 5px 0 #111;border-radius:8px;transition:transform .12s cubic-bezier(.7,0,.3,1),box-shadow .12s cubic-bezier(.7,0,.3,1);animation:press 2.4s infinite}\nhtml.hover .b,.b:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 #111;animation:none}\n.b:active{transform:translate(5px,5px);box-shadow:0 0 0 #111}\n@keyframes press{0%,40%{transform:none;box-shadow:5px 5px 0 #111}50%,60%{transform:translate(5px,5px);box-shadow:0 0 0 #111}70%,100%{transform:none;box-shadow:5px 5px 0 #111}}",
+    "height": 220,
+    "fonts": [],
+    "hover": true,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "tap",
+  "duration_ms": 120,
+  "easing": "cubic-bezier(0.7, 0, 0.3, 1)",
+  "stagger_ms": 0,
+  "props": [
+    "x",
+    "y",
+    "boxShadow"
+  ],
+  "reduced_motion": "Mantém, é curto e não desloca a página; opcionalmente trocar por mudança de cor.",
+  "snippet": "<motion.button\n  style={{ boxShadow: \"5px 5px 0 #111\", border: \"3px solid #111\" }}\n  whileHover={{ x: -2, y: -2, boxShadow: \"7px 7px 0 #111\" }}\n  whileTap={{ x: 5, y: 5, boxShadow: \"0px 0px 0 #111\" }}\n  transition={{ duration: 0.12, ease: [0.7, 0, 0.3, 1] }}\n>Começar</motion.button>"
+}

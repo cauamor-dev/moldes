@@ -1,0 +1,47 @@
+{
+  "slug": "dica-flutuante",
+  "title": "Dica flutuante",
+  "summary": "Tooltip escuro com seta, aparece acima do elemento com fade de 150ms.",
+  "category": "feedback",
+  "tags": [
+    "tooltip",
+    "dica",
+    "ajuda"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Explicar ícones e siglas"
+  ],
+  "avoid_when": [
+    "Informação essencial (não aparece no toque)"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/tooltip"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><span class=\"tt\">AA<span class=\"tip\">Contraste mínimo 4,5:1</span></span></div>",
+    "css": ".w{height:100vh;display:grid;place-items:center}.tt{position:relative;font:700 .9rem var(--font);border-bottom:1px dashed;cursor:help}\n.tip{position:absolute;bottom:calc(100% + 10px);left:50%;transform:translate(-50%,4px);white-space:nowrap;padding:.45rem .7rem;border-radius:7px;background:var(--fg);color:var(--bg);font:500 .78rem var(--font);opacity:0;transition:.15s}\n.tip::after{content:\"\";position:absolute;top:100%;left:50%;margin-left:-5px;border:5px solid transparent;border-top-color:var(--fg)}\n.tt:hover .tip,html.hover .tip{opacity:1;transform:translate(-50%,0)}",
+    "height": 200,
+    "fonts": [],
+    "hover": true,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

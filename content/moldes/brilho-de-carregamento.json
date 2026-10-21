@@ -1,0 +1,64 @@
+{
+  "slug": "brilho-de-carregamento",
+  "title": "Brilho de carregamento",
+  "summary": "Skeleton com uma faixa de luz atravessando. Mostra que algo está vindo sem spinner.",
+  "category": "estado",
+  "tags": [
+    "loading",
+    "skeleton",
+    "estado"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Listas e cards carregando"
+  ],
+  "avoid_when": [
+    "Carregamentos de menos de 300ms (pisca)"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/skeleton"
+  ],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"k\"><div class=\"av\"></div><div class=\"ln\"><i></i><i class=\"s\"></i></div></div><div class=\"k\"><div class=\"av\"></div><div class=\"ln\"><i></i><i class=\"s\"></i></div></div><div class=\"blk\"></div>",
+    "css": ".k{display:flex;gap:.8rem;padding:.8rem 1.2rem}.av{width:40px;height:40px;border-radius:50%}.ln{flex:1;display:grid;gap:8px;align-content:center}.ln i{height:10px;border-radius:5px}.ln i.s{width:55%}.blk{height:70px;margin:.4rem 1.2rem;border-radius:12px}\n.av,.ln i,.blk{background:linear-gradient(90deg,var(--surface) 30%,var(--line) 50%,var(--surface) 70%);background-size:300% 100%;animation:sh 1.4s linear infinite}\n@keyframes sh{from{background-position:100% 0}to{background-position:0 0}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "loop",
+  "duration_ms": 1400,
+  "easing": "linear",
+  "stagger_ms": 0,
+  "props": [
+    "backgroundPosition"
+  ],
+  "reduced_motion": "Skeleton parado com opacidade alternando devagar, ou estático.",
+  "snippet": "<motion.div style={{ background: \"linear-gradient(90deg, var(--s1) 30%, var(--s2) 50%, var(--s1) 70%)\", backgroundSize: \"300% 100%\" }}\n  animate={{ backgroundPosition: [\"100% 0\", \"0% 0\"] }} transition={{ duration: 1.4, repeat: Infinity, ease: \"linear\" }} />"
+}

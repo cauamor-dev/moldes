@@ -1,0 +1,48 @@
+{
+  "slug": "campo-rotulo-flutuante",
+  "title": "Campo com rótulo que sobe",
+  "summary": "O rótulo fica dentro do campo e sobe quando há foco ou valor. CSS puro com :placeholder-shown.",
+  "category": "formulário",
+  "tags": [
+    "input",
+    "formulário",
+    "rótulo"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Formulários curtos (contato, login)"
+  ],
+  "avoid_when": [
+    "Formulários longos (prefira rótulo fixo acima)"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/input",
+    "@shadcn/label"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><label class=\"f\"><input placeholder=\" \" value=\"ana@exemplo.com\"><span>E-mail</span></label><label class=\"f\"><input placeholder=\" \"><span>Telefone</span></label></div>",
+    "css": ".w{display:grid;gap:14px;padding:1.2rem}\n.f{position:relative;display:block}.f input{width:100%;box-sizing:border-box;min-height:52px;padding:1.2rem .9rem .4rem;border:1.5px solid var(--line);border-radius:10px;background:var(--surface);color:var(--fg);font:400 1rem var(--font)}\n.f span{position:absolute;left:.9rem;top:50%;transform:translateY(-50%);color:var(--muted);font:400 1rem var(--font);transition:.2s;pointer-events:none}\n.f input:focus{outline:none;border-color:var(--fg)}.f input:focus+span,.f input:not(:placeholder-shown)+span{top:.85rem;font-size:.72rem;font-weight:600}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

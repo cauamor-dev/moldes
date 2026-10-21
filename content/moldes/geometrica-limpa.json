@@ -1,0 +1,99 @@
+{
+  "slug": "geometrica-limpa",
+  "title": "Geométrica limpa",
+  "summary": "Geométrica redonda com sans de texto russa muito legível. Produto calmo.",
+  "category": "produto",
+  "tags": [
+    "geométrica",
+    "app",
+    "calmo"
+  ],
+  "sectors": [
+    "saúde",
+    "agendamento",
+    "fintech"
+  ],
+  "boldness": 2,
+  "when_to_use": [
+    "Apps de serviço",
+    "Saúde digital"
+  ],
+  "avoid_when": [
+    "Editorial"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Outfit",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Onest",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "Martian Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.25,
+    "base_px": 16,
+    "steps": [
+      12.8,
+      16,
+      20,
+      25,
+      31.3,
+      39.1,
+      48.8
+    ]
+  },
+  "sample": {
+    "headline": "Agende, confirme, receba.",
+    "body": "Outfit é simples e geométrica. Onest foi feita para interface e tem números tabulares bons."
+  }
+}

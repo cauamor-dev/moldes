@@ -1,0 +1,55 @@
+{
+  "slug": "antes-e-depois",
+  "title": "Antes e depois",
+  "summary": "Duas metades com divisor arrastável comparando o site antigo e o novo, ou o produto antes/depois.",
+  "category": "prova-social",
+  "tags": [
+    "comparação",
+    "resultado",
+    "case"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Cases de redesign",
+    "Reformas, estética"
+  ],
+  "avoid_when": [
+    "Imagens com enquadramento diferente"
+  ],
+  "anti_patterns": [
+    "Antes propositalmente piorado"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"ab\"><div class=\"a\"><span>ANTES</span></div><div class=\"b\"><span>DEPOIS</span></div><i></i></section>",
+    "css": ".ab{position:relative;height:24rem;margin:2.4rem;overflow:hidden}.ab>div{position:absolute;inset:0;display:flex;padding:1.2rem;font:700 .9rem var(--mono)}\n.a{background:repeating-linear-gradient(0deg,oklch(0.85 0 0) 0 1.2rem,oklch(0.9 0 0) 1.2rem 2.4rem)}.b{justify-content:flex-end;background:linear-gradient(150deg,oklch(0.75 0.12 60),oklch(0.5 0.12 30));color:#fff;clip-path:inset(0 0 0 50%);animation:sl 5s ease-in-out infinite}\n.ab i{position:absolute;top:0;bottom:0;left:50%;width:3px;background:#fff;box-shadow:0 0 0 1px oklch(0 0 0/.2);animation:sx 5s ease-in-out infinite}.ab i::after{content:\"\";position:absolute;top:50%;left:50%;width:2.6rem;height:2.6rem;margin:-1.3rem;border-radius:50%;background:#fff;box-shadow:0 .2rem .8rem oklch(0 0 0/.3)}\n@keyframes sl{0%,100%{clip-path:inset(0 0 0 50%)}50%{clip-path:inset(0 0 0 25%)}}@keyframes sx{0%,100%{left:50%}50%{left:25%}}",
+    "height": 173,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Imagem 'antes' e 'depois' do mesmo enquadramento",
+    "Divisor com alça (arrastar ou teclado)",
+    "Rótulos nos cantos"
+  ],
+  "wireframe": "| ANTES                |                    DEPOIS |\n|                      ||                           |\n|      imagem A       <||>       imagem B           |\n|                      ||                           |",
+  "variations": [
+    "Lado a lado sem divisor no mobile",
+    "Com métrica abaixo (ex.: +40% pedidos)"
+  ]
+}

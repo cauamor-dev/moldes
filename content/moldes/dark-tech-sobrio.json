@@ -1,0 +1,206 @@
+{
+  "slug": "dark-tech-sobrio",
+  "title": "Dark tech sóbrio",
+  "summary": "Escuro com hierarquia por luminosidade, grade fina de fundo, um único acento elétrico e nada de neon espalhado.",
+  "category": "tech",
+  "tags": [
+    "escuro",
+    "produto",
+    "grid",
+    "preciso"
+  ],
+  "sectors": [
+    "SaaS",
+    "IA",
+    "fintech",
+    "infra"
+  ],
+  "boldness": 3,
+  "when_to_use": [
+    "Produtos técnicos para times",
+    "Landing de API, infraestrutura, dados"
+  ],
+  "avoid_when": [
+    "Público geral que espera claro e amigável",
+    "Conteúdo editorial longo"
+  ],
+  "anti_patterns": [
+    "Gradiente roxo/azul atrás do hero",
+    "Glow em todos os cards",
+    "Texto cinza 50% no preto (falha AA)"
+  ],
+  "pairs_with": [
+    "grotesca-e-mono",
+    "grafite-e-lima",
+    "grade-de-pontos",
+    "spotlight-no-cursor",
+    "features-em-bento"
+  ],
+  "component_refs": [
+    "@magicui/dot-pattern",
+    "@magicui/border-beam",
+    "@shadcn/tabs"
+  ],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "style",
+  "tokens": {
+    "color": {
+      "bg": {
+        "$type": "color",
+        "$value": "oklch(0.16 0.005 260)"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "oklch(0.2 0.006 260)"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "oklch(0.95 0.003 260)"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "oklch(0.72 0.01 260)"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "oklch(0.88 0.19 125)"
+      },
+      "accent-fg": {
+        "$type": "color",
+        "$value": "oklch(0.18 0.02 125)"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "oklch(0.32 0.008 260)"
+      }
+    },
+    "font": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Geist",
+          "sans-serif"
+        ]
+      },
+      "text": {
+        "$type": "fontFamily",
+        "$value": [
+          "Geist",
+          "sans-serif"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "Geist Mono",
+          "monospace"
+        ]
+      },
+      "display-weight": {
+        "$type": "fontWeight",
+        "$value": 600
+      },
+      "tracking": {
+        "$type": "number",
+        "$value": -0.035,
+        "$description": "letter-spacing do display em em"
+      },
+      "uppercase": {
+        "$type": "number",
+        "$value": 0,
+        "$description": "1 = display em caixa alta"
+      }
+    },
+    "radius": {
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 6,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 10,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 14,
+          "unit": "px"
+        }
+      }
+    },
+    "border": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1,
+          "unit": "px"
+        }
+      }
+    },
+    "space": {
+      "unit": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        }
+      }
+    },
+    "shadow": {
+      "card": {
+        "$type": "shadow",
+        "$value": {
+          "color": "oklch(1 0 0 / 0.06)",
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 0,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 0,
+            "unit": "px"
+          },
+          "spread": {
+            "value": 1,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "motion": {
+      "duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 200,
+          "unit": "ms"
+        }
+      },
+      "ease": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.2,
+          0,
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "signature_moves": [
+    "Grade de linhas 1px com máscara radial",
+    "Bordas 1px com 10% de branco",
+    "Rótulos em mono caixa alta",
+    "Um único elemento com acento por tela"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "slug": "grotesca-e-mono",
+  "title": "Grotesca + mono",
+  "summary": "Grotesca de jornal com mono para rótulos e números. Séria, precisa, sem frieza.",
+  "category": "neutro",
+  "tags": [
+    "grotesca",
+    "mono",
+    "neutro"
+  ],
+  "sectors": [
+    "consultoria",
+    "SaaS",
+    "arquitetura"
+  ],
+  "boldness": 2,
+  "when_to_use": [
+    "Sites institucionais modernos",
+    "Produto B2B"
+  ],
+  "avoid_when": [
+    "Marcas lúdicas"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [
+    "suico",
+    "dark-tech-sobrio"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Schibsted Grotesk",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700,
+      800
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Schibsted Grotesk",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700,
+      800
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "IBM Plex Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.333,
+    "base_px": 16,
+    "steps": [
+      12,
+      16,
+      21.3,
+      28.4,
+      37.9,
+      50.5,
+      67.3
+    ]
+  },
+  "sample": {
+    "headline": "Projeto, prazo e preço na mesa.",
+    "body": "Uma grotesca de jornal carrega o texto inteiro. A mono entra só em rótulos, datas e números de referência."
+  }
+}

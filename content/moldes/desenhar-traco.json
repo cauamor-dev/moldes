@@ -1,0 +1,63 @@
+{
+  "slug": "desenhar-traco",
+  "title": "Desenhar o traço",
+  "summary": "Um traço SVG se desenha sozinho, como se alguém sublinhasse ou circulasse algo à mão.",
+  "category": "svg",
+  "tags": [
+    "svg",
+    "traço",
+    "destaque"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Sublinhar uma palavra do título",
+    "Setas e anotações"
+  ],
+  "avoid_when": [
+    "Ícones de interface"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<h2 class=\"h\">Sites que <span>vendem<svg viewBox=\"0 0 200 24\" preserveAspectRatio=\"none\"><path d=\"M3 16 C 50 5, 120 4, 197 13\" pathLength=\"1\"/></svg></span></h2>",
+    "css": ".h{font:700 2.4rem/1.1 var(--font);letter-spacing:-.03em;padding:2rem 1.4rem;margin:0}.h span{position:relative;white-space:nowrap}\n.h svg{position:absolute;left:0;bottom:-.25em;width:100%;height:.45em;overflow:visible}\n.h path{fill:none;stroke:var(--accent);stroke-width:5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:0;animation:dr 3.5s cubic-bezier(.65,0,.35,1) infinite}\n@keyframes dr{0%{stroke-dashoffset:1}40%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:-1}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "scroll",
+  "duration_ms": 1400,
+  "easing": "cubic-bezier(0.65, 0, 0.35, 1)",
+  "stagger_ms": 0,
+  "props": [
+    "pathLength"
+  ],
+  "reduced_motion": "Traço completo, já desenhado.",
+  "snippet": "<motion.svg viewBox=\"0 0 200 20\"><motion.path d=\"M2 14 C 50 4, 120 4, 198 12\" fill=\"none\" stroke=\"var(--accent)\" strokeWidth={4} strokeLinecap=\"round\"\n  initial={{ pathLength: 0 }} whileInView={{ pathLength: 1 }} viewport={{ once: true }} transition={{ duration: 1.4, ease: [0.65, 0, 0.35, 1] }} /></motion.svg>"
+}

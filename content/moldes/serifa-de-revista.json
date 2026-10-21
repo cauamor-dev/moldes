@@ -1,0 +1,101 @@
+{
+  "slug": "serifa-de-revista",
+  "title": "Serifa de revista",
+  "summary": "Fraunces com eixo óptico nos títulos e Newsreader para leitura longa. Cara de revista boa.",
+  "category": "editorial",
+  "tags": [
+    "serifa",
+    "editorial",
+    "leitura"
+  ],
+  "sectors": [
+    "mídia",
+    "cultura",
+    "gastronomia"
+  ],
+  "boldness": 3,
+  "when_to_use": [
+    "Blogs, revistas, newsletters",
+    "Landing de restaurante autoral"
+  ],
+  "avoid_when": [
+    "Dashboards"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [
+    "editorial"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Fraunces",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": true
+  },
+  "text": {
+    "family": "Newsreader",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600
+    ],
+    "italic": true
+  },
+  "mono": {
+    "family": "IBM Plex Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.414,
+    "base_px": 18,
+    "steps": [
+      12.7,
+      18,
+      25.5,
+      36,
+      50.9,
+      72,
+      101.7
+    ]
+  },
+  "sample": {
+    "headline": "O que sobra quando a moda passa",
+    "body": "Newsreader foi desenhada para tela e aguenta parágrafos longos. Fraunces dá o drama nos títulos sem virar caricatura."
+  }
+}

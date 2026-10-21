@@ -1,0 +1,52 @@
+{
+  "slug": "card-de-metrica",
+  "title": "Card de métrica",
+  "summary": "Número grande, rótulo pequeno em mono e variação com seta. Sem gráfico se não precisa.",
+  "category": "card",
+  "tags": [
+    "métrica",
+    "dashboard",
+    "número"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Dashboards",
+    "Seção de resultados"
+  ],
+  "avoid_when": [
+    "Números sem contexto"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [
+    "bento",
+    "contador-de-numeros"
+  ],
+  "component_refs": [
+    "@shadcn/card",
+    "@magicui/number-ticker"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"m\"><small>RECEITA · OUT</small><b>R$ 18.420</b><span class=\"up\">▲ 12% vs set</span></div><div class=\"m\"><small>PEDIDOS</small><b>312</b><span class=\"dn\">▼ 3%</span></div></div>",
+    "css": ".w{display:grid;grid-template-columns:1.4fr 1fr;gap:10px;padding:1rem}\n.m{padding:1rem;border:1px solid var(--line);border-radius:14px;background:var(--surface);display:grid;gap:.25rem}\n.m small{font:500 .7rem var(--mono);letter-spacing:.08em;color:var(--muted)}.m b{font:700 1.6rem var(--font);letter-spacing:-.03em;font-variant-numeric:tabular-nums}\n.up{color:oklch(0.5 0.14 150);font:600 .8rem var(--font)}.dn{color:oklch(0.52 0.19 25);font:600 .8rem var(--font)}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

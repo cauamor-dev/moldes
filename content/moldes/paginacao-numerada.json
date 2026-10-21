@@ -1,0 +1,48 @@
+{
+  "slug": "paginacao-numerada",
+  "title": "Paginação numerada",
+  "summary": "Anterior/próxima com texto, números com reticências e página atual sublinhada.",
+  "category": "navegação",
+  "tags": [
+    "paginação",
+    "lista",
+    "navegação"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Listagens grandes",
+    "Blog"
+  ],
+  "avoid_when": [
+    "Feeds (use scroll infinito)"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/pagination"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<nav class=\"p\"><a>← Anterior</a><a>1</a><a class=\"on\">2</a><a>3</a><span>…</span><a>9</a><a>Próxima →</a></nav>",
+    "css": ".p{display:flex;flex-wrap:wrap;align-items:center;gap:2px;padding:2rem 1rem;font:500 .9rem var(--font)}\n.p a{min-width:40px;min-height:44px;display:grid;place-items:center;padding:0 .4rem;color:var(--fg)}.p a.on{font-weight:800;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}.p span{color:var(--muted);padding:0 .3rem}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

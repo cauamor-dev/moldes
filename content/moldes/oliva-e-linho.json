@@ -1,0 +1,71 @@
+{
+  "slug": "oliva-e-linho",
+  "title": "Oliva e linho",
+  "summary": "Linho cru, verde-oliva e tinta escura. Moda sustentável e casa.",
+  "category": "humano",
+  "tags": [
+    "oliva",
+    "natural",
+    "têxtil"
+  ],
+  "sectors": [
+    "moda",
+    "decoração",
+    "bem-estar"
+  ],
+  "boldness": 2,
+  "when_to_use": [
+    "Moda slow",
+    "Decoração"
+  ],
+  "avoid_when": [
+    "Tech"
+  ],
+  "anti_patterns": [
+    "Usar o acento em texto corrido",
+    "Inventar tons fora da paleta para 'dar vida'",
+    "Cinza puro sobre fundo colorido (perde contraste)"
+  ],
+  "pairs_with": [
+    "instrument-duo",
+    "serifa-de-livro"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "OKLCH in CSS",
+      "url": "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl",
+      "author": "Evil Martians",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "Understanding Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "author": "W3C WAI",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "palette",
+  "light": {
+    "bg": "oklch(0.95 0.015 95)",
+    "surface": "oklch(0.91 0.02 100)",
+    "fg": "oklch(0.25 0.03 120)",
+    "muted": "oklch(0.47 0.04 115)",
+    "accent": "oklch(0.52 0.09 125)",
+    "accent_fg": "oklch(0.98 0.01 95)",
+    "danger": "oklch(0.5 0.17 30)"
+  },
+  "dark": {
+    "bg": "oklch(0.2 0.02 120)",
+    "surface": "oklch(0.25 0.025 120)",
+    "fg": "oklch(0.94 0.015 95)",
+    "muted": "oklch(0.76 0.03 110)",
+    "accent": "oklch(0.74 0.1 125)",
+    "accent_fg": "oklch(0.2 0.02 120)",
+    "danger": "oklch(0.72 0.15 30)"
+  }
+}

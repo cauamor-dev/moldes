@@ -1,0 +1,58 @@
+{
+  "slug": "galeria-em-rio",
+  "title": "Galeria em rio",
+  "summary": "Imagens de proporções diferentes alinhadas por baixo, com legendas em mono e espaços irregulares.",
+  "category": "galeria",
+  "tags": [
+    "galeria",
+    "imagens",
+    "ritmo"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Portfólio de produto, arquitetura"
+  ],
+  "avoid_when": [
+    "Imagens de baixa qualidade"
+  ],
+  "anti_patterns": [
+    "Grade quadrada perfeita de 9 fotos",
+    "Lightbox com animação pesada"
+  ],
+  "pairs_with": [
+    "minimal-japones",
+    "editorial"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"gr\"><figure style=\"--h:16rem;--w:12rem;--c:60\"><i></i><figcaption>01 casa</figcaption></figure><figure style=\"--h:10rem;--w:8rem;--c:30\"><i></i><figcaption>02 vaso</figcaption></figure><figure style=\"--h:20rem;--w:9rem;--c:90\"><i></i><figcaption>03 luminária</figcaption></figure><figure style=\"--h:12rem;--w:14rem;--c:140\"><i></i><figcaption>04 mesa</figcaption></figure></section>",
+    "css": ".gr{display:flex;align-items:flex-end;gap:2.4rem;padding:3rem 2.4rem}.gr figure{margin:0}.gr i{display:block;width:var(--w);height:var(--h);background:linear-gradient(170deg,oklch(0.85 0.03 var(--c)),oklch(0.6 0.05 var(--c)))}\n.gr figcaption{font:500 .85rem var(--mono);color:var(--muted);margin-top:.6rem}",
+    "height": 181,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Faixa horizontal de 3–5 imagens de alturas diferentes",
+    "Legendas curtas com número e título",
+    "Scroll horizontal no mobile"
+  ],
+  "wireframe": "| +------+        +----+                +--------+ |\n| |      | +----+ |    |  +----------+  |        | |\n| |      | |    | |    |  |          |  |        | |\n| +------+ +----+ +----+  +----------+  +--------+ |\n| 01 casa  02 vaso 03 mesa 04 luminária  05 sofá   |",
+  "variations": [
+    "Alinhado pelo topo",
+    "Uma imagem em cor e o resto em P&B"
+  ]
+}

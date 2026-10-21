@@ -1,0 +1,47 @@
+{
+  "slug": "selo-de-status",
+  "title": "Selo de status",
+  "summary": "Badge com ponto colorido e texto, com fundo da mesma cor a 12%. Lê sem depender só da cor.",
+  "category": "dados",
+  "tags": [
+    "badge",
+    "status",
+    "tabela"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Status em tabelas e listas"
+  ],
+  "avoid_when": [
+    "Usar só cor sem texto"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/badge"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><span class=\"b ok\">Pago</span><span class=\"b wait\">Pendente</span><span class=\"b err\">Atrasado</span><span class=\"b off\">Rascunho</span></div>",
+    "css": ".w{display:flex;flex-wrap:wrap;gap:8px;padding:1.6rem 1.2rem}\n.b{--c:var(--muted);display:inline-flex;align-items:center;gap:.4rem;padding:.3rem .65rem;border-radius:99px;font:600 .8rem var(--font);color:color-mix(in oklch,var(--c),black 25%);background:color-mix(in oklch,var(--c) 13%,transparent)}\n.b::before{content:\"\";width:7px;height:7px;border-radius:50%;background:var(--c)}\n.ok{--c:oklch(0.6 0.15 150)}.wait{--c:oklch(0.7 0.15 75)}.err{--c:oklch(0.58 0.2 25)}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

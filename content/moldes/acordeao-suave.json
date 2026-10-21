@@ -1,0 +1,66 @@
+{
+  "slug": "acordeao-suave",
+  "title": "Acordeão suave",
+  "summary": "Altura animada com grid-template-rows de 0fr a 1fr: abre sem saber a altura do conteúdo.",
+  "category": "interação",
+  "tags": [
+    "faq",
+    "acordeão",
+    "css"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "FAQ",
+    "Detalhes técnicos"
+  ],
+  "avoid_when": [
+    "Conteúdo principal escondido"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/accordion"
+  ],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"a\"><div class=\"q\"><b>Vocês fazem a hospedagem?</b><span>+</span></div><div class=\"p\"><div><p>Sim. Publicamos na Vercel e deixamos o domínio configurado.</p></div></div><div class=\"q\"><b>Quanto tempo leva?</b><span>+</span></div></div>",
+    "css": ".a{padding:1rem 1.2rem;font:400 .95rem/1.4 var(--font)}.q{display:flex;justify-content:space-between;padding:.8rem 0;border-bottom:1px solid var(--line)}\n.q span{transition:transform .32s;animation:ic 4s infinite}.p{display:grid;grid-template-rows:0fr;animation:op 4s cubic-bezier(.2,0,0,1) infinite}.p>div{overflow:hidden}.p p{margin:.6rem 0;color:var(--muted)}\n.q:last-child span{animation:none}\n@keyframes op{0%,15%{grid-template-rows:0fr}30%,80%{grid-template-rows:1fr}95%,100%{grid-template-rows:0fr}}\n@keyframes ic{0%,15%{transform:none}30%,80%{transform:rotate(45deg)}95%{transform:none}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "state",
+  "duration_ms": 320,
+  "easing": "cubic-bezier(0.2, 0, 0, 1)",
+  "stagger_ms": 0,
+  "props": [
+    "gridTemplateRows",
+    "rotate (ícone)"
+  ],
+  "reduced_motion": "Abre e fecha sem transição.",
+  "snippet": "<motion.div initial={false} animate={{ height: open ? \"auto\" : 0, opacity: open ? 1 : 0 }}\n  transition={{ duration: 0.32, ease: [0.2, 0, 0, 1] }} style={{ overflow: \"hidden\" }}>{children}</motion.div>\n/* CSS puro: .panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .32s} .open .panel{grid-template-rows:1fr} */"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "blob-organico",
+  "title": "Blob orgânico",
+  "summary": "Forma com border-radius de 8 valores que se transforma devagar. Calor sem ilustração.",
+  "category": "fundo",
+  "tags": [
+    "blob",
+    "orgânico",
+    "forma"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Atrás de foto de produto",
+    "Orgânico/quente"
+  ],
+  "avoid_when": [
+    "Interfaces técnicas"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [
+    "organico-quente"
+  ],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"b\"></div></div>",
+    "css": ".w{height:100vh;display:grid;place-items:center;background:oklch(0.95 0.025 75)}\n.b{width:150px;height:150px;background:oklch(0.55 0.13 40);animation:mo 8s ease-in-out infinite}\n@keyframes mo{0%,100%{border-radius:60% 40% 55% 45%/50% 60% 40% 50%}33%{border-radius:40% 60% 45% 55%/60% 40% 60% 40%}66%{border-radius:55% 45% 40% 60%/40% 55% 45% 60%}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "grafite-e-violeta",
+  "title": "Grafite e violeta",
+  "summary": "Preto e cinzas neutros com um violeta frio como acento único. Sem gradiente.",
+  "category": "tech",
+  "tags": [
+    "escuro",
+    "violeta",
+    "minimal"
+  ],
+  "sectors": [
+    "SaaS",
+    "criadores",
+    "portfólio"
+  ],
+  "boldness": 3,
+  "when_to_use": [
+    "Marca pessoal tech",
+    "Portfólio escuro"
+  ],
+  "avoid_when": [
+    "Saúde tradicional"
+  ],
+  "anti_patterns": [
+    "Usar o acento em texto corrido",
+    "Inventar tons fora da paleta para 'dar vida'",
+    "Cinza puro sobre fundo colorido (perde contraste)"
+  ],
+  "pairs_with": [
+    "dark-tech-sobrio",
+    "instrument-duo"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "OKLCH in CSS",
+      "url": "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl",
+      "author": "Evil Martians",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "Understanding Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "author": "W3C WAI",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "palette",
+  "light": {
+    "bg": "oklch(0.98 0.002 290)",
+    "surface": "oklch(0.95 0.004 290)",
+    "fg": "oklch(0.2 0.01 290)",
+    "muted": "oklch(0.48 0.01 290)",
+    "accent": "oklch(0.52 0.2 295)",
+    "accent_fg": "oklch(0.99 0 0)",
+    "danger": "oklch(0.52 0.2 25)"
+  },
+  "dark": {
+    "bg": "oklch(0.15 0.004 290)",
+    "surface": "oklch(0.2 0.006 290)",
+    "fg": "oklch(0.95 0.004 290)",
+    "muted": "oklch(0.72 0.01 290)",
+    "accent": "oklch(0.74 0.16 295)",
+    "accent_fg": "oklch(0.15 0.02 295)",
+    "danger": "oklch(0.7 0.19 25)"
+  }
+}

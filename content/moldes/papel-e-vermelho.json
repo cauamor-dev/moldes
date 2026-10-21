@@ -1,0 +1,71 @@
+{
+  "slug": "papel-e-vermelho",
+  "title": "Papel e vermelho",
+  "summary": "Branco de papel, preto quase puro e um vermelho de sinalização. A paleta suíça.",
+  "category": "clássico",
+  "tags": [
+    "vermelho",
+    "neutro",
+    "contraste"
+  ],
+  "sectors": [
+    "arquitetura",
+    "cultura",
+    "consultoria"
+  ],
+  "boldness": 3,
+  "when_to_use": [
+    "Estilo suíço",
+    "Marcas que querem autoridade"
+  ],
+  "avoid_when": [
+    "Saúde (vermelho = alerta)"
+  ],
+  "anti_patterns": [
+    "Usar o acento em texto corrido",
+    "Inventar tons fora da paleta para 'dar vida'",
+    "Cinza puro sobre fundo colorido (perde contraste)"
+  ],
+  "pairs_with": [
+    "suico",
+    "grotesca-e-mono"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "OKLCH in CSS",
+      "url": "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl",
+      "author": "Evil Martians",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "Understanding Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "author": "W3C WAI",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "palette",
+  "light": {
+    "bg": "oklch(0.98 0.004 90)",
+    "surface": "oklch(0.95 0.004 90)",
+    "fg": "oklch(0.18 0 0)",
+    "muted": "oklch(0.48 0 0)",
+    "accent": "oklch(0.58 0.22 28)",
+    "accent_fg": "oklch(0.99 0 0)",
+    "danger": "oklch(0.5 0.2 28)"
+  },
+  "dark": {
+    "bg": "oklch(0.16 0 0)",
+    "surface": "oklch(0.21 0 0)",
+    "fg": "oklch(0.96 0.004 90)",
+    "muted": "oklch(0.72 0 0)",
+    "accent": "oklch(0.64 0.22 28)",
+    "accent_fg": "oklch(0.15 0 0)",
+    "danger": "oklch(0.7 0.19 28)"
+  }
+}

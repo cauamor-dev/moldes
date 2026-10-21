@@ -1,0 +1,52 @@
+{
+  "slug": "card-de-artigo",
+  "title": "Card de artigo editorial",
+  "summary": "Categoria em caixa alta, título em serifa, linha fina e metadados. Sem imagem obrigatória.",
+  "category": "card",
+  "tags": [
+    "artigo",
+    "blog",
+    "editorial"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Listas de posts",
+    "Newsletter"
+  ],
+  "avoid_when": [
+    "Feeds de produto"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [
+    "editorial"
+  ],
+  "component_refs": [
+    "@shadcn/card"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<article class=\"a\"><small>Ensaio</small><h3>Por que todo site novo parece igual</h3><p>Sobre templates, IA e a volta do gosto pessoal.</p><footer>8 min · 14 out</footer></article>",
+    "css": ".a{margin:1rem;padding-top:.8rem;border-top:2px solid var(--fg);font:400 .9rem/1.45 var(--font)}\n.a small{font:700 .7rem var(--font);letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}\n.a h3{font:600 1.5rem/1.1 \"Fraunces\",serif;margin:.4rem 0;transition:color .2s}.a p{margin:0;color:var(--muted)}.a footer{margin-top:.7rem;font:500 .75rem var(--mono);color:var(--muted)}\n.a:hover h3,html.hover .a h3{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}",
+    "height": 200,
+    "fonts": [
+      "Fraunces"
+    ],
+    "hover": true,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

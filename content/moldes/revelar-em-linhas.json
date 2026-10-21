@@ -1,0 +1,67 @@
+{
+  "slug": "revelar-em-linhas",
+  "title": "Revelar em linhas",
+  "summary": "Cada linha do título sobe de dentro de uma máscara, uma depois da outra. Entrada clássica de site editorial.",
+  "category": "texto",
+  "tags": [
+    "título",
+    "entrada",
+    "stagger"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Título principal do hero",
+    "Abertura de seção editorial"
+  ],
+  "avoid_when": [
+    "Texto que o usuário precisa ler imediatamente em formulários"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [
+    "suico",
+    "editorial"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<h1 class=\"t\"><span><i>Projeto,</i></span><span><i>prazo e</i></span><span><i>preço.</i></span></h1>",
+    "css": ".t{font:700 2.6rem/1 var(--font);letter-spacing:-.04em;margin:0;padding:1.5rem}\n.t span{display:block;overflow:hidden}.t i{display:block;font-style:normal;animation:up 3.2s cubic-bezier(.2,0,0,1) infinite}\n.t span:nth-child(2) i{animation-delay:.09s}.t span:nth-child(3) i{animation-delay:.18s;color:var(--accent)}\n@keyframes up{0%{transform:translateY(110%)}22%,85%{transform:none}100%{transform:translateY(-110%)}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "load",
+  "duration_ms": 700,
+  "easing": "cubic-bezier(0.2, 0, 0, 1)",
+  "stagger_ms": 90,
+  "props": [
+    "y",
+    "opacity"
+  ],
+  "reduced_motion": "Mostrar o texto direto, sem deslocamento; no máximo um fade de 150ms.",
+  "snippet": "const lines = [\"Projeto,\", \"prazo e\", \"preço.\"];\n<h1>{lines.map((l, i) => (\n  <span key={l} style={{ display: \"block\", overflow: \"hidden\" }}>\n    <motion.span style={{ display: \"block\" }} initial={{ y: \"110%\" }} animate={{ y: 0 }}\n      transition={{ duration: 0.7, ease: [0.2, 0, 0, 1], delay: i * 0.09 }}>{l}</motion.span>\n  </span>\n))}</h1>"
+}

@@ -1,0 +1,205 @@
+{
+  "slug": "minimal-japones",
+  "title": "Minimal japonês",
+  "summary": "Muito vazio, alinhamento assimétrico, tipografia pequena e precisa, um ponto de cor como selo.",
+  "category": "minimal",
+  "tags": [
+    "ma",
+    "vazio",
+    "calmo",
+    "assimétrico"
+  ],
+  "sectors": [
+    "arquitetura",
+    "cerâmica",
+    "moda",
+    "chá",
+    "estúdio"
+  ],
+  "boldness": 1,
+  "when_to_use": [
+    "Marcas de produto físico artesanal",
+    "Portfólio de arquitetura, fotografia"
+  ],
+  "avoid_when": [
+    "Muito conteúdo para mostrar",
+    "Público que precisa de CTA óbvio e grande"
+  ],
+  "anti_patterns": [
+    "Usar caracteres japoneses como decoração sem sentido",
+    "Vermelho em excesso (é selo, não tema)",
+    "Centralizar tudo"
+  ],
+  "pairs_with": [
+    "serifa-de-livro",
+    "papel-de-arroz",
+    "fade-lento",
+    "texto-vertical",
+    "galeria-em-rio"
+  ],
+  "component_refs": [
+    "@shadcn/separator"
+  ],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "style",
+  "tokens": {
+    "color": {
+      "bg": {
+        "$type": "color",
+        "$value": "oklch(0.97 0.006 95)"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "oklch(0.94 0.008 95)"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "oklch(0.25 0.005 95)"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "oklch(0.5 0.008 95)"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "oklch(0.55 0.19 30)"
+      },
+      "accent-fg": {
+        "$type": "color",
+        "$value": "oklch(0.98 0 0)"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "oklch(0.86 0.006 95)"
+      }
+    },
+    "font": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Shippori Mincho",
+          "serif"
+        ]
+      },
+      "text": {
+        "$type": "fontFamily",
+        "$value": [
+          "Zen Kaku Gothic New",
+          "sans-serif"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "IBM Plex Mono",
+          "monospace"
+        ]
+      },
+      "display-weight": {
+        "$type": "fontWeight",
+        "$value": 500
+      },
+      "tracking": {
+        "$type": "number",
+        "$value": 0.04,
+        "$description": "letter-spacing do display em em"
+      },
+      "uppercase": {
+        "$type": "number",
+        "$value": 0,
+        "$description": "1 = display em caixa alta"
+      }
+    },
+    "radius": {
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        }
+      }
+    },
+    "border": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1,
+          "unit": "px"
+        }
+      }
+    },
+    "space": {
+      "unit": {
+        "$type": "dimension",
+        "$value": {
+          "value": 12,
+          "unit": "px"
+        }
+      }
+    },
+    "shadow": {
+      "card": {
+        "$type": "shadow",
+        "$value": {
+          "color": "oklch(0 0 0 / 0)",
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 0,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 0,
+            "unit": "px"
+          },
+          "spread": {
+            "value": 0,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "motion": {
+      "duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 700,
+          "unit": "ms"
+        }
+      },
+      "ease": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.25,
+          0.1,
+          0.25,
+          1
+        ]
+      }
+    }
+  },
+  "signature_moves": [
+    "Texto vertical (writing-mode) como rótulo",
+    "Selo quadrado vermelho pequeno",
+    "Margem lateral de 20% vazia",
+    "Números de página discretos"
+  ]
+}

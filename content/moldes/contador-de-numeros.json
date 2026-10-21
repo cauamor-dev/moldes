@@ -1,0 +1,68 @@
+{
+  "slug": "contador-de-numeros",
+  "title": "Contador de números",
+  "summary": "O número sobe do zero até o valor quando entra na tela, desacelerando no fim.",
+  "category": "dados",
+  "tags": [
+    "números",
+    "métricas",
+    "dados"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Métricas no hero",
+    "Seção de resultados"
+  ],
+  "avoid_when": [
+    "Números que mudam em tempo real"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [
+    "industrial-mineiro",
+    "card-de-metrica"
+  ],
+  "component_refs": [
+    "@magicui/number-ticker"
+  ],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"n\"><b></b><span>toneladas por mês</span></div>",
+    "css": "@property --v{syntax:\"<integer>\";initial-value:0;inherits:false}\n.n{padding:1.4rem}.n b{font:800 3.6rem/1 var(--font);letter-spacing:-.04em;--v:40000;counter-reset:v var(--v);animation:c 4s cubic-bezier(.16,1,.3,1) infinite}\n.n b::after{content:counter(v)}.n span{display:block;color:var(--muted);font:500 .9rem var(--font)}\n@keyframes c{0%{--v:0}50%,100%{--v:40000}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "scroll",
+  "duration_ms": 1600,
+  "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+  "stagger_ms": 0,
+  "props": [
+    "valor numérico"
+  ],
+  "reduced_motion": "Mostrar o valor final direto.",
+  "snippet": "const v = useMotionValue(0);\nconst text = useTransform(v, (n) => Math.round(n).toLocaleString(\"pt-BR\"));\nconst ref = useRef(null); const inView = useInView(ref, { once: true });\nuseEffect(() => { if (inView) animate(v, 40000, { duration: 1.6, ease: [0.16, 1, 0.3, 1] }); }, [inView]);\n<motion.span ref={ref}>{text}</motion.span>"
+}

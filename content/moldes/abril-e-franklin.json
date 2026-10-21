@@ -1,0 +1,87 @@
+{
+  "slug": "abril-e-franklin",
+  "title": "Abril + Franklin",
+  "summary": "Didone gorda de cartaz antigo com Franklin. Clássico de pôster.",
+  "category": "editorial",
+  "tags": [
+    "pôster",
+    "didone",
+    "retrô"
+  ],
+  "sectors": [
+    "cultura",
+    "eventos",
+    "bar"
+  ],
+  "boldness": 4,
+  "when_to_use": [
+    "Cartaz, cardápio",
+    "Eventos culturais"
+  ],
+  "avoid_when": [
+    "Interface"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Abril Fatface",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Libre Franklin",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.5,
+    "base_px": 16,
+    "steps": [
+      10.7,
+      16,
+      24,
+      36,
+      54,
+      81,
+      121.5
+    ]
+  },
+  "sample": {
+    "headline": "Grande Circo Nacional",
+    "body": "Abril é a didone de pôster do século XIX. Use em uma linha, grande, com a Franklin sóbria embaixo."
+  }
+}

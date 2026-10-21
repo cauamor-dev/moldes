@@ -1,0 +1,38 @@
+{
+  "slug": "vidro-fosco-escuro",
+  "title": "Vidro fosco escuro",
+  "summary": "Painel escuro translúcido com grão leve por cima. Lê bem e não parece 2021.",
+  "category": "glass",
+  "tags": [
+    "glass",
+    "escuro",
+    "painel"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Modal sobre conteúdo rico",
+    "Player de mídia"
+  ],
+  "avoid_when": [
+    "Formulários longos"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"bg\"><div class=\"p\"><small>TOCANDO</small><b>Noite em BH</b><div class=\"bar\"><i></i></div></div></div>",
+    "css": ".bg{height:100vh;display:grid;place-items:center;background:conic-gradient(from 200deg at 30% 60%,oklch(0.5 0.15 30),oklch(0.4 0.12 300),oklch(0.55 0.13 80),oklch(0.5 0.15 30))}\n.p{position:relative;width:70%;padding:1rem;border-radius:16px;background:oklch(0.15 0 0/.55);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border:1px solid oklch(1 0 0/.12);color:#fff;font:400 .85rem var(--font);display:grid;gap:.3rem;overflow:hidden}\n.p::after{content:\"\";position:absolute;inset:0;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\");opacity:.12;mix-blend-mode:overlay;pointer-events:none}\n.p small{letter-spacing:.2em;opacity:.7}.p b{font-size:1.2rem}.bar{height:4px;border-radius:2px;background:oklch(1 0 0/.2)}.bar i{display:block;width:40%;height:100%;border-radius:2px;background:#fff}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": true
+  },
+  "code": [],
+  "kind": "effect"
+}

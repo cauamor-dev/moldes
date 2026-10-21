@@ -1,0 +1,100 @@
+{
+  "slug": "sora-e-plex-mono",
+  "title": "Sora + Plex Mono",
+  "summary": "Geométrica tecnológica sem ser fria, com mono para dados.",
+  "category": "tech",
+  "tags": [
+    "tech",
+    "geométrica",
+    "escuro"
+  ],
+  "sectors": [
+    "SaaS",
+    "IA",
+    "infra"
+  ],
+  "boldness": 2,
+  "when_to_use": [
+    "Produto técnico",
+    "Dark tech"
+  ],
+  "avoid_when": [
+    "Editorial"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Sora",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Sora",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "IBM Plex Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.25,
+    "base_px": 16,
+    "steps": [
+      12.8,
+      16,
+      20,
+      25,
+      31.3,
+      39.1,
+      48.8
+    ]
+  },
+  "sample": {
+    "headline": "Infra que escala sozinha",
+    "body": "Sora tem aberturas largas e funciona bem em telas escuras. A mono separa o que é dado do que é texto."
+  }
+}

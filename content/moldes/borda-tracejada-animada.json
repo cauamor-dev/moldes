@@ -1,0 +1,38 @@
+{
+  "slug": "borda-tracejada-animada",
+  "title": "Borda tracejada andando",
+  "summary": "Tracejado que anda em volta da área, tipo seleção de editor. Ótimo para zona de upload.",
+  "category": "borda",
+  "tags": [
+    "tracejado",
+    "upload",
+    "seleção"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Área de arrastar arquivo",
+    "Seleção ativa"
+  ],
+  "avoid_when": [
+    "Bordas comuns de card"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"dz\">Solte o arquivo aqui</div></div>",
+    "css": ".w{height:100vh;padding:1.2rem;box-sizing:border-box}\n.dz{height:100%;display:grid;place-items:center;font:500 1rem var(--font);color:var(--muted);border-radius:12px;background:linear-gradient(90deg,var(--fg) 50%,transparent 0) repeat-x top/16px 2px,linear-gradient(90deg,var(--fg) 50%,transparent 0) repeat-x bottom/16px 2px,linear-gradient(0deg,var(--fg) 50%,transparent 0) repeat-y left/2px 16px,linear-gradient(0deg,var(--fg) 50%,transparent 0) repeat-y right/2px 16px;animation:ants .8s linear infinite}\n@keyframes ants{to{background-position:16px 0,-16px 100%,0 -16px,100% 16px}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

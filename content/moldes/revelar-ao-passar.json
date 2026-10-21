@@ -1,0 +1,38 @@
+{
+  "slug": "revelar-ao-passar",
+  "title": "Revelar ao passar",
+  "summary": "A lista mostra só títulos; no hover a linha ganha fundo de acento e uma seta desliza.",
+  "category": "hover",
+  "tags": [
+    "lista",
+    "hover",
+    "menu"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Índice de projetos",
+    "Menu em tela cheia"
+  ],
+  "avoid_when": [
+    "Listas de dados"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<ul class=\"l\"><li>Branding <span>→</span></li><li class=\"on\">Sites <span>→</span></li><li>Embalagem <span>→</span></li></ul>",
+    "css": ".l{list-style:none;margin:0;padding:1rem}.l li{display:flex;justify-content:space-between;padding:.8rem .6rem;border-bottom:1px solid var(--line);font:600 1.3rem var(--font);transition:background .25s,color .25s,padding .25s}\n.l span{opacity:0;transform:translateX(-10px);transition:.25s}\n.l li:hover,html.hover .l li.on{background:var(--accent);color:var(--accent-fg);padding-left:1rem}.l li:hover span,html.hover .l li.on span{opacity:1;transform:none}",
+    "height": 220,
+    "fonts": [],
+    "hover": true,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

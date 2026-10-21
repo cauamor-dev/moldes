@@ -1,0 +1,211 @@
+{
+  "slug": "brutalismo",
+  "title": "Brutalismo cru",
+  "summary": "HTML quase sem estilo de propósito: fonte do sistema mono, links sublinhados azuis, layout que mostra a estrutura.",
+  "category": "ousado",
+  "tags": [
+    "cru",
+    "mono",
+    "anti-design",
+    "texto"
+  ],
+  "sectors": [
+    "arte",
+    "música",
+    "portfólio",
+    "manifesto"
+  ],
+  "boldness": 5,
+  "when_to_use": [
+    "Portfólio de artista ou estúdio experimental",
+    "Manifestos, zines, páginas de lançamento underground"
+  ],
+  "avoid_when": [
+    "E-commerce",
+    "Qualquer público que precise de confiança imediata"
+  ],
+  "anti_patterns": [
+    "Fazer 'brutalismo' com gradiente e sombra",
+    "Esconder a navegação",
+    "Contraste baixo como estética"
+  ],
+  "pairs_with": [
+    "mono-total",
+    "terminal-verde",
+    "texto-que-pisca",
+    "lista-indice"
+  ],
+  "component_refs": [
+    "@shadcn/table"
+  ],
+  "references": [
+    {
+      "title": "Brutalist Websites",
+      "url": "https://brutalistwebsites.com",
+      "author": "Pascal Deville",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "style",
+  "tokens": {
+    "color": {
+      "bg": {
+        "$type": "color",
+        "$value": "oklch(1 0 0)"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "oklch(0.93 0 0)"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "oklch(0 0 0)"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "oklch(0.35 0 0)"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "oklch(0.45 0.27 264)"
+      },
+      "accent-fg": {
+        "$type": "color",
+        "$value": "oklch(1 0 0)"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "oklch(0 0 0)"
+      }
+    },
+    "font": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "IBM Plex Mono",
+          "monospace"
+        ]
+      },
+      "text": {
+        "$type": "fontFamily",
+        "$value": [
+          "IBM Plex Mono",
+          "monospace"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "IBM Plex Mono",
+          "monospace"
+        ]
+      },
+      "display-weight": {
+        "$type": "fontWeight",
+        "$value": 700
+      },
+      "tracking": {
+        "$type": "number",
+        "$value": -0.03,
+        "$description": "letter-spacing do display em em"
+      },
+      "uppercase": {
+        "$type": "number",
+        "$value": 1,
+        "$description": "1 = display em caixa alta"
+      }
+    },
+    "radius": {
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      }
+    },
+    "border": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1,
+          "unit": "px"
+        }
+      }
+    },
+    "space": {
+      "unit": {
+        "$type": "dimension",
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        }
+      }
+    },
+    "shadow": {
+      "card": {
+        "$type": "shadow",
+        "$value": {
+          "color": "oklch(0 0 0 / 0)",
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 0,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 0,
+            "unit": "px"
+          },
+          "spread": {
+            "value": 0,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "motion": {
+      "duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 0,
+          "unit": "ms"
+        }
+      },
+      "ease": {
+        "$type": "cubicBezier",
+        "$value": [
+          0,
+          0,
+          1,
+          1
+        ]
+      }
+    }
+  },
+  "signature_moves": [
+    "Tabela HTML como layout",
+    "Links sublinhados com cor padrão",
+    "Bordas de 1px pretas em tudo",
+    "Texto gigante quebrando a coluna"
+  ]
+}

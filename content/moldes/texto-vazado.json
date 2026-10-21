@@ -1,0 +1,38 @@
+{
+  "slug": "texto-vazado",
+  "title": "Texto vazado",
+  "summary": "Título só com contorno (-webkit-text-stroke) misturado com palavras cheias.",
+  "category": "texto",
+  "tags": [
+    "contorno",
+    "título",
+    "cartaz"
+  ],
+  "sectors": [],
+  "boldness": 4,
+  "when_to_use": [
+    "Cartazes, títulos gigantes"
+  ],
+  "avoid_when": [
+    "Texto abaixo de 40px",
+    "Contorno fino em fundo agitado"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<h1 class=\"o\">FESTA<br><span>JUNINA</span><br>2026</h1>",
+    "css": ".o{font:900 3.2rem/.9 var(--font);margin:0;padding:1.4rem;letter-spacing:-.03em}.o span{color:transparent;-webkit-text-stroke:2px var(--fg)}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

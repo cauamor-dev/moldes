@@ -1,0 +1,59 @@
+{
+  "slug": "faq-em-duas-colunas",
+  "title": "FAQ em duas colunas",
+  "summary": "Título e contato fixos à esquerda, perguntas em acordeão à direita. Respostas curtas e honestas.",
+  "category": "conteúdo",
+  "tags": [
+    "faq",
+    "acordeão",
+    "suporte"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Quase toda landing de serviço"
+  ],
+  "avoid_when": [
+    "Perguntas que ninguém faz"
+  ],
+  "anti_patterns": [
+    "Perguntas inventadas para SEO",
+    "Centralizar tudo numa coluna estreita"
+  ],
+  "pairs_with": [
+    "acordeao-suave"
+  ],
+  "component_refs": [
+    "@shadcn/accordion"
+  ],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"fq\"><div class=\"l\"><h2>Perguntas<br>frequentes</h2><p>Não achou? <u>Fale no WhatsApp</u>.</p></div><div class=\"r\"><div class=\"q o\"><b>Quanto tempo leva?</b><span>−</span><p>De 1 a 3 semanas, dependendo do número de páginas.</p></div><div class=\"q\"><b>Vocês fazem a hospedagem?</b><span>+</span></div><div class=\"q\"><b>Posso editar o site depois?</b><span>+</span></div><div class=\"q\"><b>Como é o pagamento?</b><span>+</span></div></div></section>",
+    "css": ".fq{display:grid;grid-template-columns:1fr 1.6fr;gap:3rem;padding:3rem 2.4rem;font:400 1rem var(--font)}.l h2{font:800 3rem/1 var(--font);letter-spacing:-.04em;margin:0 0 1rem}.l p{color:var(--muted)}\n.q{display:grid;grid-template-columns:1fr auto;padding:1.2rem 0;border-bottom:1px solid var(--line);font-size:1.2rem}.q:first-child{border-top:1px solid var(--line)}.q p{grid-column:1/-1;color:var(--muted);margin:.6rem 0 0;font-size:1rem}",
+    "height": 153,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Coluna esquerda: título, frase e contato",
+    "Coluna direita: 5–8 perguntas em acordeão",
+    "Primeira pergunta aberta"
+  ],
+  "wireframe": "| PERGUNTAS            | Pergunta 1                 − |\n| FREQUENTES           |   resposta curta             |\n|                      |------------------------------|\n| não achou?           | Pergunta 2                 + |\n| fale no WhatsApp     | Pergunta 3                 + |",
+  "variations": [
+    "Categorias como abas acima",
+    "Busca nas perguntas"
+  ]
+}

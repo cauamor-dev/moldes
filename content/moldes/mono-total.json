@@ -1,0 +1,102 @@
+{
+  "slug": "mono-total",
+  "title": "Mono total",
+  "summary": "Uma mono só, em três pesos. Para quem quer cara de ferramenta.",
+  "category": "tech",
+  "tags": [
+    "mono",
+    "dev",
+    "cli"
+  ],
+  "sectors": [
+    "devtools",
+    "API"
+  ],
+  "boldness": 4,
+  "when_to_use": [
+    "Terminal/dev",
+    "Documentação de API"
+  ],
+  "avoid_when": [
+    "Textos longos de marketing"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [
+    "terminal-dev",
+    "brutalismo"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "JetBrains Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "JetBrains Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "JetBrains Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.25,
+    "base_px": 15,
+    "steps": [
+      12,
+      15,
+      18.8,
+      23.4,
+      29.3,
+      36.6,
+      45.8
+    ]
+  },
+  "sample": {
+    "headline": "$ deploy --prod",
+    "body": "Monoespaçada em tudo exige escala curta e entrelinha generosa. Use peso, não tamanho, para hierarquia."
+  }
+}

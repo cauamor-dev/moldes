@@ -1,0 +1,68 @@
+{
+  "slug": "prova-social-editorial",
+  "title": "Prova social editorial",
+  "summary": "Uma citação grande em serifa com aspas tipográficas, nome e cargo pequenos, e dois depoimentos menores ao lado.",
+  "category": "prova-social",
+  "tags": [
+    "depoimento",
+    "citação",
+    "editorial"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Serviços e agências",
+    "Produtos com poucos mas bons clientes"
+  ],
+  "avoid_when": [
+    "Quando não há depoimentos reais"
+  ],
+  "anti_patterns": [
+    "Grade de 6 cards iguais com 5 estrelas",
+    "Fotos de banco de imagem sorrindo",
+    "Depoimentos inventados"
+  ],
+  "pairs_with": [
+    "editorial",
+    "serifa-de-revista",
+    "marquee-de-logos"
+  ],
+  "component_refs": [
+    "@magicui/marquee",
+    "@shadcn/card"
+  ],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"q\"><blockquote class=\"main\"><p>“O site novo fez a gente parar de explicar o que faz. Agora o cliente chega sabendo.”</p><cite>Renata Alves, sócia · Ateliê Barro</cite></blockquote><aside><blockquote><p>“Entregaram antes do prazo.”</p><cite>Paulo, Café Ponto</cite></blockquote><blockquote><p>“Primeira agência que respondeu rápido.”</p><cite>Júlia, Studio J</cite></blockquote></aside><footer>120 clientes · desde 2019</footer></section>",
+    "css": ".q{display:grid;grid-template-columns:2.2fr 1fr;gap:2.4rem;padding:3rem 2.4rem;font:400 1rem var(--font)}.q blockquote{margin:0}\n.main p{font:500 3rem/1.08 \"Fraunces\",serif;letter-spacing:-.02em;margin:0 0 1.4rem}.main cite{font:600 .95rem var(--font);font-style:normal;color:var(--muted)}\naside{display:grid;gap:1.6rem;align-content:start;border-left:1px solid var(--line);padding-left:1.6rem}aside p{font:500 1.35rem/1.2 \"Fraunces\",serif;margin:0 0 .4rem}aside cite{font-style:normal;color:var(--muted);font-size:.9rem}\nfooter{grid-column:1/-1;border-top:3px solid var(--fg);padding-top:.8rem;font:500 .9rem var(--mono);color:var(--muted)}",
+    "height": 170,
+    "fonts": [
+      "Fraunces"
+    ],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Citação principal (até 25 palavras) em serifa grande",
+    "Autor: nome, cargo, empresa, sem foto de banco",
+    "Coluna lateral com 2 citações curtas",
+    "Número de prova (ex.: 120 clientes) como rodapé"
+  ],
+  "wireframe": "| “CITAÇÃO PRINCIPAL EM SERIFA         | “curta 1”  |\n|  GRANDE QUE OCUPA A MAIOR PARTE      |  — nome    |\n|  DA LARGURA.”                        |------------|\n|  — Nome, cargo · Empresa             | “curta 2”  |\n|--------------------------------------+  — nome    |\n| 120 clientes · desde 2019                         |",
+  "variations": [
+    "Citação com foto real recortada em P&B",
+    "Marquee de citações curtas abaixo",
+    "Uma citação por tela no mobile com scroll horizontal"
+  ]
+}

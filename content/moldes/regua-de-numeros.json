@@ -1,0 +1,62 @@
+{
+  "slug": "regua-de-numeros",
+  "title": "Régua de números",
+  "summary": "Faixa com 3–4 números grandes separados por filetes verticais, cada um com rótulo curto embaixo.",
+  "category": "prova-social",
+  "tags": [
+    "números",
+    "métricas",
+    "faixa"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Industrial, B2B",
+    "Resultados de agência"
+  ],
+  "avoid_when": [
+    "Números vaidosos sem significado"
+  ],
+  "anti_patterns": [
+    "'+1000 clientes satisfeitos' sem fonte",
+    "Ícones acima dos números"
+  ],
+  "pairs_with": [
+    "industrial-mineiro",
+    "suico",
+    "contador-de-numeros"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"rn\"><div><b>40<small>t</small></b><span>por turno</span></div><div><b>220<small>kW</small></b><span>de potência</span></div><div><b>24<small>meses</small></b><span>de garantia</span></div><div><b>1987</b><span>fundada em Contagem</span></div></section>",
+    "css": ".rn{display:grid;grid-template-columns:repeat(4,1fr);padding:2.4rem;border-top:3px solid var(--fg);border-bottom:1px solid var(--fg)}.rn div{padding:0 1.4rem;border-left:1px solid var(--line)}.rn div:first-child{border:0;padding-left:0}\n.rn b{display:block;font:800 5rem/1 \"Big Shoulders Display\",sans-serif}.rn small{font-size:1.6rem;margin-left:.3rem}.rn span{font:500 1rem var(--font);color:var(--muted)}",
+    "height": 76,
+    "fonts": [
+      "Big Shoulders Display"
+    ],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "3–4 métricas reais",
+    "Número em display, unidade menor",
+    "Rótulo de 2–4 palavras"
+  ],
+  "wireframe": "| 40 t        | 220 kW      | 24 meses     | 1987    |\n| por turno   | de potência | de garantia  | fundada |",
+  "variations": [
+    "Com contador animado ao entrar",
+    "Fundo escuro"
+  ]
+}

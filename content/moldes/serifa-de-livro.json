@@ -1,0 +1,100 @@
+{
+  "slug": "serifa-de-livro",
+  "title": "Serifa de livro",
+  "summary": "Garamond clássica em tudo, com Courier para notas. Cheiro de livro.",
+  "category": "editorial",
+  "tags": [
+    "livro",
+    "clássico",
+    "leitura"
+  ],
+  "sectors": [
+    "editoras",
+    "museus",
+    "pesquisa"
+  ],
+  "boldness": 1,
+  "when_to_use": [
+    "Arquivo acadêmico",
+    "Minimal japonês"
+  ],
+  "avoid_when": [
+    "Apps"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [
+    "academico-arquivo",
+    "minimal-japones"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "EB Garamond",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600
+    ],
+    "italic": true
+  },
+  "text": {
+    "family": "EB Garamond",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600
+    ],
+    "italic": true
+  },
+  "mono": {
+    "family": "Courier Prime",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.25,
+    "base_px": 18,
+    "steps": [
+      14.4,
+      18,
+      22.5,
+      28.1,
+      35.2,
+      43.9,
+      54.9
+    ]
+  },
+  "sample": {
+    "headline": "Notas sobre o acervo, volume II",
+    "body": "Uma serifa só, com itálico de verdade, resolve quase tudo em projetos editoriais e de acervo."
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "citacao-grande",
+  "title": "Citação de página inteira",
+  "summary": "Uma frase só ocupando a dobra, deslocada para a direita, com número de seção à esquerda.",
+  "category": "conteúdo",
+  "tags": [
+    "citação",
+    "manifesto",
+    "pausa"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Pausa entre seções longas",
+    "Manifesto da marca"
+  ],
+  "avoid_when": [
+    "Frases genéricas ('inovação e qualidade')"
+  ],
+  "anti_patterns": [
+    "Aspas gigantes decorativas cinzas",
+    "Centralizar"
+  ],
+  "pairs_with": [
+    "editorial",
+    "suico"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"cq\"><span>03</span><p>A gente não faz site bonito. A gente faz site que <em>o cliente entende</em> em cinco segundos.</p><cite>— manifesto, 2026</cite></section>",
+    "css": ".cq{display:grid;grid-template-columns:8rem 1fr;gap:1rem;padding:4rem 2.4rem}.cq span{font:600 1rem var(--mono);color:var(--muted)}\n.cq p{font:400 4rem/1.02 \"Instrument Serif\",serif;letter-spacing:-.02em;margin:0}.cq em{color:var(--accent)}.cq cite{grid-column:2;justify-self:end;font:500 1rem var(--font);color:var(--muted);font-style:normal}",
+    "height": 173,
+    "fonts": [
+      "Instrument Serif"
+    ],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Número ou rótulo de seção à esquerda",
+    "Frase de 10–20 palavras em display",
+    "Assinatura pequena"
+  ],
+  "wireframe": "| 03      UMA FRASE SÓ, GRANDE, OCUPANDO           |\n|         A DOBRA INTEIRA E DESLOCADA PARA         |\n|         A DIREITA.                               |\n|                                      — assinatura|",
+  "variations": [
+    "Fundo escuro",
+    "Com uma palavra em cor de acento"
+  ]
+}

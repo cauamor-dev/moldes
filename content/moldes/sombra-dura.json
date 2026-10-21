@@ -1,0 +1,40 @@
+{
+  "slug": "sombra-dura",
+  "title": "Sombra dura deslocada",
+  "summary": "Sombra sem blur, deslocada, na cor do contorno. A assinatura do neo-brutalismo.",
+  "category": "sombra",
+  "tags": [
+    "neo-brutalismo",
+    "sombra",
+    "chapado"
+  ],
+  "sectors": [],
+  "boldness": 4,
+  "when_to_use": [
+    "Neo-brutalismo",
+    "Cartões lúdicos"
+  ],
+  "avoid_when": [
+    "Interfaces sóbrias"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [
+    "neo-brutalismo"
+  ],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"c\">Nova turma<br><b>abre segunda</b></div></div>",
+    "css": ".w{height:100vh;display:grid;place-items:center;background:oklch(0.9 0.08 200)}\n.c{padding:1.1rem 1.3rem;background:oklch(0.96 0.05 95);border:3px solid #111;box-shadow:6px 6px 0 #111;border-radius:10px;font:500 1.1rem/1.2 var(--font);transform:rotate(-2deg)}.c b{font-weight:800}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

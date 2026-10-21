@@ -1,0 +1,64 @@
+{
+  "slug": "zoom-no-hover",
+  "title": "Zoom dentro da moldura",
+  "summary": "No hover a imagem cresce 6% dentro da moldura fixa e a legenda sobe. Card de portfólio.",
+  "category": "imagem",
+  "tags": [
+    "imagem",
+    "card",
+    "portfólio"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Grade de projetos",
+    "Cards de produto"
+  ],
+  "avoid_when": [
+    "Imagens com texto (corta)"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<a class=\"c\"><div class=\"im\"></div><p>Restaurante Lume <span>ver projeto →</span></p></a>",
+    "css": ".c{display:block;margin:1rem;overflow:hidden;border-radius:10px;position:relative}\n.im{height:170px;background:radial-gradient(circle at 30% 40%,oklch(0.8 0.1 80),oklch(0.55 0.12 40) 60%,oklch(0.3 0.05 30));transition:transform .6s cubic-bezier(.2,0,0,1)}\n.c p{position:absolute;left:0;right:0;bottom:0;margin:0;padding:.8rem;font:600 .95rem var(--font);color:#fff;background:linear-gradient(transparent,oklch(0 0 0/.6));display:flex;justify-content:space-between}\n.c p span{opacity:0;transform:translateY(8px);transition:.4s}\n.c:hover .im,html.hover .im{transform:scale(1.06)}.c:hover p span,html.hover p span{opacity:1;transform:none}",
+    "height": 220,
+    "fonts": [],
+    "hover": true,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "hover",
+  "duration_ms": 600,
+  "easing": "cubic-bezier(0.2, 0, 0, 1)",
+  "stagger_ms": 0,
+  "props": [
+    "scale",
+    "y"
+  ],
+  "reduced_motion": "Sem zoom; só mostrar a legenda.",
+  "snippet": "<motion.a initial=\"rest\" whileHover=\"hover\" style={{ overflow: \"hidden\", display: \"block\" }}>\n  <motion.img src={src} variants={{ rest: { scale: 1 }, hover: { scale: 1.06 } }} transition={{ duration: 0.6, ease: [0.2, 0, 0, 1] }} />\n  <motion.p variants={{ rest: { y: 8, opacity: 0 }, hover: { y: 0, opacity: 1 } }}>Ver projeto</motion.p>\n</motion.a>"
+}

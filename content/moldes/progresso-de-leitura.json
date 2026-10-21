@@ -1,0 +1,65 @@
+{
+  "slug": "progresso-de-leitura",
+  "title": "Progresso de leitura",
+  "summary": "Uma barra fina no topo acompanha o scroll da página. Ligada direto ao scroll, sem atraso.",
+  "category": "scroll",
+  "tags": [
+    "scroll",
+    "leitura",
+    "barra"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Artigos longos",
+    "Documentação"
+  ],
+  "avoid_when": [
+    "Páginas curtas"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@magicui/scroll-progress"
+  ],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"p\"><i></i><h3>Como escolher uma paleta</h3><p></p><p></p><p class=\"s\"></p><p></p></div>",
+    "css": ".p{padding:1.2rem;position:relative}.p i{position:absolute;top:0;left:0;right:0;height:4px;background:var(--accent);transform-origin:0;animation:pr 5s linear infinite}\n.p h3{font:700 1.2rem var(--font);margin:.6rem 0 1rem}.p p{height:10px;background:var(--line);border-radius:5px;margin:0 0 10px}.p p.s{width:60%}\n@keyframes pr{from{transform:scaleX(0)}to{transform:scaleX(1)}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "scroll",
+  "duration_ms": 0,
+  "easing": "linear",
+  "stagger_ms": 0,
+  "props": [
+    "scaleX"
+  ],
+  "reduced_motion": "Mantém (é ligado ao scroll do próprio usuário).",
+  "snippet": "const { scrollYProgress } = useScroll();\n<motion.div style={{ scaleX: scrollYProgress, originX: 0, position: \"fixed\", top: 0, left: 0, right: 0, height: 3, background: \"var(--accent)\" }} />\n/* CSS puro: animation-timeline: scroll(); */"
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "abas-sublinhadas",
+  "title": "Abas sublinhadas",
+  "summary": "Abas de texto com sublinhado grosso na ativa e contador em mono. Sem pílula, sem fundo.",
+  "category": "navegação",
+  "tags": [
+    "abas",
+    "tabs",
+    "navegação"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Filtros de conteúdo",
+    "Seções de perfil"
+  ],
+  "avoid_when": [
+    "Mais de 6 abas no mobile (use scroll)"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/tabs"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"t\"><a class=\"on\">Telas <i>18</i></a><a>Fontes <i>26</i></a><a>Paletas <i>22</i></a></div>",
+    "css": ".t{display:flex;gap:1.2rem;padding:1.6rem 1.2rem 0;border-bottom:1px solid var(--line);font:600 1rem var(--font)}\n.t a{display:flex;align-items:center;gap:.35rem;min-height:44px;color:var(--muted);border-bottom:3px solid transparent;margin-bottom:-1px}.t a.on{color:var(--fg);border-color:var(--fg)}\n.t i{font:500 .7rem var(--mono);font-style:normal;color:var(--muted)}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

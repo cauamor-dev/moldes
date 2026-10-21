@@ -1,0 +1,97 @@
+{
+  "slug": "serifa-gorda-e-grotesca",
+  "title": "Serifa gorda + grotesca",
+  "summary": "Serifa pesada de alto contraste com grotesca de caráter. Editorial com músculo.",
+  "category": "editorial",
+  "tags": [
+    "serifa",
+    "pesada",
+    "editorial"
+  ],
+  "sectors": [
+    "gastronomia",
+    "cultura",
+    "editoras"
+  ],
+  "boldness": 4,
+  "when_to_use": [
+    "Restaurante, bar",
+    "Revista independente"
+  ],
+  "avoid_when": [
+    "SaaS técnico"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Gloock",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Familjen Grotesk",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "DM Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      500
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.414,
+    "base_px": 16,
+    "steps": [
+      11.3,
+      16,
+      22.6,
+      32,
+      45.2,
+      64,
+      90.4
+    ]
+  },
+  "sample": {
+    "headline": "Comida honesta, preço justo",
+    "body": "Gloock é preta e expressiva. Familjen tem detalhes curiosos que aparecem só de perto."
+  }
+}

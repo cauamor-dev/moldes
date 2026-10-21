@@ -1,0 +1,64 @@
+{
+  "slug": "revelar-com-mascara",
+  "title": "Revelar com máscara",
+  "summary": "A imagem é revelada por um recorte que abre de baixo para cima, enquanto ela mesma desce um pouco de escala.",
+  "category": "imagem",
+  "tags": [
+    "imagem",
+    "clip-path",
+    "entrada"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Fotos de portfólio",
+    "Imagem principal do hero"
+  ],
+  "avoid_when": [
+    "Galerias com muitas imagens (cansa)"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<figure class=\"f\"><div class=\"img\"></div><figcaption>Casa Pampulha, 2026</figcaption></figure>",
+    "css": ".f{margin:0;padding:1rem}.img{height:150px;background:linear-gradient(160deg,oklch(0.7 0.08 60),oklch(0.45 0.06 40) 60%,oklch(0.3 0.04 30));border-radius:4px;animation:clip 4s cubic-bezier(.77,0,.175,1) infinite}\n.f figcaption{font:500 .75rem var(--mono);color:var(--muted);margin-top:.5rem}\n@keyframes clip{0%{clip-path:inset(100% 0 0 0);transform:scale(1.1)}35%,85%{clip-path:inset(0 0 0 0);transform:scale(1)}100%{clip-path:inset(0 0 100% 0)}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "scroll",
+  "duration_ms": 900,
+  "easing": "cubic-bezier(0.77, 0, 0.175, 1)",
+  "stagger_ms": 0,
+  "props": [
+    "clipPath",
+    "scale"
+  ],
+  "reduced_motion": "Imagem aparece com fade simples.",
+  "snippet": "<motion.figure initial={{ clipPath: \"inset(100% 0 0 0)\" }} whileInView={{ clipPath: \"inset(0% 0 0 0)\" }}\n  viewport={{ once: true }} transition={{ duration: 0.9, ease: [0.77, 0, 0.175, 1] }}>\n  <motion.img src={src} alt=\"\" initial={{ scale: 1.15 }} whileInView={{ scale: 1 }} transition={{ duration: 1.2 }} />\n</motion.figure>"
+}

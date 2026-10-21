@@ -1,0 +1,96 @@
+{
+  "slug": "cartaz-condensado",
+  "title": "Cartaz condensado",
+  "summary": "Bebas em caixa alta gigante com Karla simpática. Cartaz de show.",
+  "category": "ousado",
+  "tags": [
+    "cartaz",
+    "condensada",
+    "evento"
+  ],
+  "sectors": [
+    "música",
+    "eventos",
+    "esporte"
+  ],
+  "boldness": 5,
+  "when_to_use": [
+    "Evento, show, academia"
+  ],
+  "avoid_when": [
+    "Texto longo"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Bebas Neue",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Karla",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "Space Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.618,
+    "base_px": 16,
+    "steps": [
+      9.9,
+      16,
+      25.9,
+      41.9,
+      67.8,
+      109.7,
+      177.4
+    ]
+  },
+  "sample": {
+    "headline": "SEXTA 22H AO VIVO",
+    "body": "Bebas só tem caixa alta e um peso. Escala grande, entrelinha apertada, e deixe a Karla explicar."
+  }
+}

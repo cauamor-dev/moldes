@@ -1,0 +1,100 @@
+{
+  "slug": "grotesca-larga",
+  "title": "Grotesca larga",
+  "summary": "Display larga e redonda que ocupa espaço, com Manrope compacta. Cripto sem o clichê.",
+  "category": "ousado",
+  "tags": [
+    "larga",
+    "fintech",
+    "moderno"
+  ],
+  "sectors": [
+    "fintech",
+    "web3",
+    "esporte"
+  ],
+  "boldness": 4,
+  "when_to_use": [
+    "Fintech jovem",
+    "Esporte"
+  ],
+  "avoid_when": [
+    "Títulos longos"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Unbounded",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Manrope",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "JetBrains Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.414,
+    "base_px": 16,
+    "steps": [
+      11.3,
+      16,
+      22.6,
+      32,
+      45.2,
+      64,
+      90.4
+    ]
+  },
+  "sample": {
+    "headline": "Pague em segundos",
+    "body": "Unbounded é muito larga: títulos curtos, de 2 a 4 palavras. Manrope equilibra com proporções estreitas."
+  }
+}

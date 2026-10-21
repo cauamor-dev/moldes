@@ -1,0 +1,47 @@
+{
+  "slug": "interruptor",
+  "title": "Interruptor",
+  "summary": "Switch com trilho e bolinha, estado ligado na cor de acento e rótulo clicável.",
+  "category": "formulário",
+  "tags": [
+    "switch",
+    "toggle",
+    "configuração"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Preferências e configurações"
+  ],
+  "avoid_when": [
+    "Ações que precisam de confirmação"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/switch"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><label class=\"sw\"><input type=\"checkbox\" checked><i></i>Notificações por e-mail</label><label class=\"sw\"><input type=\"checkbox\"><i></i>Modo escuro</label></div>",
+    "css": ".w{display:grid;gap:6px;padding:1.2rem}.sw{display:flex;align-items:center;gap:.8rem;min-height:44px;font:500 .95rem var(--font);cursor:pointer}\n.sw input{position:absolute;opacity:0}.sw i{position:relative;width:44px;height:26px;border-radius:99px;background:var(--line);transition:background .2s;flex:none}\n.sw i::after{content:\"\";position:absolute;left:3px;top:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 3px oklch(0 0 0/.3);transition:transform .2s cubic-bezier(.2,0,0,1)}\n.sw input:checked+i{background:var(--accent)}.sw input:checked+i::after{transform:translateX(18px)}.sw input:focus-visible+i{outline:2px solid var(--fg);outline-offset:2px}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}
