@@ -36,7 +36,10 @@ function columnsFor(width: number) {
   return 5;
 }
 
-type Item = { card: Card; key: string; loop: number };
+function uniqueBySlug(cards: Card[]): Card[] {
+  const seen = new Set<string>();
+  return cards.filter((c) => !seen.has(c.slug) && (seen.add(c.slug), true));
+}
 
 function readOrder(key: string): string[] | null {
   try {
@@ -123,38 +126,30 @@ export function Feed({ cards, initialTab }: { cards: Card[]; initialTab: string 
       const pos = new Map(results.map((s, i) => [s, i]));
       list = list.filter((c) => pos.has(c.slug)).sort((a, b) => pos.get(a.slug)! - pos.get(b.slug)!);
     }
-    return category ? list.filter((c) => c.category === category) : list;
+    return uniqueBySlug(category ? list.filter((c) => c.category === category) : list);
   }, [order, results, category]);
 
-  // Infinite: when the catalog runs out, start again (results/filters stop at the end).
-  const endless = !results && !category && base.length > 0;
-  const items: Item[] = useMemo(() => {
-    const out: Item[] = [];
-    const total = endless ? count : Math.min(count, base.length);
-    for (let i = 0; i < total; i++) {
-      const loop = Math.floor(i / base.length);
-      const card = base[i % base.length]!;
-      out.push({ card, key: `${card.slug}-${loop}`, loop });
-    }
-    return out;
-  }, [base, count, endless]);
+  // Each molde appears once; the feed stops at the end of the list.
+  const items = useMemo(() => base.slice(0, count), [base, count]);
+  const done = items.length > 0 && items.length >= base.length;
 
   const more = useCallback(() => setCount((c) => c + BATCH), []);
   useEffect(() => {
     const el = sentinel.current;
     if (!el) return;
+    if (done) return;
     const io = new IntersectionObserver(([e]) => e!.isIntersecting && more(), { rootMargin: "1200px 0px" });
     io.observe(el);
     return () => io.disconnect();
-  }, [more, items.length]);
+  }, [more, items.length, done]);
 
   const columns = useMemo(() => {
     const n = cols || 2;
-    const out: { items: Item[]; h: number }[] = Array.from({ length: n }, () => ({ items: [], h: 0 }));
+    const out: { items: Card[]; h: number }[] = Array.from({ length: n }, () => ({ items: [], h: 0 }));
     for (const it of items) {
       const target = out.reduce((min, c) => (c.h < min.h ? c : min), out[0]!);
       target.items.push(it);
-      target.h += it.card.height / 340 + CAPTION;
+      target.h += it.height / 340 + CAPTION;
     }
     return out;
   }, [items, cols]);
@@ -215,20 +210,24 @@ export function Feed({ cards, initialTab }: { cards: Card[]; initialTab: string 
           {columns.map((col, ci) => (
             <div key={ci} className="flex min-w-0 flex-1 flex-col gap-5 md:gap-7">
               {col.items.map((it, i) => (
-                <FeedCard key={it.key} item={it} delay={reduce || count > BATCH ? 0 : Math.min(ci + i * cols, 12) * 0.05} reduce={!!reduce} />
+                <FeedCard key={it.slug} card={it} delay={reduce || count > BATCH ? 0 : Math.min(ci + i * cols, 12) * 0.05} reduce={!!reduce} />
               ))}
             </div>
           ))}
         </div>
         <div ref={sentinel} aria-hidden className="h-px" />
-        {!endless && items.length > 0 && <p className="meta pt-10">fim · {base.length} moldes</p>}
+        {done && (
+          <p role="status" className="pt-14 text-center">
+            <span className="font-display text-3xl italic">Você viu todos os moldes</span>
+            <span className="meta mt-2 block">{base.length} {base.length === 1 ? "molde" : "moldes"} · fim</span>
+          </p>
+        )}
       </div>
     </>
   );
 }
 
-function FeedCard({ item, delay, reduce }: { item: Item; delay: number; reduce: boolean }) {
-  const { card, loop } = item;
+function FeedCard({ card, delay, reduce }: { card: Card; delay: number; reduce: boolean }) {
   const [hovering, setHovering] = useState(false);
   return (
     <motion.article
@@ -251,7 +250,6 @@ function FeedCard({ item, delay, reduce }: { item: Item; delay: number; reduce: 
         <p className="meta px-0.5 pt-1 text-[10px]">
           {KIND_LABELS[card.kind]}
           {card.category ? ` · ${card.category}` : ""}
-          {loop > 0 ? " · de novo" : ""}
         </p>
       </Link>
     </motion.article>
