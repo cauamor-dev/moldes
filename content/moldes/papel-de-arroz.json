@@ -1,0 +1,70 @@
+{
+  "slug": "papel-de-arroz",
+  "title": "Papel de arroz",
+  "summary": "Off-white levemente esverdeado, cinza de nanquim e um vermelho de selo.",
+  "category": "minimal",
+  "tags": [
+    "minimal",
+    "calmo",
+    "neutro"
+  ],
+  "sectors": [
+    "cerâmica",
+    "arquitetura",
+    "chá"
+  ],
+  "boldness": 1,
+  "when_to_use": [
+    "Minimal japonês"
+  ],
+  "avoid_when": [
+    "Campanha barulhenta"
+  ],
+  "anti_patterns": [
+    "Usar o acento em texto corrido",
+    "Inventar tons fora da paleta para 'dar vida'",
+    "Cinza puro sobre fundo colorido (perde contraste)"
+  ],
+  "pairs_with": [
+    "minimal-japones",
+    "mincho-e-gothic"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "OKLCH in CSS",
+      "url": "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl",
+      "author": "Evil Martians",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "Understanding Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "author": "W3C WAI",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "palette",
+  "light": {
+    "bg": "oklch(0.97 0.006 95)",
+    "surface": "oklch(0.94 0.008 95)",
+    "fg": "oklch(0.25 0.005 95)",
+    "muted": "oklch(0.5 0.008 95)",
+    "accent": "oklch(0.55 0.19 30)",
+    "accent_fg": "oklch(0.98 0 0)",
+    "danger": "oklch(0.5 0.19 30)"
+  },
+  "dark": {
+    "bg": "oklch(0.19 0.004 95)",
+    "surface": "oklch(0.23 0.005 95)",
+    "fg": "oklch(0.93 0.006 95)",
+    "muted": "oklch(0.72 0.008 95)",
+    "accent": "oklch(0.66 0.18 30)",
+    "accent_fg": "oklch(0.15 0 0)",
+    "danger": "oklch(0.7 0.17 30)"
+  }
+}

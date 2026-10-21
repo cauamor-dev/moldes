@@ -1,0 +1,208 @@
+{
+  "slug": "luxo-sobrio",
+  "title": "Luxo sóbrio",
+  "summary": "Preto profundo, dourado contido, serifa fina com muito espaço e nada piscando. Silêncio como sinal de preço.",
+  "category": "premium",
+  "tags": [
+    "premium",
+    "escuro",
+    "serifa",
+    "minimal"
+  ],
+  "sectors": [
+    "joalheria",
+    "imobiliário",
+    "hotelaria",
+    "advocacia",
+    "vinhos"
+  ],
+  "boldness": 2,
+  "when_to_use": [
+    "Produtos de alto ticket",
+    "Imobiliário de alto padrão",
+    "Escritórios que querem parecer exclusivos"
+  ],
+  "avoid_when": [
+    "Promoções, varejo de volume",
+    "Apps com muita interação"
+  ],
+  "anti_patterns": [
+    "Dourado em gradiente brilhante",
+    "Muitas animações",
+    "Fonte script 'chique'",
+    "Texto pequeno demais em cinza no preto"
+  ],
+  "pairs_with": [
+    "didone-fina",
+    "noite-e-ouro",
+    "fade-lento",
+    "hero-tela-cheia-lateral",
+    "botao-fantasma-fino"
+  ],
+  "component_refs": [
+    "@shadcn/button",
+    "@shadcn/dialog"
+  ],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "style",
+  "tokens": {
+    "color": {
+      "bg": {
+        "$type": "color",
+        "$value": "oklch(0.15 0.005 80)"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "oklch(0.2 0.006 80)"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "oklch(0.93 0.01 85)"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "oklch(0.72 0.015 85)"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "oklch(0.78 0.09 85)"
+      },
+      "accent-fg": {
+        "$type": "color",
+        "$value": "oklch(0.15 0.005 80)"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "oklch(0.4 0.03 85)"
+      }
+    },
+    "font": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Cormorant Garamond",
+          "serif"
+        ]
+      },
+      "text": {
+        "$type": "fontFamily",
+        "$value": [
+          "Hanken Grotesk",
+          "sans-serif"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "IBM Plex Mono",
+          "monospace"
+        ]
+      },
+      "display-weight": {
+        "$type": "fontWeight",
+        "$value": 500
+      },
+      "tracking": {
+        "$type": "number",
+        "$value": 0.02,
+        "$description": "letter-spacing do display em em"
+      },
+      "uppercase": {
+        "$type": "number",
+        "$value": 1,
+        "$description": "1 = display em caixa alta"
+      }
+    },
+    "radius": {
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        }
+      }
+    },
+    "border": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1,
+          "unit": "px"
+        }
+      }
+    },
+    "space": {
+      "unit": {
+        "$type": "dimension",
+        "$value": {
+          "value": 10,
+          "unit": "px"
+        }
+      }
+    },
+    "shadow": {
+      "card": {
+        "$type": "shadow",
+        "$value": {
+          "color": "oklch(0 0 0 / 0)",
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 0,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 0,
+            "unit": "px"
+          },
+          "spread": {
+            "value": 0,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "motion": {
+      "duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 800,
+          "unit": "ms"
+        }
+      },
+      "ease": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.4,
+          0,
+          0.2,
+          1
+        ]
+      }
+    }
+  },
+  "signature_moves": [
+    "Caixa alta pequena com tracking 0.3em",
+    "Filete dourado de 1px",
+    "Margens enormes",
+    "Uma única imagem por dobra"
+  ]
+}

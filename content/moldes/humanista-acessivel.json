@@ -1,0 +1,98 @@
+{
+  "slug": "humanista-acessivel",
+  "title": "Humanista acessível",
+  "summary": "Fonte feita para baixa visão em tudo. Quando legibilidade é o requisito número um.",
+  "category": "acessível",
+  "tags": [
+    "acessibilidade",
+    "legível",
+    "saúde"
+  ],
+  "sectors": [
+    "saúde",
+    "governo",
+    "educação"
+  ],
+  "boldness": 1,
+  "when_to_use": [
+    "Serviço público, saúde",
+    "Público idoso"
+  ],
+  "avoid_when": [
+    "Marca que precisa de muito caráter"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Atkinson Hyperlegible",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      700
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Atkinson Hyperlegible",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      700
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "IBM Plex Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.25,
+    "base_px": 17,
+    "steps": [
+      13.6,
+      17,
+      21.3,
+      26.6,
+      33.2,
+      41.5,
+      51.9
+    ]
+  },
+  "sample": {
+    "headline": "Seu exame está pronto",
+    "body": "Atkinson distingue letras parecidas como I, l e 1. Ideal para saúde, governo e público idoso."
+  }
+}

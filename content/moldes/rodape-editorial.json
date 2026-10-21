@@ -1,0 +1,58 @@
+{
+  "slug": "rodape-editorial",
+  "title": "Rodapé editorial",
+  "summary": "Nome da marca enorme cortado na base da página, colunas de links pequenas acima.",
+  "category": "rodapé",
+  "tags": [
+    "rodapé",
+    "marca",
+    "tipografia"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Estúdios, marcas com nome forte"
+  ],
+  "avoid_when": [
+    "Nomes longos"
+  ],
+  "anti_patterns": [
+    "Rodapé com 40 links",
+    "Newsletter com glass"
+  ],
+  "pairs_with": [
+    "hero-assimetrico",
+    "cta-de-rodape"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<footer class=\"re\"><div class=\"cols\"><div><b>Estúdio</b><span>Sobre</span><span>Equipe</span></div><div><b>Projetos</b><span>Branding</span><span>Sites</span></div><div><b>Contato</b><span>ola@lume.studio</span><span>BH, MG</span></div><div><b>Redes</b><span>Instagram</span><span>LinkedIn</span></div></div><div class=\"big\">lume</div></footer>",
+    "css": ".re{background:var(--fg);color:var(--bg);overflow:hidden;padding:2.4rem 2.4rem 0}.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;font:400 .95rem var(--font)}.cols div{display:grid;gap:.4rem}.cols b{font-weight:700;margin-bottom:.3rem}.cols span{opacity:.75}\n.big{font:900 15rem/.75 var(--font);letter-spacing:-.07em;margin-top:2rem;margin-bottom:-2.4rem}",
+    "height": 116,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "3–4 colunas de links",
+    "Contato e endereço",
+    "Nome da marca gigante sangrando no fim"
+  ],
+  "wireframe": "| Estúdio      Projetos     Contato     Redes       |\n| sobre        branding     ola@…       instagram   |\n| equipe       sites        BH, MG      linkedin    |\n| L U M E  ← nome gigante cortado pela borda        |",
+  "variations": [
+    "Nome em outline",
+    "Nome com hover que preenche"
+  ]
+}

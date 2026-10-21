@@ -1,0 +1,48 @@
+{
+  "slug": "chips-de-filtro",
+  "title": "Chips de filtro",
+  "summary": "Chips selecionáveis com scroll horizontal no mobile; selecionado é cheio, os outros contornados.",
+  "category": "formulário",
+  "tags": [
+    "filtro",
+    "chips",
+    "mobile"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Filtros de catálogo",
+    "Tags"
+  ],
+  "avoid_when": [
+    "Mais de 2 linhas de chips"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/toggle-group"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"c\"><button class=\"on\">Todos</button><button>Gradiente</button><button>Glass</button><button>Grão</button><button>Sombra</button><button>Hover</button></div>",
+    "css": ".c{display:flex;gap:8px;overflow-x:auto;padding:2rem 1rem;scrollbar-width:none}\n.c button{flex:none;min-height:40px;padding:0 1rem;border-radius:99px;border:1.5px solid var(--line);background:transparent;color:var(--fg);font:500 .9rem var(--font)}\n.c button.on{background:var(--fg);border-color:var(--fg);color:var(--bg)}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

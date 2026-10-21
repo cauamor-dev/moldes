@@ -1,0 +1,39 @@
+{
+  "slug": "inclinar-no-hover",
+  "title": "Inclinar no hover",
+  "summary": "O card inclina levemente em 3D na direção do cursor, com reflexo. Use com moderação.",
+  "category": "hover",
+  "tags": [
+    "3d",
+    "tilt",
+    "card"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Cartões de produto, ingressos",
+    "Capa de case"
+  ],
+  "avoid_when": [
+    "Listas longas",
+    "Mobile"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"t\"><small>INGRESSO</small><b>Show de sábado</b><span>Pista · 22h</span></div></div>",
+    "css": ".w{height:100vh;display:grid;place-items:center;perspective:700px;background:var(--bg)}\n.t{width:65%;padding:1.1rem;border-radius:14px;background:linear-gradient(in oklch 135deg,oklch(0.55 0.2 15),oklch(0.4 0.16 350));color:#fff;font:400 .85rem var(--font);display:grid;gap:.2rem;position:relative;overflow:hidden;animation:tl 4s ease-in-out infinite;transform-style:preserve-3d}\n.t::after{content:\"\";position:absolute;inset:0;background:linear-gradient(110deg,transparent 40%,oklch(1 0 0/.25) 50%,transparent 60%);animation:sh 4s ease-in-out infinite}\n.t small{letter-spacing:.2em;opacity:.8}.t b{font-size:1.3rem}\n@keyframes tl{0%,100%{transform:rotateX(8deg) rotateY(-12deg)}50%{transform:rotateX(-6deg) rotateY(12deg)}}\n@keyframes sh{0%,100%{transform:translateX(-60%)}50%{transform:translateX(60%)}}",
+    "height": 220,
+    "fonts": [],
+    "hover": true,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

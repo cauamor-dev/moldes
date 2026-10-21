@@ -1,0 +1,51 @@
+{
+  "slug": "bloco-de-comando",
+  "title": "Bloco de comando",
+  "summary": "Linha de comando com prompt, botão de copiar e rótulo do gerenciador. Para docs e devtools.",
+  "category": "código",
+  "tags": [
+    "código",
+    "cli",
+    "copiar"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Instalação na landing de devtool",
+    "Documentação"
+  ],
+  "avoid_when": [
+    "Público não técnico"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [
+    "terminal-dev"
+  ],
+  "component_refs": [
+    "@magicui/terminal",
+    "@shadcn/button"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"cmd\"><span class=\"tab\">pnpm</span><code><i>$</i> pnpm dlx shadcn add button</code><button aria-label=\"Copiar\">copiar</button></div></div>",
+    "css": ".w{height:100vh;display:grid;place-items:center;grid-template-columns:minmax(0,1fr);padding:1rem;box-sizing:border-box;background:oklch(0.16 0.005 260)}\n.cmd{width:100%;display:flex;align-items:center;gap:.6rem;padding:.4rem .4rem .4rem .8rem;border:1px solid oklch(1 0 0/.12);border-radius:10px;background:oklch(0.2 0.006 260);font:500 .8rem var(--mono);color:oklch(0.92 0 0)}\n.tab{color:oklch(0.88 0.19 125)}code{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}code i{color:oklch(0.65 0 0);font-style:normal}\n.cmd button{min-height:36px;padding:0 .7rem;border:1px solid oklch(1 0 0/.15);border-radius:7px;background:transparent;color:inherit;font:inherit}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": true
+  },
+  "code": [],
+  "kind": "component"
+}

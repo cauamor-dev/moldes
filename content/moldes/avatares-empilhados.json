@@ -1,0 +1,49 @@
+{
+  "slug": "avatares-empilhados",
+  "title": "Avatares empilhados",
+  "summary": "Círculos sobrepostos com borda da cor do fundo e um '+12' no final. Prova social compacta.",
+  "category": "dados",
+  "tags": [
+    "avatar",
+    "prova-social",
+    "grupo"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "'Usado por 300 escolas'",
+    "Membros de projeto"
+  ],
+  "avoid_when": [
+    "Fotos falsas de banco"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/avatar",
+    "@magicui/avatar-circles"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"st\"><i style=\"--h:30\"></i><i style=\"--h:150\"></i><i style=\"--h:260\"></i><i style=\"--h:80\"></i><span>+12</span></div><p>Usado por 300 escolas em MG</p></div>",
+    "css": ".w{padding:1.8rem 1.2rem;font:500 .9rem var(--font)}.st{display:flex}.st i,.st span{width:40px;height:40px;border-radius:50%;border:3px solid var(--bg);margin-left:-10px;background:oklch(0.75 0.1 var(--h))}\n.st i:first-child{margin-left:0}.st span{display:grid;place-items:center;background:var(--fg);color:var(--bg);font:700 .75rem var(--font)}.w p{margin:.7rem 0 0;color:var(--muted)}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

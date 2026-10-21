@@ -1,0 +1,64 @@
+{
+  "slug": "check-com-mola",
+  "title": "Check com mola",
+  "summary": "Ao concluir, o círculo cresce com overshoot e o check se desenha. Recompensa pequena.",
+  "category": "feedback",
+  "tags": [
+    "sucesso",
+    "check",
+    "feedback"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Formulário enviado",
+    "Tarefa concluída"
+  ],
+  "avoid_when": [
+    "Ações repetitivas (cansa)"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"c\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 12.5l4.5 4.5L19 7.5\" pathLength=\"1\"/></svg></div><p>Pedido enviado</p></div>",
+    "css": ".w{display:grid;place-items:center;align-content:center;gap:.8rem;height:100vh;font:600 1rem var(--font)}.w p{margin:0}\n.c{width:64px;height:64px;border-radius:50%;background:oklch(0.62 0.16 150);display:grid;place-items:center;animation:pop 3s cubic-bezier(.34,1.56,.64,1) infinite}\n.c svg{width:34px}.c path{fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:0;animation:ck 3s ease-out infinite}\n@keyframes pop{0%{transform:scale(0)}15%,85%{transform:scale(1)}100%{transform:scale(0)}}\n@keyframes ck{0%,15%{stroke-dashoffset:1}30%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "state",
+  "duration_ms": 500,
+  "easing": "spring(stiffness 400, damping 15)",
+  "stagger_ms": 0,
+  "props": [
+    "scale",
+    "pathLength"
+  ],
+  "reduced_motion": "Check aparece pronto.",
+  "snippet": "<motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: \"spring\", stiffness: 400, damping: 15 }}>\n  <svg viewBox=\"0 0 24 24\"><motion.path d=\"M5 12l5 5L19 7\" initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ delay: 0.15, duration: 0.3 }} /></svg>\n</motion.div>"
+}

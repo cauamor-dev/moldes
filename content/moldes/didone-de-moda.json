@@ -1,0 +1,89 @@
+{
+  "slug": "didone-de-moda",
+  "title": "Didone de moda",
+  "summary": "Bodoni de contraste extremo, grande, com Work Sans neutra. Capa de revista de moda.",
+  "category": "premium",
+  "tags": [
+    "moda",
+    "didone",
+    "contraste"
+  ],
+  "sectors": [
+    "moda",
+    "beleza",
+    "joalheria"
+  ],
+  "boldness": 4,
+  "when_to_use": [
+    "E-commerce de moda",
+    "Lookbook"
+  ],
+  "avoid_when": [
+    "Interfaces densas"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Bodoni Moda",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": true
+  },
+  "text": {
+    "family": "Work Sans",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.618,
+    "base_px": 16,
+    "steps": [
+      9.9,
+      16,
+      25.9,
+      41.9,
+      67.8,
+      109.7,
+      177.4
+    ]
+  },
+  "sample": {
+    "headline": "Coleção Inverno",
+    "body": "Bodoni Moda tem eixo óptico. Grande, mostra filetes finíssimos; pequena, engrossa para não sumir."
+  }
+}

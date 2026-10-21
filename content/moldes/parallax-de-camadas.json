@@ -1,0 +1,64 @@
+{
+  "slug": "parallax-de-camadas",
+  "title": "Parallax de camadas",
+  "summary": "Camadas se movem em velocidades diferentes conforme o scroll. Profundidade leve, sem enjoo.",
+  "category": "scroll",
+  "tags": [
+    "parallax",
+    "scroll",
+    "profundidade"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Hero ilustrado",
+    "Storytelling"
+  ],
+  "avoid_when": [
+    "Deslocamentos acima de 15% (enjoo)",
+    "Mobile com muitas camadas"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"px\"><i class=\"s\"></i><i class=\"m1\"></i><i class=\"m2\"></i><i class=\"f\"></i></div>",
+    "css": ".px{position:relative;height:100vh;overflow:hidden;background:oklch(0.9 0.04 220)}.px i{position:absolute;left:-10%;right:-10%}\n.s{top:15%;left:auto!important;right:20%!important;width:46px;height:46px;border-radius:50%;background:oklch(0.85 0.14 85);animation:p1 5s ease-in-out infinite alternate}\n.m1{bottom:0;height:55%;background:oklch(0.6 0.06 200);clip-path:polygon(0 60%,25% 20%,45% 55%,70% 10%,100% 50%,100% 100%,0 100%);animation:p2 5s ease-in-out infinite alternate}\n.m2{bottom:0;height:40%;background:oklch(0.42 0.06 190);clip-path:polygon(0 50%,30% 30%,60% 60%,85% 25%,100% 45%,100% 100%,0 100%);animation:p3 5s ease-in-out infinite alternate}\n.f{bottom:0;height:16%;background:oklch(0.28 0.04 180);animation:p4 5s ease-in-out infinite alternate}\n@keyframes p1{to{transform:translateY(10px)}}@keyframes p2{to{transform:translateY(-6px)}}@keyframes p3{to{transform:translateY(-14px)}}@keyframes p4{to{transform:translateY(-22px)}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "scroll",
+  "duration_ms": 0,
+  "easing": "linear",
+  "stagger_ms": 0,
+  "props": [
+    "y"
+  ],
+  "reduced_motion": "Camadas fixas.",
+  "snippet": "const { scrollYProgress } = useScroll({ target: ref, offset: [\"start end\", \"end start\"] });\nconst back = useTransform(scrollYProgress, [0, 1], [\"-5%\", \"5%\"]);\nconst front = useTransform(scrollYProgress, [0, 1], [\"10%\", \"-10%\"]);\n<section ref={ref}><motion.div style={{ y: back }} /><motion.div style={{ y: front }} /></section>"
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "marquee-de-logos",
+  "title": "Faixa rolando",
+  "summary": "Uma faixa contínua de logos ou palavras rolando para o lado, com máscara nas bordas.",
+  "category": "loop",
+  "tags": [
+    "marquee",
+    "logos",
+    "faixa"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Logos de clientes",
+    "Palavras-chave de serviço"
+  ],
+  "avoid_when": [
+    "Informação essencial (some da tela)"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [
+    "prova-social-editorial"
+  ],
+  "component_refs": [
+    "@magicui/marquee"
+  ],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"m\"><div class=\"r\"><span>Branding</span><span>Sites</span><span>Embalagem</span><span>Motion</span><span>Editorial</span><span>Branding</span><span>Sites</span><span>Embalagem</span><span>Motion</span><span>Editorial</span></div></div>",
+    "css": ".m{overflow:hidden;padding:2.6rem 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}\n.r{display:flex;gap:2rem;width:max-content;animation:mq 12s linear infinite}\n.r span{font:700 2rem var(--font);letter-spacing:-.03em}.r span:nth-child(even){font-style:italic;font-weight:400;color:var(--accent)}\n@keyframes mq{to{transform:translateX(-50%)}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "loop",
+  "duration_ms": 20000,
+  "easing": "linear",
+  "stagger_ms": 0,
+  "props": [
+    "x"
+  ],
+  "reduced_motion": "Faixa parada, com scroll horizontal manual.",
+  "snippet": "<div style={{ overflow: \"hidden\", maskImage: \"linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent)\" }}>\n  <motion.div style={{ display: \"flex\", gap: 48, width: \"max-content\" }}\n    animate={{ x: [\"0%\", \"-50%\"] }} transition={{ duration: 20, ease: \"linear\", repeat: Infinity }}>\n    {[...logos, ...logos].map((l, i) => <img key={i} src={l.src} alt={l.name} />)}\n  </motion.div>\n</div>"
+}

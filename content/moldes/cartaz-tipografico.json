@@ -1,0 +1,62 @@
+{
+  "slug": "cartaz-tipografico",
+  "title": "Cartaz tipográfico",
+  "summary": "Só tipografia: palavras gigantes de tamanhos diferentes empilhadas, data e local como num cartaz de evento.",
+  "category": "hero",
+  "tags": [
+    "cartaz",
+    "tipografia",
+    "evento"
+  ],
+  "sectors": [],
+  "boldness": 5,
+  "when_to_use": [
+    "Eventos, festivais, shows"
+  ],
+  "avoid_when": [
+    "Serviços corporativos"
+  ],
+  "anti_patterns": [
+    "Foto genérica de multidão",
+    "Contagem regressiva gigante"
+  ],
+  "pairs_with": [
+    "risografia",
+    "display-gorda",
+    "cartaz-condensado"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"cz\"><h1><span>FESTIVAL</span><span>DE INVERNO</span><span class=\"big\">2026</span></h1><aside><b>12—14 JUN</b><span>PRAÇA DA ESTAÇÃO · BH</span><a>INGRESSOS</a></aside></section>",
+    "css": ".cz{display:grid;grid-template-columns:2fr 1fr;padding:2.4rem;background:oklch(0.86 0.17 92);color:#111;min-height:28rem}\n.cz h1{margin:0;font:400 1rem/.82 \"Bebas Neue\",sans-serif}.cz h1 span{display:block;font-size:5.4rem}.cz h1 .big{font-size:13rem;color:oklch(0.55 0.22 28)}\n.cz aside{display:grid;align-content:space-between;justify-items:end;font:700 1.1rem var(--font);text-align:right}.cz aside b{font:400 3rem \"Bebas Neue\",sans-serif}.cz a{padding:1rem 1.6rem;background:#111;color:oklch(0.86 0.17 92);transform:rotate(-4deg)}",
+    "height": 188,
+    "fonts": [
+      "Bebas Neue"
+    ],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Nome do evento quebrado em 2–4 linhas de tamanhos diferentes",
+    "Data e local em bloco pequeno",
+    "Uma cor de acento chapada",
+    "Ingresso/CTA como etiqueta"
+  ],
+  "wireframe": "| FESTIVAL                       12—14 JUN         |\n| DE INVERNO                     PRAÇA DA ESTAÇÃO  |\n| 2026  ←enorme                                    |\n|                    [ INGRESSOS ]                 |",
+  "variations": [
+    "Texto girado 90° na lateral",
+    "Duas tintas sobrepostas (riso)"
+  ]
+}

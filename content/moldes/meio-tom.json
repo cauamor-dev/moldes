@@ -1,0 +1,40 @@
+{
+  "slug": "meio-tom",
+  "title": "Meio-tom (halftone)",
+  "summary": "Pontos em grade com tamanho variando por gradiente, como retícula de jornal. CSS puro com máscara.",
+  "category": "noise",
+  "tags": [
+    "halftone",
+    "retícula",
+    "impresso"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Detalhes gráficos",
+    "Risografia, cartaz"
+  ],
+  "avoid_when": [
+    "Fundo de texto"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [
+    "risografia"
+  ],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"ht\"><div class=\"dots\"></div><b>Edição 04</b></div>",
+    "css": ".ht{position:relative;height:100vh;background:oklch(0.95 0.015 90);overflow:hidden}\n.dots{position:absolute;inset:0;background:radial-gradient(circle,oklch(0.66 0.21 0) 38%,transparent 40%) 0 0/12px 12px;-webkit-mask-image:linear-gradient(135deg,#000,transparent 75%);mask-image:linear-gradient(135deg,#000,transparent 75%)}\n.ht b{position:absolute;right:1.2rem;bottom:1.2rem;font:800 2rem var(--font);color:oklch(0.3 0.12 260);letter-spacing:-.03em}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

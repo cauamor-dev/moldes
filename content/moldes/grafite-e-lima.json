@@ -1,0 +1,72 @@
+{
+  "slug": "grafite-e-lima",
+  "title": "Grafite e lima",
+  "summary": "Grafite azulado, branco frio e lima elétrico como único ponto de luz.",
+  "category": "tech",
+  "tags": [
+    "escuro",
+    "lima",
+    "produto"
+  ],
+  "sectors": [
+    "SaaS",
+    "IA",
+    "fintech"
+  ],
+  "boldness": 3,
+  "when_to_use": [
+    "Dark tech",
+    "Bento"
+  ],
+  "avoid_when": [
+    "Marcas quentes"
+  ],
+  "anti_patterns": [
+    "Usar o acento em texto corrido",
+    "Inventar tons fora da paleta para 'dar vida'",
+    "Cinza puro sobre fundo colorido (perde contraste)"
+  ],
+  "pairs_with": [
+    "dark-tech-sobrio",
+    "bento",
+    "sora-e-plex-mono"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "OKLCH in CSS",
+      "url": "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl",
+      "author": "Evil Martians",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "Understanding Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "author": "W3C WAI",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "palette",
+  "light": {
+    "bg": "oklch(0.98 0.003 260)",
+    "surface": "oklch(0.95 0.004 260)",
+    "fg": "oklch(0.2 0.01 260)",
+    "muted": "oklch(0.48 0.01 260)",
+    "accent": "oklch(0.62 0.17 135)",
+    "accent_fg": "oklch(0.15 0.02 135)",
+    "danger": "oklch(0.53 0.2 25)"
+  },
+  "dark": {
+    "bg": "oklch(0.16 0.005 260)",
+    "surface": "oklch(0.2 0.006 260)",
+    "fg": "oklch(0.95 0.003 260)",
+    "muted": "oklch(0.72 0.01 260)",
+    "accent": "oklch(0.88 0.19 125)",
+    "accent_fg": "oklch(0.18 0.02 125)",
+    "danger": "oklch(0.7 0.19 25)"
+  }
+}

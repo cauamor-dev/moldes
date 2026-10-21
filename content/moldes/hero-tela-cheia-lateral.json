@@ -1,0 +1,62 @@
+{
+  "slug": "hero-tela-cheia-lateral",
+  "title": "Hero de tela cheia com texto lateral",
+  "summary": "Foto ocupando a tela, texto pequeno em caixa alta no canto inferior esquerdo e um CTA fantasma.",
+  "category": "hero",
+  "tags": [
+    "hero",
+    "luxo",
+    "imagem"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Imobiliário, hotelaria, moda"
+  ],
+  "avoid_when": [
+    "Sem foto boa (fica pior que nada)"
+  ],
+  "anti_patterns": [
+    "Texto centralizado sobre a foto com overlay preto 50%",
+    "Carrossel automático rápido"
+  ],
+  "pairs_with": [
+    "luxo-sobrio",
+    "fade-lento",
+    "botao-fantasma-fino"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"fs\"><header><b>SERRA</b><span>MENU</span></header><div class=\"tx\"><small>COLEÇÃO 2026</small><h1>Residências<br>na serra</h1><a>Agendar visita</a></div><span class=\"n\">01 / 04</span></section>",
+    "css": ".fs{position:relative;height:100vh;min-height:30rem;background:linear-gradient(180deg,oklch(0 0 0/.15),oklch(0 0 0/.55)),linear-gradient(200deg,oklch(0.55 0.05 160),oklch(0.35 0.04 120) 50%,oklch(0.2 0.02 80));color:oklch(0.95 0.01 85)}\n.fs header{display:flex;justify-content:space-between;padding:2rem 2.4rem;font:500 .9rem var(--font);letter-spacing:.3em}\n.tx{position:absolute;left:2.4rem;bottom:2.4rem}.tx small{font:500 .8rem var(--font);letter-spacing:.3em;color:oklch(0.78 0.09 85)}.tx h1{font:500 4.4rem/.95 \"Cormorant Garamond\",serif;margin:.6rem 0 1.6rem}\n.tx a{display:inline-block;padding:1rem 2rem;border:1px solid oklch(0.78 0.09 85);font:500 .8rem var(--font);letter-spacing:.3em;text-transform:uppercase}.n{position:absolute;right:2.4rem;bottom:2.4rem;font:500 .9rem var(--mono)}",
+    "height": 220,
+    "fonts": [
+      "Cormorant Garamond"
+    ],
+    "hover": false,
+    "dark": true
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Imagem em tela cheia",
+    "Rótulo e título discretos no canto",
+    "CTA fantasma fino",
+    "Indicador de scroll sutil"
+  ],
+  "wireframe": "|LOGO                                      MENU    |\n|                                                  |\n|                 IMAGEM TELA CHEIA                |\n|                                                  |\n|RESIDÊNCIAS NA SERRA                              |\n|[ AGENDAR VISITA ]                         01/04  |",
+  "variations": [
+    "Vídeo curto em loop no lugar da foto",
+    "Texto no canto superior direito"
+  ]
+}

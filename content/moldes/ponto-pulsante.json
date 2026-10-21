@@ -1,0 +1,64 @@
+{
+  "slug": "ponto-pulsante",
+  "title": "Ponto pulsante",
+  "summary": "Ponto de status com um anel que expande e some. Indica 'ao vivo' ou 'online'.",
+  "category": "status",
+  "tags": [
+    "status",
+    "ao-vivo",
+    "micro"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Status online",
+    "Badge 'ao vivo'"
+  ],
+  "avoid_when": [
+    "Vários pontos pulsando juntos"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"s\"><span class=\"d\"></span>Sistema operando normalmente</div>",
+    "css": ".s{display:flex;align-items:center;gap:.7rem;padding:2.4rem 1.4rem;font:500 1rem var(--font)}\n.d{position:relative;width:10px;height:10px;border-radius:50%;background:oklch(0.65 0.17 150)}\n.d::before{content:\"\";position:absolute;inset:0;border-radius:50%;background:inherit;animation:pl 1.8s cubic-bezier(0,0,.2,1) infinite}\n@keyframes pl{from{transform:scale(1);opacity:.6}to{transform:scale(2.8);opacity:0}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "loop",
+  "duration_ms": 1800,
+  "easing": "cubic-bezier(0, 0, 0.2, 1)",
+  "stagger_ms": 0,
+  "props": [
+    "scale",
+    "opacity"
+  ],
+  "reduced_motion": "Ponto fixo, sem anel.",
+  "snippet": "<span style={{ position: \"relative\", width: 10, height: 10 }}>\n  <motion.span style={{ position: \"absolute\", inset: 0, borderRadius: 99, background: \"var(--accent)\" }}\n    animate={{ scale: [1, 2.6], opacity: [0.6, 0] }} transition={{ duration: 1.8, repeat: Infinity, ease: [0, 0, 0.2, 1] }} />\n  <span style={{ position: \"absolute\", inset: 0, borderRadius: 99, background: \"var(--accent)\" }} />\n</span>"
+}

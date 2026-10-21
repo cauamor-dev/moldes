@@ -1,0 +1,40 @@
+{
+  "slug": "texto-vertical",
+  "title": "Texto vertical",
+  "summary": "Rótulo com writing-mode vertical na lateral. Organiza e dá ar de livro de arte.",
+  "category": "texto",
+  "tags": [
+    "vertical",
+    "rótulo",
+    "editorial"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Minimal japonês",
+    "Rótulos de seção"
+  ],
+  "avoid_when": [
+    "Textos com mais de 3 palavras"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [
+    "minimal-japones"
+  ],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><span class=\"v\">coleção 03 — inverno</span><div class=\"img\"></div></div>",
+    "css": ".w{display:flex;gap:1rem;padding:1.4rem;height:100vh;box-sizing:border-box}\n.v{writing-mode:vertical-rl;transform:rotate(180deg);font:500 .75rem var(--font);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}\n.img{flex:1;background:linear-gradient(170deg,oklch(0.85 0.02 90),oklch(0.65 0.03 80));position:relative}.img::after{content:\"\";position:absolute;right:10px;bottom:10px;width:14px;height:14px;background:oklch(0.55 0.19 30)}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

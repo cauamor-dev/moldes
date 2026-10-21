@@ -1,0 +1,67 @@
+{
+  "slug": "texto-que-pisca",
+  "title": "Piscar de letreiro",
+  "summary": "Liga e desliga seco, sem fade, como placa de neon velha ou cursor de terminal.",
+  "category": "texto",
+  "tags": [
+    "brutalismo",
+    "loop",
+    "letreiro"
+  ],
+  "sectors": [],
+  "boldness": 5,
+  "when_to_use": [
+    "Uma palavra de destaque",
+    "Status 'ao vivo'"
+  ],
+  "avoid_when": [
+    "Texto longo",
+    "Mais de um elemento piscando (acessibilidade)"
+  ],
+  "anti_patterns": [
+    "Piscar mais de 3 vezes por segundo (risco de crise fotossensível)",
+    "Piscar o CTA principal"
+  ],
+  "pairs_with": [
+    "brutalismo"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<p class=\"x\">ENTRADA <mark>GRÁTIS</mark><br>HOJE 22H</p>",
+    "css": ".x{font:700 2.4rem/1.05 \"IBM Plex Mono\",monospace;margin:0;padding:1.4rem;letter-spacing:-.03em}\n.x mark{background:#000;color:#fff;padding:0 .2em;animation:blink 1.2s steps(2,jump-none) infinite}\n@keyframes blink{50%{opacity:0}}",
+    "height": 220,
+    "fonts": [
+      "IBM Plex Mono"
+    ],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "loop",
+  "duration_ms": 1200,
+  "easing": "steps(2, jump-none)",
+  "stagger_ms": 0,
+  "props": [
+    "opacity"
+  ],
+  "reduced_motion": "Parar ligado (opacity 1).",
+  "snippet": "<motion.span animate={{ opacity: [1, 0, 1] }} transition={{ duration: 1.2, repeat: Infinity, ease: \"linear\", times: [0, 0.5, 0.5] }}>\n  AO VIVO\n</motion.span>"
+}

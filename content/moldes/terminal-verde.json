@@ -1,0 +1,70 @@
+{
+  "slug": "terminal-verde",
+  "title": "Terminal verde",
+  "summary": "Fósforo verde sobre preto esverdeado. Terminal antigo, com contraste de verdade.",
+  "category": "tech",
+  "tags": [
+    "escuro",
+    "verde",
+    "dev"
+  ],
+  "sectors": [
+    "devtools",
+    "segurança"
+  ],
+  "boldness": 4,
+  "when_to_use": [
+    "Terminal/dev",
+    "Brutalismo"
+  ],
+  "avoid_when": [
+    "Público geral"
+  ],
+  "anti_patterns": [
+    "Usar o acento em texto corrido",
+    "Inventar tons fora da paleta para 'dar vida'",
+    "Cinza puro sobre fundo colorido (perde contraste)"
+  ],
+  "pairs_with": [
+    "terminal-dev",
+    "mono-total"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "OKLCH in CSS",
+      "url": "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl",
+      "author": "Evil Martians",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "Understanding Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "author": "W3C WAI",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "palette",
+  "light": {
+    "bg": "oklch(0.97 0.01 150)",
+    "surface": "oklch(0.93 0.015 150)",
+    "fg": "oklch(0.2 0.03 160)",
+    "muted": "oklch(0.45 0.03 160)",
+    "accent": "oklch(0.5 0.15 150)",
+    "accent_fg": "oklch(0.98 0.01 150)",
+    "danger": "oklch(0.52 0.2 25)"
+  },
+  "dark": {
+    "bg": "oklch(0.17 0.01 160)",
+    "surface": "oklch(0.22 0.012 160)",
+    "fg": "oklch(0.9 0.03 150)",
+    "muted": "oklch(0.7 0.03 150)",
+    "accent": "oklch(0.84 0.2 145)",
+    "accent_fg": "oklch(0.17 0.01 160)",
+    "danger": "oklch(0.72 0.18 25)"
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "slug": "organico-quente",
+  "title": "Orgânico / quente",
+  "summary": "Tons de barro e creme, formas arredondadas irregulares, serifa macia e textura de papel.",
+  "category": "humano",
+  "tags": [
+    "quente",
+    "natural",
+    "arredondado",
+    "artesanal"
+  ],
+  "sectors": [
+    "gastronomia",
+    "bem-estar",
+    "saúde",
+    "cosméticos",
+    "café"
+  ],
+  "boldness": 2,
+  "when_to_use": [
+    "Marcas artesanais, cafés, padarias",
+    "Bem-estar, terapia, produtos naturais"
+  ],
+  "avoid_when": [
+    "Produtos de tecnologia de ponta",
+    "Finanças com tom institucional"
+  ],
+  "anti_patterns": [
+    "Folhinhas clip-art",
+    "Bege sem contraste (texto ilegível)",
+    "Script cursiva no texto corrido"
+  ],
+  "pairs_with": [
+    "serifa-macia",
+    "barro-e-creme",
+    "flutuar-suave",
+    "blob-organico",
+    "depoimento-em-cartao"
+  ],
+  "component_refs": [
+    "@shadcn/card",
+    "@shadcn/accordion"
+  ],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "style",
+  "tokens": {
+    "color": {
+      "bg": {
+        "$type": "color",
+        "$value": "oklch(0.95 0.025 75)"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "oklch(0.91 0.035 70)"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "oklch(0.28 0.04 45)"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "oklch(0.47 0.045 50)"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "oklch(0.55 0.13 40)"
+      },
+      "accent-fg": {
+        "$type": "color",
+        "$value": "oklch(0.97 0.02 75)"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "oklch(0.82 0.04 65)"
+      }
+    },
+    "font": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Young Serif",
+          "serif"
+        ]
+      },
+      "text": {
+        "$type": "fontFamily",
+        "$value": [
+          "Figtree",
+          "sans-serif"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "DM Mono",
+          "monospace"
+        ]
+      },
+      "display-weight": {
+        "$type": "fontWeight",
+        "$value": 400
+      },
+      "tracking": {
+        "$type": "number",
+        "$value": -0.01,
+        "$description": "letter-spacing do display em em"
+      },
+      "uppercase": {
+        "$type": "number",
+        "$value": 0,
+        "$description": "1 = display em caixa alta"
+      }
+    },
+    "radius": {
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 12,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 22,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 40,
+          "unit": "px"
+        }
+      }
+    },
+    "border": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      }
+    },
+    "space": {
+      "unit": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        }
+      }
+    },
+    "shadow": {
+      "card": {
+        "$type": "shadow",
+        "$value": {
+          "color": "oklch(0.4 0.06 45 / 0.25)",
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 8,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 24,
+            "unit": "px"
+          },
+          "spread": {
+            "value": -8,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "motion": {
+      "duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 600,
+          "unit": "ms"
+        }
+      },
+      "ease": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.33,
+          1,
+          0.68,
+          1
+        ]
+      }
+    }
+  },
+  "signature_moves": [
+    "Blobs com border-radius assimétrico",
+    "Fotos com cantos muito arredondados",
+    "Textura de papel granulada",
+    "Títulos em serifa com itálico"
+  ]
+}

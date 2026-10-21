@@ -1,0 +1,46 @@
+{
+  "slug": "avaliacao-em-estrelas",
+  "title": "Nota em estrelas",
+  "summary": "Estrelas em CSS (clip-path) com preenchimento parcial e nota numérica ao lado.",
+  "category": "dados",
+  "tags": [
+    "avaliação",
+    "estrelas",
+    "review"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Avaliações de produto",
+    "Depoimentos"
+  ],
+  "avoid_when": [
+    "Nota sem número de avaliações"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"r\"><div class=\"st\" style=\"--v:4.6\"></div><b>4,6</b><span>· 212 avaliações</span></div>",
+    "css": ".r{display:flex;align-items:center;gap:.5rem;padding:2rem 1.2rem;font:500 .9rem var(--font)}.r span{color:var(--muted)}\n.st{width:110px;height:22px;background:linear-gradient(90deg,oklch(0.78 0.16 80) calc(var(--v)/5*100%),var(--line) 0);-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l3 7 7 .6-5.3 4.6 1.6 7.3L12 17.8 5.7 21.5l1.6-7.3L2 9.6 9 9z'/%3E%3C/svg%3E\") 0 0/22px 22px repeat-x;mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2l3 7 7 .6-5.3 4.6 1.6 7.3L12 17.8 5.7 21.5l1.6-7.3L2 9.6 9 9z'/%3E%3C/svg%3E\") 0 0/22px 22px repeat-x}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

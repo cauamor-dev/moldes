@@ -1,0 +1,61 @@
+{
+  "slug": "ficha-catalografica",
+  "title": "Ficha catalográfica",
+  "summary": "Item apresentado como ficha de acervo: número de registro, metadados em mono, imagem e descrição.",
+  "category": "conteúdo",
+  "tags": [
+    "acervo",
+    "metadados",
+    "catálogo"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Museus, acervos, coleções",
+    "Catálogo de produtos artesanais"
+  ],
+  "avoid_when": [
+    "E-commerce rápido"
+  ],
+  "anti_patterns": [
+    "Tabela de metadados com bordas pesadas"
+  ],
+  "pairs_with": [
+    "academico-arquivo",
+    "serifa-de-livro"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"fc\"><div class=\"m\"><b>REG. 0042</b><dl><dt>autor</dt><dd>Maria Helena</dd><dt>data</dt><dd>1974</dd><dt>técnica</dt><dd>óleo sobre tela</dd><dt>acervo</dt><dd>Casa do Baile</dd></dl><p>Paisagem da lagoa vista do alto, com a igreja ainda em obra.</p></div><figure><i></i><figcaption>fig. 12</figcaption></figure></section>",
+    "css": ".fc{display:grid;grid-template-columns:1.2fr 1fr;gap:2.4rem;padding:2.4rem;font:400 1rem var(--font)}.fc b{font:700 2.4rem var(--mono);letter-spacing:-.03em}\n.fc dl{display:grid;grid-template-columns:8rem 1fr;margin:1.2rem 0;font:500 .95rem var(--mono)}.fc dt{color:var(--muted);border-bottom:1px dotted var(--line);padding:.35rem 0}.fc dd{margin:0;border-bottom:1px dotted var(--line);padding:.35rem 0}\n.fc p{font:400 1.3rem/1.4 \"Libre Caslon Text\",serif;margin:0}.fc figure{margin:0}.fc i{display:block;height:18rem;background:linear-gradient(180deg,oklch(0.8 0.04 220),oklch(0.65 0.06 150) 55%,oklch(0.5 0.05 100))}.fc figcaption{font:500 .8rem var(--mono);color:var(--muted);margin-top:.4rem}",
+    "height": 159,
+    "fonts": [
+      "Libre Caslon Text"
+    ],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Número de registro em destaque",
+    "Tabela de metadados (autor, data, técnica)",
+    "Imagem com legenda",
+    "Descrição curta"
+  ],
+  "wireframe": "| REG. 0042                       +--------------+ |\n| autor ..... Fulano              |              | |\n| data ...... 1974                |    IMAGEM    | |\n| técnica ... óleo s/ tela        |              | |\n| descrição curta em serifa       +--------------+ |",
+  "variations": [
+    "Lista de fichas empilhadas",
+    "Ficha com furo e sombra de papel"
+  ]
+}

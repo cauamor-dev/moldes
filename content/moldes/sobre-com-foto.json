@@ -1,0 +1,59 @@
+{
+  "slug": "sobre-com-foto",
+  "title": "Sobre com foto e fatos",
+  "summary": "Foto real recortada à esquerda, texto em primeira pessoa e uma lista de fatos curtos em mono.",
+  "category": "conteúdo",
+  "tags": [
+    "sobre",
+    "pessoal",
+    "equipe"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Página 'sobre' de profissional ou estúdio pequeno"
+  ],
+  "avoid_when": [
+    "Empresas grandes (use equipe)"
+  ],
+  "anti_patterns": [
+    "Texto em terceira pessoa formal",
+    "Lista de 'valores' genéricos"
+  ],
+  "pairs_with": [
+    "moldura-polaroide",
+    "duotone"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"so\"><i></i><div><p>Eu sou a Ana. Faço marcas para quem cozinha, de padaria de bairro a restaurante com estrela.</p><dl><dt>desde</dt><dd>2015</dd><dt>clientes</dt><dd>120</dd><dt>base</dt><dd>Belo Horizonte</dd></dl><a>Vamos conversar →</a></div></section>",
+    "css": ".so{display:grid;grid-template-columns:16rem 1fr;gap:2.4rem;padding:2.4rem;font:400 1rem var(--font)}.so i{display:block;height:20rem;background:linear-gradient(170deg,oklch(0.7 0.05 60),oklch(0.4 0.04 40));filter:grayscale(.3)}\n.so p{font:600 1.9rem/1.2 var(--font);letter-spacing:-.02em;margin:0 0 1.4rem}.so dl{display:grid;grid-template-columns:8rem 1fr;font:500 1rem var(--mono);margin:0 0 1.4rem}.so dt{color:var(--muted)}.so dd{margin:0}.so a{font-weight:700;text-decoration:underline;text-underline-offset:.3rem}",
+    "height": 162,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Foto real (não banco)",
+    "Texto em primeira pessoa, 3–5 linhas",
+    "Lista de fatos: desde quando, onde, quantos",
+    "Link de contato"
+  ],
+  "wireframe": "| +---------+  Eu sou a Ana. Faço marcas para      |\n| |  FOTO   |  quem cozinha.                       |\n| |         |  desde ..... 2015                    |\n| +---------+  clientes .. 120                     |",
+  "variations": [
+    "Foto em duotone",
+    "Sem foto: assinatura manuscrita"
+  ]
+}

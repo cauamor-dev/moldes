@@ -1,0 +1,88 @@
+{
+  "slug": "manuscrita-e-sans",
+  "title": "Manuscrita + sans",
+  "summary": "Letra de mão para anotações pontuais, DM Sans para tudo o resto.",
+  "category": "humano",
+  "tags": [
+    "manuscrita",
+    "pessoal",
+    "notas"
+  ],
+  "sectors": [
+    "educação",
+    "criadores",
+    "papelaria"
+  ],
+  "boldness": 3,
+  "when_to_use": [
+    "Anotações sobre screenshots",
+    "Marca pessoal"
+  ],
+  "avoid_when": [
+    "Corporativo"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Caveat",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      500,
+      700
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "DM Sans",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.333,
+    "base_px": 16,
+    "steps": [
+      12,
+      16,
+      21.3,
+      28.4,
+      37.9,
+      50.5,
+      67.3
+    ]
+  },
+  "sample": {
+    "headline": "feito à mão, com calma",
+    "body": "Caveat funciona como bilhete: uma palavra, uma seta, uma nota de margem. Nunca no parágrafo."
+  }
+}

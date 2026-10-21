@@ -1,0 +1,71 @@
+{
+  "slug": "riso-rosa-e-azul",
+  "title": "Riso rosa e azul",
+  "summary": "As duas tintas clássicas de risografia: rosa fluorescente e azul médio, sobre papel.",
+  "category": "gráfico",
+  "tags": [
+    "risografia",
+    "duotone",
+    "rosa"
+  ],
+  "sectors": [
+    "eventos",
+    "música",
+    "editoras"
+  ],
+  "boldness": 4,
+  "when_to_use": [
+    "Risografia",
+    "Cartazes"
+  ],
+  "avoid_when": [
+    "Corporativo"
+  ],
+  "anti_patterns": [
+    "Usar o acento em texto corrido",
+    "Inventar tons fora da paleta para 'dar vida'",
+    "Cinza puro sobre fundo colorido (perde contraste)"
+  ],
+  "pairs_with": [
+    "risografia",
+    "display-gorda"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "OKLCH in CSS",
+      "url": "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl",
+      "author": "Evil Martians",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "Understanding Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "author": "W3C WAI",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "palette",
+  "light": {
+    "bg": "oklch(0.95 0.015 90)",
+    "surface": "oklch(0.91 0.02 90)",
+    "fg": "oklch(0.3 0.12 260)",
+    "muted": "oklch(0.42 0.1 260)",
+    "accent": "oklch(0.65 0.21 0)",
+    "accent_fg": "oklch(0.2 0.08 260)",
+    "danger": "oklch(0.5 0.19 25)"
+  },
+  "dark": {
+    "bg": "oklch(0.22 0.08 260)",
+    "surface": "oklch(0.27 0.09 260)",
+    "fg": "oklch(0.95 0.015 90)",
+    "muted": "oklch(0.8 0.04 260)",
+    "accent": "oklch(0.72 0.2 0)",
+    "accent_fg": "oklch(0.18 0.06 260)",
+    "danger": "oklch(0.74 0.17 25)"
+  }
+}

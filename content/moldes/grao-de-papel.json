@@ -1,0 +1,50 @@
+{
+  "slug": "grao-de-papel",
+  "title": "Grão de papel",
+  "summary": "Ruído SVG (feTurbulence) em overlay com 6–10% de opacidade. Tira o aspecto digital chapado.",
+  "category": "noise",
+  "tags": [
+    "grão",
+    "textura",
+    "svg"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Fundo de site editorial ou quente",
+    "Cartazes digitais"
+  ],
+  "avoid_when": [
+    "Interfaces densas de dados"
+  ],
+  "anti_patterns": [
+    "Opacidade acima de 15%",
+    "Grão animado em tela cheia (pesado)",
+    "Grão por cima de texto pequeno"
+  ],
+  "pairs_with": [
+    "risografia",
+    "organico-quente"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Grainy gradients",
+      "url": "https://css-tricks.com/grainy-gradients/",
+      "author": "CSS-Tricks",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"pp\"><h2>Caderno<br>de receitas</h2><p>edição de outono</p></div>",
+    "css": ".pp{position:relative;height:100vh;padding:1.4rem;box-sizing:border-box;background:oklch(0.93 0.03 80)}\n.pp::before{content:\"\";position:absolute;inset:0;background:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\");opacity:.22;mix-blend-mode:multiply;pointer-events:none}\n.pp h2{position:relative;font:700 2.2rem/1 var(--font);letter-spacing:-.03em;margin:0;color:oklch(0.3 0.05 40)}.pp p{position:relative;color:oklch(0.45 0.05 40);font:italic 500 .95rem var(--font)}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

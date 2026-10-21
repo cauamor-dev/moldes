@@ -1,0 +1,71 @@
+{
+  "slug": "tinta-e-papel",
+  "title": "Tinta e papel",
+  "summary": "Creme de papel offset, tinta marrom-escura e um vinho como acento editorial.",
+  "category": "editorial",
+  "tags": [
+    "creme",
+    "editorial",
+    "quente"
+  ],
+  "sectors": [
+    "mídia",
+    "editoras",
+    "gastronomia"
+  ],
+  "boldness": 2,
+  "when_to_use": [
+    "Editorial, arquivo, revista"
+  ],
+  "avoid_when": [
+    "Tech escuro"
+  ],
+  "anti_patterns": [
+    "Usar o acento em texto corrido",
+    "Inventar tons fora da paleta para 'dar vida'",
+    "Cinza puro sobre fundo colorido (perde contraste)"
+  ],
+  "pairs_with": [
+    "editorial",
+    "academico-arquivo",
+    "serifa-de-revista"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "OKLCH in CSS",
+      "url": "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl",
+      "author": "Evil Martians",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "Understanding Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "author": "W3C WAI",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "palette",
+  "light": {
+    "bg": "oklch(0.97 0.012 85)",
+    "surface": "oklch(0.94 0.016 85)",
+    "fg": "oklch(0.22 0.01 60)",
+    "muted": "oklch(0.48 0.015 60)",
+    "accent": "oklch(0.45 0.12 25)",
+    "accent_fg": "oklch(0.97 0.012 85)",
+    "danger": "oklch(0.5 0.18 25)"
+  },
+  "dark": {
+    "bg": "oklch(0.19 0.01 60)",
+    "surface": "oklch(0.24 0.012 60)",
+    "fg": "oklch(0.94 0.012 85)",
+    "muted": "oklch(0.74 0.015 80)",
+    "accent": "oklch(0.7 0.12 25)",
+    "accent_fg": "oklch(0.18 0.01 60)",
+    "danger": "oklch(0.7 0.17 25)"
+  }
+}

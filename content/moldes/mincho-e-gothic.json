@@ -1,0 +1,101 @@
+{
+  "slug": "mincho-e-gothic",
+  "title": "Mincho + Gothic",
+  "summary": "Serifa japonesa (mincho) com gótica limpa. Funciona em latim e japonês.",
+  "category": "minimal",
+  "tags": [
+    "japonês",
+    "minimal",
+    "calmo"
+  ],
+  "sectors": [
+    "cerâmica",
+    "chá",
+    "arquitetura"
+  ],
+  "boldness": 1,
+  "when_to_use": [
+    "Minimal japonês"
+  ],
+  "avoid_when": [
+    "Interfaces densas"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [
+    "minimal-japones"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Shippori Mincho",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      500,
+      700
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Zen Kaku Gothic New",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      500,
+      700
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "IBM Plex Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.25,
+    "base_px": 16,
+    "steps": [
+      12.8,
+      16,
+      20,
+      25,
+      31.3,
+      39.1,
+      48.8
+    ]
+  },
+  "sample": {
+    "headline": "Cerâmica feita em pequenos lotes",
+    "body": "As duas cobrem latim e japonês, então a mesma página pode misturar idiomas sem trocar de fonte."
+  }
+}

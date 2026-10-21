@@ -1,0 +1,204 @@
+{
+  "slug": "memphis-contido",
+  "title": "Memphis contido",
+  "summary": "Formas geométricas soltas, padrões de rabisco e cores pastel com um preto firme, usado com moderação.",
+  "category": "lúdico",
+  "tags": [
+    "geométrico",
+    "colorido",
+    "anos-80",
+    "lúdico"
+  ],
+  "sectors": [
+    "educação",
+    "infantil",
+    "eventos",
+    "agências"
+  ],
+  "boldness": 4,
+  "when_to_use": [
+    "Produtos educativos, escolas, cursos",
+    "Agências criativas e eventos"
+  ],
+  "avoid_when": [
+    "Ferramentas profissionais sérias",
+    "Saúde e finanças"
+  ],
+  "anti_patterns": [
+    "Formas cobrindo o texto",
+    "Mais de 5 cores",
+    "Animar todas as formas ao mesmo tempo"
+  ],
+  "pairs_with": [
+    "display-gorda",
+    "pastel-com-preto",
+    "flutuar-suave",
+    "formas-soltas"
+  ],
+  "component_refs": [
+    "@shadcn/card",
+    "@shadcn/badge"
+  ],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "style",
+  "tokens": {
+    "color": {
+      "bg": {
+        "$type": "color",
+        "$value": "oklch(0.97 0.02 90)"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "oklch(0.9 0.07 200)"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "oklch(0.18 0.01 280)"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "oklch(0.4 0.02 280)"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "oklch(0.75 0.15 350)"
+      },
+      "accent-fg": {
+        "$type": "color",
+        "$value": "oklch(0.18 0.01 280)"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "oklch(0.18 0.01 280)"
+      }
+    },
+    "font": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Syne",
+          "sans-serif"
+        ]
+      },
+      "text": {
+        "$type": "fontFamily",
+        "$value": [
+          "Karla",
+          "sans-serif"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "Space Mono",
+          "monospace"
+        ]
+      },
+      "display-weight": {
+        "$type": "fontWeight",
+        "$value": 800
+      },
+      "tracking": {
+        "$type": "number",
+        "$value": -0.02,
+        "$description": "letter-spacing do display em em"
+      },
+      "uppercase": {
+        "$type": "number",
+        "$value": 0,
+        "$description": "1 = display em caixa alta"
+      }
+    },
+    "radius": {
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 10,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 999,
+          "unit": "px"
+        }
+      }
+    },
+    "border": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        }
+      }
+    },
+    "space": {
+      "unit": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        }
+      }
+    },
+    "shadow": {
+      "card": {
+        "$type": "shadow",
+        "$value": {
+          "color": "oklch(0.18 0.01 280)",
+          "offsetX": {
+            "value": 3,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 3,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 0,
+            "unit": "px"
+          },
+          "spread": {
+            "value": 0,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "motion": {
+      "duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 360,
+          "unit": "ms"
+        }
+      },
+      "ease": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.34,
+          1.56,
+          0.64,
+          1
+        ]
+      }
+    }
+  },
+  "signature_moves": [
+    "Triângulos e círculos soltos nas margens",
+    "Padrão de zigue-zague como divisor",
+    "Pastel chapado com contorno preto",
+    "Títulos levemente rotacionados"
+  ]
+}

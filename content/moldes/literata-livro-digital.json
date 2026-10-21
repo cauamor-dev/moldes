@@ -1,0 +1,96 @@
+{
+  "slug": "literata-livro-digital",
+  "title": "Livro digital",
+  "summary": "Literata foi feita para e-books. Uma família só para leitura longa em tela.",
+  "category": "editorial",
+  "tags": [
+    "leitura",
+    "livro",
+    "longo"
+  ],
+  "sectors": [
+    "editoras",
+    "blogs",
+    "educação"
+  ],
+  "boldness": 1,
+  "when_to_use": [
+    "Leitura longa",
+    "Documentação narrativa"
+  ],
+  "avoid_when": [
+    "Landing curta"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Literata",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600
+    ],
+    "italic": true
+  },
+  "text": {
+    "family": "Literata",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600
+    ],
+    "italic": true
+  },
+  "mono": {
+    "family": "Fragment Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.2,
+    "base_px": 18,
+    "steps": [
+      15,
+      18,
+      21.6,
+      25.9,
+      31.1,
+      37.3,
+      44.8
+    ]
+  },
+  "sample": {
+    "headline": "Capítulo 3: a volta",
+    "body": "Escala curta e entrelinha de 1,6 deixam a página respirar. Itálico para ênfase, nunca negrito."
+  }
+}

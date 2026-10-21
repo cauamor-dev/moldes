@@ -1,0 +1,38 @@
+{
+  "slug": "botao-com-preenchimento",
+  "title": "Botão com preenchimento",
+  "summary": "No hover a cor enche o botão a partir de baixo e o texto inverte. Simples e satisfatório.",
+  "category": "hover",
+  "tags": [
+    "botão",
+    "hover",
+    "preenchimento"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "CTAs secundários",
+    "Botões contornados"
+  ],
+  "avoid_when": [
+    "Botões pequenos de interface"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><button>Ver portfólio</button></div>",
+    "css": ".w{height:100vh;display:grid;place-items:center}\nbutton{position:relative;overflow:hidden;font:600 1rem var(--font);padding:.9rem 1.5rem;border:2px solid var(--fg);background:transparent;color:var(--fg);border-radius:0;transition:color .3s;z-index:0}\nbutton::before{content:\"\";position:absolute;inset:0;background:var(--fg);transform:translateY(101%);transition:transform .35s cubic-bezier(.2,0,0,1);z-index:-1}\nbutton:hover,html.hover button{color:var(--bg)}button:hover::before,html.hover button::before{transform:none}",
+    "height": 220,
+    "fonts": [],
+    "hover": true,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

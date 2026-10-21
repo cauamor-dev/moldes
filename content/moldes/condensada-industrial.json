@@ -1,0 +1,100 @@
+{
+  "slug": "condensada-industrial",
+  "title": "Condensada industrial",
+  "summary": "Condensada alta inspirada em sinalização, com Barlow técnica no texto.",
+  "category": "setor",
+  "tags": [
+    "condensada",
+    "industrial",
+    "técnico"
+  ],
+  "sectors": [
+    "indústria",
+    "logística",
+    "construção"
+  ],
+  "boldness": 4,
+  "when_to_use": [
+    "Industrial",
+    "Catálogo técnico"
+  ],
+  "avoid_when": [
+    "Bem-estar"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [
+    "industrial-mineiro"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Big Shoulders Display",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      600,
+      800,
+      900
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Barlow",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "Chivo Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.5,
+    "base_px": 16,
+    "steps": [
+      10.7,
+      16,
+      24,
+      36,
+      54,
+      81,
+      121.5
+    ]
+  },
+  "sample": {
+    "headline": "Capacidade de 40 t por turno",
+    "body": "Big Shoulders em caixa alta segura números e especificações. Barlow é legível em tabelas técnicas."
+  }
+}

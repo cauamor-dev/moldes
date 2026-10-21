@@ -1,0 +1,70 @@
+{
+  "slug": "azul-cartorio",
+  "title": "Azul cartório",
+  "summary": "Azul-marinho institucional, papel cinza-quente e cobre discreto. Jurídico sem parecer 1998.",
+  "category": "setor",
+  "tags": [
+    "institucional",
+    "azul",
+    "sério"
+  ],
+  "sectors": [
+    "jurídico",
+    "contabilidade",
+    "governo"
+  ],
+  "boldness": 1,
+  "when_to_use": [
+    "Escritórios de advocacia",
+    "Contabilidade"
+  ],
+  "avoid_when": [
+    "Marcas jovens"
+  ],
+  "anti_patterns": [
+    "Usar o acento em texto corrido",
+    "Inventar tons fora da paleta para 'dar vida'",
+    "Cinza puro sobre fundo colorido (perde contraste)"
+  ],
+  "pairs_with": [
+    "serifa-tecnica"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "OKLCH in CSS",
+      "url": "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl",
+      "author": "Evil Martians",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "Understanding Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "author": "W3C WAI",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "palette",
+  "light": {
+    "bg": "oklch(0.97 0.006 80)",
+    "surface": "oklch(0.93 0.008 80)",
+    "fg": "oklch(0.24 0.06 255)",
+    "muted": "oklch(0.47 0.03 255)",
+    "accent": "oklch(0.55 0.1 55)",
+    "accent_fg": "oklch(0.99 0 0)",
+    "danger": "oklch(0.5 0.19 25)"
+  },
+  "dark": {
+    "bg": "oklch(0.2 0.05 255)",
+    "surface": "oklch(0.25 0.055 255)",
+    "fg": "oklch(0.95 0.008 80)",
+    "muted": "oklch(0.76 0.02 255)",
+    "accent": "oklch(0.74 0.1 55)",
+    "accent_fg": "oklch(0.18 0.04 255)",
+    "danger": "oklch(0.72 0.16 25)"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "slug": "fade-lento",
+  "title": "Fade lento com desfoque",
+  "summary": "Imagem ou título sai de um leve desfoque para nítido, devagar. Calma de marca premium.",
+  "category": "entrada",
+  "tags": [
+    "premium",
+    "calmo",
+    "entrada"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Luxo sóbrio",
+    "Minimal japonês"
+  ],
+  "avoid_when": [
+    "Conteúdo urgente"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [
+    "luxo-sobrio",
+    "minimal-japones"
+  ],
+  "component_refs": [
+    "@magicui/blur-fade"
+  ],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"l\"><small>COLEÇÃO 2026</small><h1>Residências<br><em>na serra</em></h1></div>",
+    "css": ".l{background:oklch(0.15 0.005 80);color:oklch(0.93 0.01 85);height:100vh;padding:1.6rem;box-sizing:border-box}\n.l small{font:500 .7rem var(--font);letter-spacing:.3em;color:oklch(0.78 0.09 85)}\n.l h1{font:500 2.6rem/1 \"Cormorant Garamond\",serif;margin:.6rem 0 0;animation:bf 5s cubic-bezier(.4,0,.2,1) infinite}\n@keyframes bf{0%{opacity:0;filter:blur(8px)}30%,85%{opacity:1;filter:blur(0)}100%{opacity:0;filter:blur(8px)}}",
+    "height": 220,
+    "fonts": [
+      "Cormorant Garamond"
+    ],
+    "hover": false,
+    "dark": true
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "load",
+  "duration_ms": 1200,
+  "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+  "stagger_ms": 0,
+  "props": [
+    "opacity",
+    "filter: blur"
+  ],
+  "reduced_motion": "Só opacity, 200ms.",
+  "snippet": "<motion.h1 initial={{ opacity: 0, filter: \"blur(8px)\" }} animate={{ opacity: 1, filter: \"blur(0px)\" }}\n  transition={{ duration: 1.2, ease: [0.4, 0, 0.2, 1] }}>Residências na serra</motion.h1>"
+}

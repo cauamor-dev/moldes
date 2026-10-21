@@ -1,0 +1,71 @@
+{
+  "slug": "cafe-torrado",
+  "title": "Café torrado",
+  "summary": "Marrom de grão torrado, leite vaporizado e laranja de crema.",
+  "category": "humano",
+  "tags": [
+    "café",
+    "marrom",
+    "quente"
+  ],
+  "sectors": [
+    "café",
+    "padaria",
+    "chocolate"
+  ],
+  "boldness": 2,
+  "when_to_use": [
+    "Cafeterias",
+    "Torrefação"
+  ],
+  "avoid_when": [
+    "Tech"
+  ],
+  "anti_patterns": [
+    "Usar o acento em texto corrido",
+    "Inventar tons fora da paleta para 'dar vida'",
+    "Cinza puro sobre fundo colorido (perde contraste)"
+  ],
+  "pairs_with": [
+    "serifa-macia",
+    "slab-de-jornal"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "OKLCH in CSS",
+      "url": "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl",
+      "author": "Evil Martians",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "Understanding Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "author": "W3C WAI",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "palette",
+  "light": {
+    "bg": "oklch(0.96 0.018 70)",
+    "surface": "oklch(0.92 0.025 65)",
+    "fg": "oklch(0.26 0.04 50)",
+    "muted": "oklch(0.48 0.04 55)",
+    "accent": "oklch(0.62 0.15 55)",
+    "accent_fg": "oklch(0.2 0.04 50)",
+    "danger": "oklch(0.5 0.18 25)"
+  },
+  "dark": {
+    "bg": "oklch(0.19 0.025 50)",
+    "surface": "oklch(0.24 0.03 50)",
+    "fg": "oklch(0.94 0.02 70)",
+    "muted": "oklch(0.76 0.03 65)",
+    "accent": "oklch(0.72 0.14 55)",
+    "accent_fg": "oklch(0.19 0.025 50)",
+    "danger": "oklch(0.72 0.16 25)"
+  }
+}

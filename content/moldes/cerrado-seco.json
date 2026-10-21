@@ -1,0 +1,73 @@
+{
+  "slug": "cerrado-seco",
+  "title": "Cerrado seco",
+  "summary": "Ocre de terra, verde-buriti e céu de agosto. Paleta brasileira do interior.",
+  "category": "humano",
+  "tags": [
+    "brasil",
+    "terra",
+    "ocre"
+  ],
+  "sectors": [
+    "turismo",
+    "agro",
+    "cultura",
+    "café"
+  ],
+  "boldness": 3,
+  "when_to_use": [
+    "Turismo rural",
+    "Agro com cara boa",
+    "Festivais regionais"
+  ],
+  "avoid_when": [
+    "Tech frio"
+  ],
+  "anti_patterns": [
+    "Usar o acento em texto corrido",
+    "Inventar tons fora da paleta para 'dar vida'",
+    "Cinza puro sobre fundo colorido (perde contraste)"
+  ],
+  "pairs_with": [
+    "slab-de-jornal",
+    "serifa-macia"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "OKLCH in CSS",
+      "url": "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl",
+      "author": "Evil Martians",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "Understanding Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "author": "W3C WAI",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "palette",
+  "light": {
+    "bg": "oklch(0.95 0.03 80)",
+    "surface": "oklch(0.9 0.05 75)",
+    "fg": "oklch(0.26 0.04 60)",
+    "muted": "oklch(0.46 0.05 60)",
+    "accent": "oklch(0.5 0.1 150)",
+    "accent_fg": "oklch(0.98 0.02 80)",
+    "danger": "oklch(0.5 0.18 30)"
+  },
+  "dark": {
+    "bg": "oklch(0.21 0.03 60)",
+    "surface": "oklch(0.26 0.04 60)",
+    "fg": "oklch(0.95 0.03 80)",
+    "muted": "oklch(0.78 0.05 75)",
+    "accent": "oklch(0.75 0.12 150)",
+    "accent_fg": "oklch(0.2 0.03 60)",
+    "danger": "oklch(0.74 0.15 30)"
+  }
+}

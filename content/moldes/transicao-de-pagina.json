@@ -1,0 +1,63 @@
+{
+  "slug": "transicao-de-pagina",
+  "title": "Transição de página",
+  "summary": "A página atual sai para cima com fade e a nova entra de baixo. Pode usar View Transitions no CSS.",
+  "category": "navegação",
+  "tags": [
+    "rotas",
+    "view-transitions",
+    "navegação"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Sites multi-página com navegação frequente"
+  ],
+  "avoid_when": [
+    "Apps de uso intenso (atrasa cada clique)"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"v\"><div class=\"pg a\"><b>Início</b><i></i><i></i></div><div class=\"pg b\"><b>Projetos</b><i></i><i class=\"s\"></i></div></div>",
+    "css": ".v{position:relative;height:100vh}.pg{position:absolute;inset:1rem;padding:1rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);font:700 1.3rem var(--font)}\n.pg i{display:block;height:10px;background:var(--line);border-radius:5px;margin-top:12px}.pg i.s{width:50%}\n.a{animation:pa 4s cubic-bezier(.65,0,.35,1) infinite}.b{animation:pb 4s cubic-bezier(.65,0,.35,1) infinite}.b b{color:var(--accent)}\n@keyframes pa{0%,40%{opacity:1;transform:none}50%,90%{opacity:0;transform:translateY(-12px)}100%{opacity:1;transform:none}}\n@keyframes pb{0%,45%{opacity:0;transform:translateY(12px)}55%,90%{opacity:1;transform:none}100%{opacity:0}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "state",
+  "duration_ms": 400,
+  "easing": "cubic-bezier(0.65, 0, 0.35, 1)",
+  "stagger_ms": 0,
+  "props": [
+    "opacity",
+    "y"
+  ],
+  "reduced_motion": "Troca instantânea.",
+  "snippet": "/* CSS (View Transitions entre páginas) */\n@view-transition { navigation: auto; }\n::view-transition-old(root) { animation: 0.4s cubic-bezier(.65,0,.35,1) both out; }\n::view-transition-new(root) { animation: 0.4s cubic-bezier(.65,0,.35,1) both in; }\n@keyframes out { to { opacity: 0; transform: translateY(-12px); } }\n@keyframes in { from { opacity: 0; transform: translateY(12px); } }"
+}

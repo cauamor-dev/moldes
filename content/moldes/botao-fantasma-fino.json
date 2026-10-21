@@ -1,0 +1,50 @@
+{
+  "slug": "botao-fantasma-fino",
+  "title": "Botão fantasma fino",
+  "summary": "Contorno de 1px, caixa alta pequena e tracking largo. Luxo que não grita.",
+  "category": "botão",
+  "tags": [
+    "botão",
+    "luxo",
+    "contorno"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Luxo sóbrio",
+    "CTA secundário elegante"
+  ],
+  "avoid_when": [
+    "CTA principal em app"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [
+    "luxo-sobrio"
+  ],
+  "component_refs": [
+    "@shadcn/button"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><a class=\"g\">Agendar visita</a></div>",
+    "css": ".w{height:100vh;display:grid;place-items:center;background:oklch(0.15 0.005 80)}\n.g{display:inline-flex;align-items:center;min-height:48px;padding:0 1.8rem;border:1px solid oklch(0.78 0.09 85);color:oklch(0.93 0.01 85);font:500 .75rem var(--font);letter-spacing:.3em;text-transform:uppercase;transition:background .4s,color .4s}\n.g:hover,html.hover .g{background:oklch(0.78 0.09 85);color:oklch(0.15 0.005 80)}",
+    "height": 200,
+    "fonts": [],
+    "hover": true,
+    "dark": true
+  },
+  "code": [],
+  "kind": "component"
+}

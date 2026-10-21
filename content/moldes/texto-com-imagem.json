@@ -1,0 +1,39 @@
+{
+  "slug": "texto-com-imagem",
+  "title": "Texto recortando imagem",
+  "summary": "background-clip: text com uma textura ou foto preenchendo letras grossas.",
+  "category": "texto",
+  "tags": [
+    "clip",
+    "título",
+    "textura"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Título de campanha",
+    "Capa"
+  ],
+  "avoid_when": [
+    "Fontes finas",
+    "Textura com pouco contraste"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<h1 class=\"c\">MAR</h1>",
+    "css": ".c{font:900 7rem/1 var(--font);margin:0;padding:1rem 1.4rem;letter-spacing:-.05em;color:transparent;background:repeating-linear-gradient(170deg,oklch(0.5 0.13 230) 0 10px,oklch(0.65 0.12 210) 10px 20px,oklch(0.8 0.09 200) 20px 26px);-webkit-background-clip:text;background-clip:text;animation:wv 6s linear infinite}\n@keyframes wv{to{background-position:0 120px}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

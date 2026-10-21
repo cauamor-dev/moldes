@@ -1,0 +1,215 @@
+{
+  "slug": "neo-brutalismo",
+  "title": "Neo-brutalismo",
+  "summary": "Bordas pretas grossas, sombra dura deslocada, cores chapadas saturadas e botões que 'afundam' ao clicar.",
+  "category": "ousado",
+  "tags": [
+    "bordas",
+    "sombra-dura",
+    "colorido",
+    "divertido"
+  ],
+  "sectors": [
+    "startup",
+    "educação",
+    "criadores",
+    "eventos"
+  ],
+  "boldness": 5,
+  "when_to_use": [
+    "Produto jovem que quer chamar atenção",
+    "Ferramentas para criadores",
+    "Landing de evento ou comunidade"
+  ],
+  "avoid_when": [
+    "Banco, jurídico, saúde tradicional",
+    "Interfaces com muita informação densa"
+  ],
+  "anti_patterns": [
+    "Sombra com blur (quebra o estilo)",
+    "Mais de 3 cores chapadas na mesma tela",
+    "Borda fina misturada com grossa sem regra"
+  ],
+  "pairs_with": [
+    "display-gorda",
+    "chapado-de-feira",
+    "botao-que-afunda",
+    "features-em-bento",
+    "botao-neo-brutal"
+  ],
+  "component_refs": [
+    "@shadcn/button",
+    "@shadcn/card",
+    "@shadcn/badge"
+  ],
+  "references": [
+    {
+      "title": "Brutalist Websites",
+      "url": "https://brutalistwebsites.com",
+      "author": "Pascal Deville",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "style",
+  "tokens": {
+    "color": {
+      "bg": {
+        "$type": "color",
+        "$value": "oklch(0.96 0.05 95)"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "oklch(1 0 0)"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "oklch(0.15 0 0)"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "oklch(0.38 0 0)"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "oklch(0.72 0.19 145)"
+      },
+      "accent-fg": {
+        "$type": "color",
+        "$value": "oklch(0.15 0 0)"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "oklch(0.15 0 0)"
+      }
+    },
+    "font": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Archivo Black",
+          "sans-serif"
+        ]
+      },
+      "text": {
+        "$type": "fontFamily",
+        "$value": [
+          "Archivo",
+          "sans-serif"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "Space Mono",
+          "monospace"
+        ]
+      },
+      "display-weight": {
+        "$type": "fontWeight",
+        "$value": 400
+      },
+      "tracking": {
+        "$type": "number",
+        "$value": -0.01,
+        "$description": "letter-spacing do display em em"
+      },
+      "uppercase": {
+        "$type": "number",
+        "$value": 0,
+        "$description": "1 = display em caixa alta"
+      }
+    },
+    "radius": {
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 6,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 12,
+          "unit": "px"
+        }
+      }
+    },
+    "border": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 3,
+          "unit": "px"
+        }
+      }
+    },
+    "space": {
+      "unit": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        }
+      }
+    },
+    "shadow": {
+      "card": {
+        "$type": "shadow",
+        "$value": {
+          "color": "oklch(0.15 0 0)",
+          "offsetX": {
+            "value": 5,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 5,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 0,
+            "unit": "px"
+          },
+          "spread": {
+            "value": 0,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "motion": {
+      "duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 120,
+          "unit": "ms"
+        }
+      },
+      "ease": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.7,
+          0,
+          0.3,
+          1
+        ]
+      }
+    }
+  },
+  "signature_moves": [
+    "Sombra 4px 4px 0 preta sem blur",
+    "Hover move o elemento -2px e aumenta a sombra",
+    "Etiquetas tortas (rotate -2deg)",
+    "Fundo de cor chapada por seção"
+  ]
+}

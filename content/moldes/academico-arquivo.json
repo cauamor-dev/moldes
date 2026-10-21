@@ -1,0 +1,204 @@
+{
+  "slug": "academico-arquivo",
+  "title": "Arquivo acadêmico",
+  "summary": "Catálogo de biblioteca: fichas, números de referência, serifa de livro e mono para metadados, tudo em papel envelhecido.",
+  "category": "editorial",
+  "tags": [
+    "arquivo",
+    "catálogo",
+    "serifa",
+    "metadados"
+  ],
+  "sectors": [
+    "educação",
+    "pesquisa",
+    "museus",
+    "editoras",
+    "jurídico"
+  ],
+  "boldness": 2,
+  "when_to_use": [
+    "Repositórios, bibliotecas, coleções",
+    "Portfólio de pesquisa ou acervo"
+  ],
+  "avoid_when": [
+    "Produto que precisa parecer novo e rápido"
+  ],
+  "anti_patterns": [
+    "Textura de papel exagerada",
+    "Fonte 'máquina de escrever' em tudo"
+  ],
+  "pairs_with": [
+    "serifa-de-livro",
+    "tinta-e-papel",
+    "revelar-em-linhas",
+    "lista-indice",
+    "ficha-catalografica"
+  ],
+  "component_refs": [
+    "@shadcn/table",
+    "@shadcn/hover-card"
+  ],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "style",
+  "tokens": {
+    "color": {
+      "bg": {
+        "$type": "color",
+        "$value": "oklch(0.94 0.02 85)"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "oklch(0.97 0.012 85)"
+      },
+      "fg": {
+        "$type": "color",
+        "$value": "oklch(0.24 0.02 60)"
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "oklch(0.46 0.025 60)"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "oklch(0.45 0.09 160)"
+      },
+      "accent-fg": {
+        "$type": "color",
+        "$value": "oklch(0.97 0.012 85)"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "oklch(0.7 0.03 75)"
+      }
+    },
+    "font": {
+      "display": {
+        "$type": "fontFamily",
+        "$value": [
+          "Libre Caslon Display",
+          "serif"
+        ]
+      },
+      "text": {
+        "$type": "fontFamily",
+        "$value": [
+          "Libre Caslon Text",
+          "serif"
+        ]
+      },
+      "mono": {
+        "$type": "fontFamily",
+        "$value": [
+          "Courier Prime",
+          "monospace"
+        ]
+      },
+      "display-weight": {
+        "$type": "fontWeight",
+        "$value": 400
+      },
+      "tracking": {
+        "$type": "number",
+        "$value": -0.01,
+        "$description": "letter-spacing do display em em"
+      },
+      "uppercase": {
+        "$type": "number",
+        "$value": 0,
+        "$description": "1 = display em caixa alta"
+      }
+    },
+    "radius": {
+      "sm": {
+        "$type": "dimension",
+        "$value": {
+          "value": 0,
+          "unit": "px"
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        }
+      }
+    },
+    "border": {
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1,
+          "unit": "px"
+        }
+      }
+    },
+    "space": {
+      "unit": {
+        "$type": "dimension",
+        "$value": {
+          "value": 8,
+          "unit": "px"
+        }
+      }
+    },
+    "shadow": {
+      "card": {
+        "$type": "shadow",
+        "$value": {
+          "color": "oklch(0.5 0.03 75 / 0.4)",
+          "offsetX": {
+            "value": 0,
+            "unit": "px"
+          },
+          "offsetY": {
+            "value": 1,
+            "unit": "px"
+          },
+          "blur": {
+            "value": 0,
+            "unit": "px"
+          },
+          "spread": {
+            "value": 0,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "motion": {
+      "duration": {
+        "$type": "duration",
+        "$value": {
+          "value": 300,
+          "unit": "ms"
+        }
+      },
+      "ease": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.2,
+          0,
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "signature_moves": [
+    "Metadados em mono com rótulos 'ref.', 'vol.'",
+    "Cards como fichas com furo",
+    "Numeração de itens 001, 002",
+    "Filetes pontilhados"
+  ]
+}

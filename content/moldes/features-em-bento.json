@@ -1,0 +1,66 @@
+{
+  "slug": "features-em-bento",
+  "title": "Features em bento",
+  "summary": "Grade com uma caixa dominante 2x2, caixas médias e uma faixa larga. Cada caixa mostra a feature, não um ícone.",
+  "category": "features",
+  "tags": [
+    "bento",
+    "features",
+    "grid"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Mostrar 4–7 funcionalidades",
+    "Página de produto"
+  ],
+  "avoid_when": [
+    "Só 2 features (use split)"
+  ],
+  "anti_patterns": [
+    "Todas as caixas iguais",
+    "Ícone + título + 1 frase em cada caixa",
+    "Cada caixa com um gradiente"
+  ],
+  "pairs_with": [
+    "bento",
+    "entrada-em-cascata",
+    "card-de-metrica"
+  ],
+  "component_refs": [
+    "@magicui/bento-grid",
+    "@shadcn/card"
+  ],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"b\"><h2><small>6 coisas</small>O que o app resolve</h2><div class=\"g\"><div class=\"big\"><b>Agenda que se preenche</b><div class=\"cal\"><i></i><i class=\"on\"></i><i></i><i class=\"on\"></i><i class=\"on\"></i><i></i><i></i><i class=\"on\"></i><i></i><i></i><i class=\"on\"></i><i></i><i></i><i></i></div></div><div class=\"m\"><em>98%</em><span>confirmam pelo WhatsApp</span></div><div class=\"m\"><div class=\"bars\"><i style=\"height:40%\"></i><i style=\"height:70%\"></i><i style=\"height:55%\"></i><i style=\"height:90%\"></i></div><span>faturamento</span></div><div class=\"w\"><span>Lembrete enviado para</span><b>Maria · 14h30</b></div><div class=\"wide\">Pix · Google Agenda · WhatsApp · Planilha</div><div class=\"cta\">Testar grátis →</div></div></section>",
+    "css": ".b{padding:2.4rem}.b h2{font:800 2.6rem var(--font);letter-spacing:-.04em;margin:0 0 1.4rem}.b h2 small{display:block;font:500 .9rem var(--mono);color:var(--muted);letter-spacing:0}\n.g{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:9rem;gap:.9rem}.g>div{background:var(--surface);border:1px solid var(--line);border-radius:1.2rem;padding:1.2rem;font:500 1rem var(--font);display:flex;flex-direction:column;justify-content:space-between}\n.big{grid-column:span 2;grid-row:span 2}.big b{font-size:1.5rem}.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:.4rem}.cal i{height:2.4rem;border-radius:.4rem;background:var(--line)}.cal i.on{background:var(--accent)}\n.m em{font:800 2.6rem var(--font);font-style:normal;letter-spacing:-.04em}.m span,.w span{color:var(--muted);font-size:.9rem}.bars{display:flex;align-items:flex-end;gap:.4rem;height:4rem}.bars i{flex:1;background:var(--fg);border-radius:.3rem}\n.w{grid-column:span 2}.w b{font-size:1.3rem}.wide{grid-column:span 3;justify-content:center!important;color:var(--muted)}.cta{background:var(--fg)!important;color:var(--bg);font-weight:700!important;justify-content:center!important}",
+    "height": 257,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Título da seção alinhado à esquerda com contagem (ex.: 6 coisas)",
+    "Caixa principal 2x2 com mini demo real",
+    "3–4 caixas menores com número, gráfico ou trecho de UI",
+    "Faixa larga com integração ou logos"
+  ],
+  "wireframe": "| 6 COISAS QUE O APP FAZ                           |\n| +-----------------+ +--------+ +--------+        |\n| |                 | | 98%    | | gráfico|        |\n| |  DEMO PRINCIPAL | +--------+ +--------+        |\n| |                 | +-------------------+        |\n| +-----------------+ | trecho de UI      |        |\n| +----------------------------+ +-------+         |\n| | faixa larga: integrações   | | CTA   |         |\n+--------------------------------------------------+",
+  "variations": [
+    "Caixa dominante à direita",
+    "Versão escura com bordas 1px",
+    "Mobile: vira pilha com a dominante primeiro"
+  ]
+}

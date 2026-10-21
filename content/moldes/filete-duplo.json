@@ -1,0 +1,42 @@
+{
+  "slug": "filete-duplo",
+  "title": "Filete duplo editorial",
+  "summary": "Linha grossa + linha fina com 3px entre elas, como em jornal. Separa seções com elegância.",
+  "category": "borda",
+  "tags": [
+    "editorial",
+    "divisor",
+    "jornal"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Divisores de seção",
+    "Cabeçalho de artigo"
+  ],
+  "avoid_when": [
+    "Interfaces de app"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [
+    "editorial"
+  ],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><hr><h3>Cultura</h3><p>A semana em cinco exposições</p></div>",
+    "css": ".w{padding:1.6rem 1.4rem}.w hr{border:0;height:7px;border-top:3px solid var(--fg);border-bottom:1px solid var(--fg);margin:0 0 .8rem}\n.w h3{font:600 .75rem var(--font);letter-spacing:.25em;text-transform:uppercase;margin:0}.w p{font:600 1.7rem/1.1 \"Fraunces\",serif;margin:.4rem 0 0}",
+    "height": 220,
+    "fonts": [
+      "Fraunces"
+    ],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

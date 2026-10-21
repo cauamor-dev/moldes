@@ -1,0 +1,98 @@
+{
+  "slug": "serifa-tecnica",
+  "title": "Serifa técnica",
+  "summary": "Família Plex completa: serifa, sans e mono desenhadas juntas. Corporativo bem resolvido.",
+  "category": "neutro",
+  "tags": [
+    "corporativo",
+    "família",
+    "relatório"
+  ],
+  "sectors": [
+    "jurídico",
+    "consultoria",
+    "governo"
+  ],
+  "boldness": 1,
+  "when_to_use": [
+    "Relatórios, documentos",
+    "Sites institucionais"
+  ],
+  "avoid_when": [
+    "Marcas jovens"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "IBM Plex Serif",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600
+    ],
+    "italic": true
+  },
+  "text": {
+    "family": "IBM Plex Sans",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "IBM Plex Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.25,
+    "base_px": 16,
+    "steps": [
+      12.8,
+      16,
+      20,
+      25,
+      31.3,
+      39.1,
+      48.8
+    ]
+  },
+  "sample": {
+    "headline": "Relatório anual 2026",
+    "body": "Usar a família inteira garante alturas de x iguais e convivência pacífica entre as três."
+  }
+}

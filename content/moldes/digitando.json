@@ -1,0 +1,72 @@
+{
+  "slug": "digitando",
+  "title": "Digitando",
+  "summary": "Texto aparece letra por letra com cursor de bloco no final. Para comandos e respostas curtas.",
+  "category": "texto",
+  "tags": [
+    "terminal",
+    "texto",
+    "dev"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Hero de devtool",
+    "Demonstração de CLI"
+  ],
+  "avoid_when": [
+    "Frases longas (o usuário espera demais)"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [
+    "terminal-dev",
+    "mono-total"
+  ],
+  "component_refs": [
+    "@magicui/typing-animation",
+    "@magicui/terminal"
+  ],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"c\"><span class=\"p\">$</span><span class=\"t\">npx moldes brief --saas</span></div>",
+    "css": ".c{font:500 1.05rem \"JetBrains Mono\",monospace;padding:1.4rem;color:oklch(0.9 0.03 150);display:flex;gap:.6ch;height:100vh;box-sizing:border-box;background:oklch(0.17 0.01 160)}\n.p{color:oklch(0.84 0.2 145)}\n.t{display:inline-block;overflow:hidden;white-space:nowrap;width:23ch;border-right:.6em solid oklch(0.84 0.2 145);animation:type 4s steps(23) infinite,cur .6s step-end infinite;height:1.3em}\n@keyframes type{0%{width:0}45%,90%{width:23ch}100%{width:0}}\n@keyframes cur{50%{border-color:transparent}}",
+    "height": 220,
+    "fonts": [
+      "JetBrains Mono"
+    ],
+    "hover": false,
+    "dark": true
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "load",
+  "duration_ms": 1800,
+  "easing": "steps(22)",
+  "stagger_ms": 0,
+  "props": [
+    "width (ch)",
+    "clipPath"
+  ],
+  "reduced_motion": "Mostrar o texto completo, sem cursor piscando.",
+  "snippet": "const text = \"npx moldes brief --goal saas\";\nconst [n, setN] = useState(0);\nuseEffect(() => { if (n < text.length) { const t = setTimeout(() => setN(n + 1), 60); return () => clearTimeout(t); } }, [n]);\n<code>{text.slice(0, n)}<motion.span animate={{ opacity: [1, 0] }} transition={{ repeat: Infinity, duration: 0.6 }}>▌</motion.span></code>"
+}

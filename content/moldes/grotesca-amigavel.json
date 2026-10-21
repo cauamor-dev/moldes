@@ -1,0 +1,103 @@
+{
+  "slug": "grotesca-amigavel",
+  "title": "Grotesca amigável",
+  "summary": "Bricolage tem personalidade nos detalhes; Figtree é limpa e lê bem em interface.",
+  "category": "produto",
+  "tags": [
+    "produto",
+    "amigável",
+    "SaaS"
+  ],
+  "sectors": [
+    "SaaS",
+    "apps",
+    "educação"
+  ],
+  "boldness": 3,
+  "when_to_use": [
+    "Landing de produto",
+    "Bento"
+  ],
+  "avoid_when": [
+    "Luxo"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [
+    "bento"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Bricolage Grotesque",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700,
+      800
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Figtree",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "JetBrains Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.333,
+    "base_px": 16,
+    "steps": [
+      12,
+      16,
+      21.3,
+      28.4,
+      37.9,
+      50.5,
+      67.3
+    ]
+  },
+  "sample": {
+    "headline": "Tudo que seu time precisa, sem planilha.",
+    "body": "Bricolage no título dá calor sem perder seriedade. Figtree segura formulários, tabelas e menus."
+  }
+}

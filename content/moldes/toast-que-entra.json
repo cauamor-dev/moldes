@@ -1,0 +1,66 @@
+{
+  "slug": "toast-que-entra",
+  "title": "Toast que entra e sai",
+  "summary": "Notificação sobe do rodapé com um leve overshoot e sai para baixo com fade.",
+  "category": "feedback",
+  "tags": [
+    "toast",
+    "feedback",
+    "notificação"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Confirmação de ação ('copiado')"
+  ],
+  "avoid_when": [
+    "Mensagens de erro críticas (use inline)"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/sonner"
+  ],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"t\"><b>✓</b> Brief copiado</div></div>",
+    "css": ".w{height:100vh;display:flex;align-items:flex-end;justify-content:center;padding-bottom:1.4rem;box-sizing:border-box}\n.t{font:600 .95rem var(--font);background:var(--fg);color:var(--bg);padding:.8rem 1.1rem;border-radius:10px;display:flex;gap:.5rem;animation:ts 3s cubic-bezier(.34,1.56,.64,1) infinite}\n.t b{color:var(--accent)}\n@keyframes ts{0%{transform:translateY(30px) scale(.96);opacity:0}15%,75%{transform:none;opacity:1}90%,100%{transform:translateY(16px);opacity:0}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "state",
+  "duration_ms": 350,
+  "easing": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+  "stagger_ms": 0,
+  "props": [
+    "y",
+    "opacity",
+    "scale"
+  ],
+  "reduced_motion": "Fade simples, sem deslocamento.",
+  "snippet": "<AnimatePresence>\n  {show && <motion.div role=\"status\" initial={{ y: 24, opacity: 0, scale: 0.96 }} animate={{ y: 0, opacity: 1, scale: 1 }}\n    exit={{ y: 16, opacity: 0 }} transition={{ duration: 0.35, ease: [0.34, 1.56, 0.64, 1] }}>Copiado!</motion.div>}\n</AnimatePresence>"
+}

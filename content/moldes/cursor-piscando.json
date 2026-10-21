@@ -1,0 +1,67 @@
+{
+  "slug": "cursor-piscando",
+  "title": "Cursor piscando",
+  "summary": "Um bloco ou traço piscando no fim do título dá vida sem animar o resto.",
+  "category": "detalhe",
+  "tags": [
+    "cursor",
+    "terminal",
+    "micro"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Final de título em sites dev",
+    "Campo de busca vazio"
+  ],
+  "avoid_when": [
+    "Vários cursores na mesma tela"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [
+    "terminal-dev"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<h1 class=\"h\">Feito para<br>o terminal<span>_</span></h1>",
+    "css": ".h{font:700 2.3rem/1.05 \"JetBrains Mono\",monospace;padding:1.4rem;margin:0;color:oklch(0.92 0.02 150);background:oklch(0.17 0.01 160);height:100vh;box-sizing:border-box;letter-spacing:-.04em}\n.h span{color:oklch(0.84 0.2 145);animation:b 1s step-end infinite}@keyframes b{50%{opacity:0}}",
+    "height": 220,
+    "fonts": [
+      "JetBrains Mono"
+    ],
+    "hover": false,
+    "dark": true
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "loop",
+  "duration_ms": 1000,
+  "easing": "step-end",
+  "stagger_ms": 0,
+  "props": [
+    "opacity"
+  ],
+  "reduced_motion": "Cursor fixo, sem piscar.",
+  "snippet": "<h1>Feito para o terminal<motion.span aria-hidden animate={{ opacity: [1, 1, 0, 0] }}\n  transition={{ duration: 1, repeat: Infinity, times: [0, 0.5, 0.5, 1] }}>_</motion.span></h1>"
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "spotlight-no-cursor",
+  "title": "Spotlight no cursor",
+  "summary": "Um brilho radial segue o cursor dentro do card, revelando a borda. Usa variável CSS atualizada no pointermove.",
+  "category": "hover",
+  "tags": [
+    "cursor",
+    "brilho",
+    "card"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Grade de features escura",
+    "Cards de preço"
+  ],
+  "avoid_when": [
+    "Mobile (sem cursor: mostrar estático)"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [
+    "dark-tech-sobrio"
+  ],
+  "component_refs": [
+    "@magicui/magic-card"
+  ],
+  "references": [
+    {
+      "title": "Aceternity UI (só referência)",
+      "url": "https://ui.aceternity.com",
+      "author": "Aceternity",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><div class=\"c\"><b>Deploy em 1 clique</b><p>Conecte o repositório e pronto.</p></div></div>",
+    "css": ".w{height:100vh;display:grid;place-items:center;background:oklch(0.16 0.005 260)}\n.c{--x:30%;--y:20%;position:relative;width:75%;padding:1.2rem;border-radius:14px;background:oklch(0.2 0.006 260);color:oklch(0.95 0 0);font:400 .9rem var(--font);border:1px solid oklch(1 0 0/.08);overflow:hidden;animation:mv 5s ease-in-out infinite}\n.c::before{content:\"\";position:absolute;inset:0;background:radial-gradient(180px circle at var(--x) var(--y),oklch(0.88 0.19 125/.18),transparent 60%);pointer-events:none}\n.c b{font-size:1.1rem}.c p{margin:.3rem 0 0;color:oklch(0.75 0.01 260)}\n@property --x{syntax:\"<percentage>\";initial-value:30%;inherits:false}@property --y{syntax:\"<percentage>\";initial-value:20%;inherits:false}\n@keyframes mv{0%,100%{--x:15%;--y:20%}50%{--x:85%;--y:80%}}",
+    "height": 220,
+    "fonts": [],
+    "hover": true,
+    "dark": true
+  },
+  "code": [],
+  "kind": "effect"
+}

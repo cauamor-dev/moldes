@@ -1,0 +1,63 @@
+{
+  "slug": "precos-em-colunas",
+  "title": "Preços em colunas abertas",
+  "summary": "Planos como colunas separadas por filete, sem cards. Preço grande, o que inclui e para quem não é.",
+  "category": "preços",
+  "tags": [
+    "preços",
+    "planos",
+    "serviço"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Freelancer, agência, SaaS simples"
+  ],
+  "avoid_when": [
+    "Mais de 4 planos"
+  ],
+  "anti_patterns": [
+    "Card do meio maior com glow e 'Mais popular'",
+    "Preço riscado falso"
+  ],
+  "pairs_with": [
+    "card-de-preco",
+    "suico"
+  ],
+  "component_refs": [
+    "@shadcn/button",
+    "@shadcn/tabs"
+  ],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"pc\"><div><small>Básico</small><b>R$ 900</b><ul><li>1 página</li><li>Publicação</li></ul><em>Não é para: loja.</em><a>Escolher</a></div><div class=\"on\"><small>Completo</small><b>R$ 2.400</b><ul><li>Até 5 páginas</li><li>Blog</li><li>1 mês de ajustes</li></ul><em>Não é para: app.</em><a>Escolher</a></div><div><small>Sob medida</small><b>a conversar</b><ul><li>Sistema, loja ou app</li></ul><a>Conversar</a></div></section>",
+    "css": ".pc{display:grid;grid-template-columns:repeat(3,1fr);padding:2.4rem;font:400 1rem var(--font)}.pc>div{display:flex;flex-direction:column;gap:.6rem;padding:0 1.6rem;border-left:1px solid var(--line)}.pc>div:first-child{border:0;padding-left:0}\n.pc small{font:600 .8rem var(--font);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.pc b{font:800 2.6rem var(--font);letter-spacing:-.04em}.pc ul{margin:0;padding-left:1.2rem;line-height:1.7;flex:1}.pc em{color:var(--muted);font-size:.9rem}\n.pc a{padding:.9rem;text-align:center;border:1.5px solid var(--fg);font-weight:600}.pc .on a{background:var(--fg);color:var(--bg)}.pc .on small{color:var(--accent)}",
+    "height": 135,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "2–3 planos em colunas",
+    "Nome e preço em destaque",
+    "Lista curta (até 5 itens)",
+    "Linha 'não é para'",
+    "Botão por coluna"
+  ],
+  "wireframe": "| BÁSICO          | COMPLETO        | SOB MEDIDA       |\n| R$ 900          | R$ 2.400        | a conversar      |\n| - item          | - item          | - item           |\n| não é para…     | não é para…     |                  |\n| [ escolher ]    | [ escolher ]    | [ conversar ]    |",
+  "variations": [
+    "Toggle mensal/anual acima",
+    "Tabela comparativa abaixo"
+  ]
+}

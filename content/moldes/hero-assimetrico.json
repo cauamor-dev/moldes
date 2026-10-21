@@ -1,0 +1,66 @@
+{
+  "slug": "hero-assimetrico",
+  "title": "Hero assimétrico",
+  "summary": "Título grande ocupando 7 de 12 colunas à esquerda, texto e CTA deslocados, imagem sangrando à direita.",
+  "category": "hero",
+  "tags": [
+    "hero",
+    "assimétrico",
+    "grid"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Quase qualquer landing que não quer cara de template"
+  ],
+  "avoid_when": [
+    "Quando o produto precisa de screenshot grande centralizado"
+  ],
+  "anti_patterns": [
+    "Hero centralizado com título + subtítulo + 2 botões",
+    "Gradiente roxo atrás",
+    "Mockup de celular flutuando com sombra"
+  ],
+  "pairs_with": [
+    "suico",
+    "editorial",
+    "revelar-em-linhas"
+  ],
+  "component_refs": [
+    "@shadcn/button",
+    "@shadcn/navigation-menu"
+  ],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<header><b>Lume</b><nav><span>Trabalhos</span><span>Estúdio</span><a>Contato</a></nav></header>\n<section class=\"h\"><small>01 / ESTÚDIO DE MARCA</small><h1>Marcas que<br>parecem gente,<br>não template.</h1><div class=\"tx\"><p>Identidade, site e embalagem para negócios independentes de BH.</p><div class=\"ct\"><a class=\"p\">Ver trabalhos</a><a>Falar com a gente →</a></div></div><div class=\"img\"></div></section>",
+    "css": "header{display:flex;justify-content:space-between;align-items:center;padding:1.6rem 2.4rem;font:600 1rem var(--font)}header nav{display:flex;gap:2rem;align-items:center}header a{padding:.6rem 1.2rem;background:var(--fg);color:var(--bg)}\n.h{display:grid;grid-template-columns:repeat(12,1fr);gap:1.2rem;padding:1rem 0 0 2.4rem;position:relative}\n.h small{grid-column:1/8;grid-row:1;font:600 .8rem var(--mono);letter-spacing:.1em;color:var(--accent)}\n.h h1{grid-column:1/8;grid-row:2;font:800 4.6rem/.95 var(--font);letter-spacing:-.045em;margin:0;position:relative;z-index:1}\n.tx{grid-column:3/8;grid-row:3;font:400 1.15rem/1.45 var(--font);color:var(--muted)}.tx p{margin:0 0 1.4rem}.ct{display:flex;gap:1.6rem;align-items:center;font:600 1rem var(--font);color:var(--fg)}.ct .p{padding:.9rem 1.5rem;background:var(--accent);color:var(--accent-fg)}\n.img{grid-column:8/13;grid-row:1/4;min-height:24rem;background:linear-gradient(160deg,oklch(0.75 0.08 60),oklch(0.45 0.06 40) 60%,oklch(0.3 0.04 30))}",
+    "height": 240,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Rótulo pequeno (categoria ou ano)",
+    "Título de 2–3 linhas, alinhado à esquerda",
+    "Parágrafo curto em coluna estreita deslocada",
+    "CTA primário + link secundário",
+    "Imagem ou demo sangrando na borda direita"
+  ],
+  "wireframe": "+--------------------------------------------------+\n| LOGO                         menu  menu  [CTA]   |\n|                                                  |\n| 01 / ESTÚDIO                                     |\n| TÍTULO GRANDE QUE          +---------------------|\n| OCUPA SETE COLUNAS         |                     |\n|            texto curto     |      IMAGEM         |\n|            deslocado       |      sangrando      |\n|            [CTA]  link →   |                     |\n+--------------------------------------------------+",
+  "variations": [
+    "Imagem à esquerda e texto à direita",
+    "Sem imagem: número gigante ocupando o lado direito",
+    "Título quebrando a grade e invadindo a imagem"
+  ]
+}

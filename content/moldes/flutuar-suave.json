@@ -1,0 +1,67 @@
+{
+  "slug": "flutuar-suave",
+  "title": "Flutuar suave",
+  "summary": "Formas sobem e descem poucos pixels em ritmos diferentes. Dá vida a ilustrações paradas.",
+  "category": "loop",
+  "tags": [
+    "loop",
+    "ambiente",
+    "formas"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Ilustrações do hero",
+    "Memphis, orgânico"
+  ],
+  "avoid_when": [
+    "Elementos clicáveis (alvo se mexendo)"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [
+    "organico-quente",
+    "memphis-contido"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"s\"><i class=\"a\"></i><i class=\"b\"></i><i class=\"c\"></i></div>",
+    "css": ".s{position:relative;height:100vh;background:oklch(0.95 0.025 75)}\n.s i{position:absolute;animation:f 6s ease-in-out infinite}\n.a{width:90px;height:90px;border-radius:60% 40% 55% 45%/50% 60% 40% 50%;background:oklch(0.55 0.13 40);left:18%;top:22%}\n.b{width:60px;height:60px;border-radius:50%;background:oklch(0.75 0.1 120);right:22%;top:30%;animation-delay:-2s!important;animation-duration:5s!important}\n.c{width:120px;height:40px;border-radius:30px;background:oklch(0.28 0.04 45);left:40%;bottom:18%;animation-delay:-4s!important;animation-duration:7s!important}\n@keyframes f{50%{transform:translateY(-10px) rotate(4deg)}}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "loop",
+  "duration_ms": 6000,
+  "easing": "ease-in-out",
+  "stagger_ms": 0,
+  "props": [
+    "y",
+    "rotate"
+  ],
+  "reduced_motion": "Formas paradas.",
+  "snippet": "<motion.div animate={{ y: [0, -8, 0], rotate: [0, 3, 0] }}\n  transition={{ duration: 6, repeat: Infinity, ease: \"easeInOut\", delay: Math.random() * 2 }} />"
+}

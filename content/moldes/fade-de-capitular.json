@@ -1,0 +1,71 @@
+{
+  "slug": "fade-de-capitular",
+  "title": "Capitular que aparece",
+  "summary": "A capitular surge primeiro com escala leve; o parágrafo vem logo depois. Ritmo de revista.",
+  "category": "texto",
+  "tags": [
+    "editorial",
+    "capitular",
+    "leitura"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Primeiro parágrafo de artigo",
+    "Página 'sobre'"
+  ],
+  "avoid_when": [
+    "Listas e UI"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [
+    "editorial",
+    "serifa-de-revista"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<p class=\"p\"><b>O</b><span>café da esquina abre às sete e fecha quando acaba o pão. Ninguém lembra de ter visto o dono sentado.</span></p>",
+    "css": ".p{font:400 1.05rem/1.5 \"Newsreader\",serif;padding:1.4rem;margin:0;color:var(--fg)}\n.p b{float:left;font:600 4.2rem/.8 \"Fraunces\",serif;margin:.3rem .5rem 0 0;color:var(--accent);animation:cap 4s cubic-bezier(.33,1,.68,1) infinite}\n.p span{display:block;animation:txt 4s cubic-bezier(.33,1,.68,1) infinite}\n@keyframes cap{0%{opacity:0;transform:scale(.85)}22%,88%{opacity:1;transform:none}100%{opacity:0}}\n@keyframes txt{0%,5%{opacity:0;transform:translateY(8px)}28%,88%{opacity:1;transform:none}100%{opacity:0}}",
+    "height": 220,
+    "fonts": [
+      "Fraunces",
+      "Newsreader"
+    ],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "scroll",
+  "duration_ms": 900,
+  "easing": "cubic-bezier(0.33, 1, 0.68, 1)",
+  "stagger_ms": 200,
+  "props": [
+    "opacity",
+    "scale",
+    "y"
+  ],
+  "reduced_motion": "Sem escala; opacity de 0 a 1 em 200ms.",
+  "snippet": "<motion.p initial=\"hidden\" whileInView=\"show\" viewport={{ once: true }}>\n  <motion.span className=\"dropcap\" variants={{ hidden: { opacity: 0, scale: 0.9 }, show: { opacity: 1, scale: 1 } }}\n    transition={{ duration: 0.9, ease: [0.33, 1, 0.68, 1] }}>O</motion.span>\n  <motion.span variants={{ hidden: { opacity: 0, y: 8 }, show: { opacity: 1, y: 0, transition: { delay: 0.2 } } }}>\n    texto continua aqui…\n  </motion.span>\n</motion.p>"
+}

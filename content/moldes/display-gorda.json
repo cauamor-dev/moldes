@@ -1,0 +1,101 @@
+{
+  "slug": "display-gorda",
+  "title": "Display gorda",
+  "summary": "Grotesca preta e larga para gritar no título, Archivo normal para o resto.",
+  "category": "ousado",
+  "tags": [
+    "pesada",
+    "cartaz",
+    "impacto"
+  ],
+  "sectors": [
+    "eventos",
+    "startup",
+    "esporte"
+  ],
+  "boldness": 5,
+  "when_to_use": [
+    "Neo-brutalismo",
+    "Cartaz, evento, campanha"
+  ],
+  "avoid_when": [
+    "Marcas discretas"
+  ],
+  "anti_patterns": [
+    "Usar mais de dois pesos do display na mesma tela",
+    "Texto corrido abaixo de 16px no celular",
+    "Tracking positivo em minúsculas"
+  ],
+  "pairs_with": [
+    "neo-brutalismo",
+    "risografia",
+    "memphis-contido"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Google Fonts",
+      "url": "https://fonts.google.com",
+      "author": "Google",
+      "license": "OFL-1.1 (por família)",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "SIL Open Font License",
+      "url": "https://openfontlicense.org",
+      "author": "SIL International",
+      "license": "OFL-1.1",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "type_pair",
+  "display": {
+    "family": "Archivo Black",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400
+    ],
+    "italic": false
+  },
+  "text": {
+    "family": "Archivo",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      600,
+      800
+    ],
+    "italic": false
+  },
+  "mono": {
+    "family": "Space Mono",
+    "source": "google",
+    "license": "OFL-1.1",
+    "weights": [
+      400,
+      700
+    ],
+    "italic": false
+  },
+  "scale": {
+    "ratio": 1.5,
+    "base_px": 16,
+    "steps": [
+      10.7,
+      16,
+      24,
+      36,
+      54,
+      81,
+      121.5
+    ]
+  },
+  "sample": {
+    "headline": "Faz barulho. Depois explica.",
+    "body": "Archivo Black só funciona grande. Abaixo de 32px ela embola, então o texto fica com a Archivo regular."
+  }
+}

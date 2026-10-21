@@ -1,0 +1,59 @@
+{
+  "slug": "processo-em-etapas",
+  "title": "Processo em etapas",
+  "summary": "Etapas numeradas em linha horizontal com duração de cada uma. Tira a ansiedade de quem contrata.",
+  "category": "processo",
+  "tags": [
+    "processo",
+    "etapas",
+    "serviço"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Serviços, agências, freelas"
+  ],
+  "avoid_when": [
+    "Produtos self-service"
+  ],
+  "anti_patterns": [
+    "Ícones genéricos de lâmpada/foguete",
+    "Etapas vagas ('Descoberta', 'Mágica')"
+  ],
+  "pairs_with": [
+    "linha-do-tempo",
+    "trilha-de-etapas"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"pe\"><h2>Como funciona</h2><ol><li><i>01</i><b>Conversa</b><p>Você conta o que precisa.</p><span>1 dia</span></li><li><i>02</i><b>Proposta</b><p>Preço fechado e prazo.</p><span>2 dias</span></li><li><i>03</i><b>Criação</b><p>Duas rodadas de ajuste.</p><span>2 semanas</span></li><li><i>04</i><b>No ar</b><p>Domínio e treinamento.</p><span>1 dia</span></li></ol></section>",
+    "css": ".pe{padding:2.4rem;font:400 1rem var(--font)}.pe h2{font:800 2.6rem var(--font);letter-spacing:-.04em;margin:0 0 2rem}.pe ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}\n.pe li{border-top:2px solid var(--fg);padding:1rem 1.2rem 0 0;display:grid;gap:.4rem}.pe i{font:600 .9rem var(--mono);font-style:normal;color:var(--accent)}.pe b{font:700 1.5rem var(--font)}.pe p{margin:0;color:var(--muted)}.pe span{font:500 .85rem var(--mono)}",
+    "height": 123,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "3–5 etapas numeradas",
+    "Nome curto e 1 frase por etapa",
+    "Duração em mono",
+    "Linha conectando"
+  ],
+  "wireframe": "| 01 ————— 02 ————— 03 ————— 04                     |\n| Conversa  Proposta  Criação   Publicação          |\n| 1 dia     2 dias    2 sem     1 dia               |",
+  "variations": [
+    "Vertical no mobile",
+    "Com a etapa atual destacada (para clientes)"
+  ]
+}

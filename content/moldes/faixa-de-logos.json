@@ -1,0 +1,59 @@
+{
+  "slug": "faixa-de-logos",
+  "title": "Faixa de logos honesta",
+  "summary": "Uma linha de logos em tom único, com frase curta à esquerda dizendo o que eles têm em comum.",
+  "category": "prova-social",
+  "tags": [
+    "logos",
+    "clientes",
+    "prova-social"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Logo abaixo do hero"
+  ],
+  "avoid_when": [
+    "Logos de empresas que não são clientes"
+  ],
+  "anti_patterns": [
+    "'Confiado por' + logos de big techs sem relação",
+    "Logos coloridos misturados"
+  ],
+  "pairs_with": [
+    "marquee-de-logos"
+  ],
+  "component_refs": [
+    "@magicui/marquee"
+  ],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"fl\"><p>Cafés e padarias<br>que já atendemos</p><div><b>PONTO</b><b style=\"font-style:italic\">Lume</b><b style=\"letter-spacing:.3em\">FORNO</b><b>barro&co</b><b style=\"font-family:var(--mono)\">grão.</b></div></section>",
+    "css": ".fl{display:grid;grid-template-columns:14rem 1fr;align-items:center;gap:2rem;padding:2.4rem;border-block:1px solid var(--line)}.fl p{margin:0;font:500 1rem var(--font);color:var(--muted)}\n.fl div{display:flex;justify-content:space-between;align-items:center;gap:1.4rem;font:800 1.8rem var(--font);color:var(--muted)}",
+    "height": 60,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Frase à esquerda ('Cafés e padarias que já atendemos')",
+    "4–6 logos monocromáticos",
+    "Opcional: marquee no mobile"
+  ],
+  "wireframe": "| Cafés e padarias      LOGO   LOGO   LOGO   LOGO   |\n| que já atendemos                                  |",
+  "variations": [
+    "Marquee contínuo",
+    "Logos com hover colorido"
+  ]
+}

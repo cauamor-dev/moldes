@@ -1,0 +1,46 @@
+{
+  "slug": "linha-do-tempo",
+  "title": "Linha do tempo",
+  "summary": "Linha vertical com marcadores, data em mono à esquerda e evento à direita.",
+  "category": "dados",
+  "tags": [
+    "timeline",
+    "histórico",
+    "processo"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "História da empresa",
+    "Processo de trabalho"
+  ],
+  "avoid_when": [
+    "Mais de 8 itens"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<ol class=\"tl\"><li><time>2019</time><p>Primeiro cliente, uma padaria no Barreiro.</p></li><li><time>2023</time><p>Equipe de 6 pessoas.</p></li><li class=\"on\"><time>2026</time><p>Estúdio próprio.</p></li></ol>",
+    "css": ".tl{list-style:none;margin:0;padding:1.2rem;font:400 .9rem/1.4 var(--font)}\n.tl li{display:grid;grid-template-columns:3.2rem 1fr;gap:1rem;position:relative;padding-bottom:1rem}.tl li::before{content:\"\";position:absolute;left:3.85rem;top:.35rem;width:9px;height:9px;border-radius:50%;background:var(--bg);border:2px solid var(--fg)}\n.tl li::after{content:\"\";position:absolute;left:4.2rem;top:1rem;bottom:0;width:1px;background:var(--line)}.tl li:last-child::after{display:none}\n.tl time{font:600 .8rem var(--mono);color:var(--muted)}.tl p{margin:0;padding-left:.8rem}.tl li.on::before{background:var(--accent);border-color:var(--accent)}",
+    "height": 230,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "vidro-com-motivo",
+  "title": "Vidro com motivo",
+  "summary": "Glass só quando há algo atrás para borrar: barra flutuando sobre foto. Blur + borda clara de 1px.",
+  "category": "glass",
+  "tags": [
+    "glass",
+    "backdrop-filter",
+    "navbar"
+  ],
+  "sectors": [],
+  "boldness": 2,
+  "when_to_use": [
+    "Navbar fixa sobre imagem",
+    "Controles sobre vídeo"
+  ],
+  "avoid_when": [
+    "Sobre fundo liso (vira cinza sem motivo)"
+  ],
+  "anti_patterns": [
+    "Glass em todos os cards",
+    "Blur acima de 24px (pesado no celular)",
+    "Texto fino sobre vidro claro"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "backdrop-filter",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/backdrop-filter",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"ph\"><nav class=\"g\"><b>Lume</b><span>Menu</span><span>Reservar</span></nav></div>",
+    "css": ".ph{height:100vh;padding:1rem;box-sizing:border-box;background:radial-gradient(circle at 25% 70%,oklch(0.75 0.14 60),transparent 40%),radial-gradient(circle at 80% 30%,oklch(0.55 0.12 30),transparent 45%),oklch(0.35 0.05 40)}\n.g{display:flex;gap:1rem;align-items:center;padding:.8rem 1rem;border-radius:14px;background:oklch(1 0 0/.14);-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4);border:1px solid oklch(1 0 0/.25);color:#fff;font:500 .9rem var(--font)}\n.g b{margin-right:auto;font-weight:700}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

@@ -1,0 +1,40 @@
+{
+  "slug": "formas-soltas",
+  "title": "Formas soltas",
+  "summary": "Triângulo, círculo, zigue-zague e pontos espalhados nas margens. Memphis sem poluir o miolo.",
+  "category": "fundo",
+  "tags": [
+    "memphis",
+    "geométrico",
+    "decoração"
+  ],
+  "sectors": [],
+  "boldness": 4,
+  "when_to_use": [
+    "Memphis contido",
+    "Seções de evento"
+  ],
+  "avoid_when": [
+    "Sobre texto"
+  ],
+  "anti_patterns": [
+    "Aplicar em todos os elementos da página",
+    "Usar só porque é bonito, sem função"
+  ],
+  "pairs_with": [
+    "memphis-contido"
+  ],
+  "component_refs": [],
+  "references": [],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><i class=\"tri\"></i><i class=\"ci\"></i><i class=\"zz\"></i><h3>Oficina de verão</h3></div>",
+    "css": ".w{position:relative;height:100vh;background:oklch(0.97 0.02 90);display:grid;place-items:center;overflow:hidden}\n.w h3{font:800 1.6rem var(--font);margin:0;color:oklch(0.18 0.01 280)}.w i{position:absolute}\n.tri{left:8%;top:12%;width:0;height:0;border-left:22px solid transparent;border-right:22px solid transparent;border-bottom:38px solid oklch(0.75 0.15 350);transform:rotate(-15deg)}\n.ci{right:12%;top:18%;width:34px;height:34px;border-radius:50%;border:4px solid oklch(0.18 0.01 280)}\n.zz{left:12%;bottom:14%;width:110px;height:14px;background:linear-gradient(135deg,oklch(0.7 0.12 200) 25%,transparent 25%) -7px 0/14px 14px,linear-gradient(225deg,oklch(0.7 0.12 200) 25%,transparent 25%) -7px 0/14px 14px}",
+    "height": 220,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "effect"
+}

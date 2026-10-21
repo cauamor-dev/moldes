@@ -1,0 +1,71 @@
+{
+  "slug": "aco-e-laranja",
+  "title": "Aço e laranja",
+  "summary": "Cinza-aço azulado com laranja de segurança. Engenharia, frota, oficina.",
+  "category": "setor",
+  "tags": [
+    "laranja",
+    "aço",
+    "técnico"
+  ],
+  "sectors": [
+    "automotivo",
+    "engenharia",
+    "logística"
+  ],
+  "boldness": 3,
+  "when_to_use": [
+    "Oficinas, frotas",
+    "Engenharia"
+  ],
+  "avoid_when": [
+    "Bem-estar"
+  ],
+  "anti_patterns": [
+    "Usar o acento em texto corrido",
+    "Inventar tons fora da paleta para 'dar vida'",
+    "Cinza puro sobre fundo colorido (perde contraste)"
+  ],
+  "pairs_with": [
+    "condensada-industrial",
+    "grotesca-e-mono"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "OKLCH in CSS",
+      "url": "https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl",
+      "author": "Evil Martians",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "Understanding Contrast (Minimum)",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html",
+      "author": "W3C WAI",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "code": [],
+  "kind": "palette",
+  "light": {
+    "bg": "oklch(0.97 0.004 240)",
+    "surface": "oklch(0.93 0.006 240)",
+    "fg": "oklch(0.22 0.015 240)",
+    "muted": "oklch(0.47 0.015 240)",
+    "accent": "oklch(0.66 0.19 45)",
+    "accent_fg": "oklch(0.18 0.02 240)",
+    "danger": "oklch(0.5 0.2 25)"
+  },
+  "dark": {
+    "bg": "oklch(0.2 0.012 240)",
+    "surface": "oklch(0.25 0.014 240)",
+    "fg": "oklch(0.95 0.004 240)",
+    "muted": "oklch(0.75 0.012 240)",
+    "accent": "oklch(0.72 0.18 45)",
+    "accent_fg": "oklch(0.18 0.02 240)",
+    "danger": "oklch(0.72 0.18 25)"
+  }
+}

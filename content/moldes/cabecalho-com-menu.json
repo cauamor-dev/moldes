@@ -1,0 +1,61 @@
+{
+  "slug": "cabecalho-com-menu",
+  "title": "Cabeçalho com menu em tela cheia",
+  "summary": "Logo e botão 'Menu' em texto; ao abrir, a tela vira lista gigante de links com numeração.",
+  "category": "navegação",
+  "tags": [
+    "menu",
+    "navegação",
+    "mobile"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Portfólio, estúdio",
+    "Sites com até 6 páginas"
+  ],
+  "avoid_when": [
+    "E-commerce com muitas categorias"
+  ],
+  "anti_patterns": [
+    "Ícone de hambúrguer sem rótulo",
+    "Menu lateral estreito"
+  ],
+  "pairs_with": [
+    "lista-indice",
+    "sublinhado-que-cresce"
+  ],
+  "component_refs": [
+    "@shadcn/sheet"
+  ],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"mn\"><header><b>Lume</b><span>Fechar</span></header><nav><a><i>01</i>Trabalhos</a><a class=\"on\"><i>02</i>Estúdio</a><a><i>03</i>Contato</a></nav><footer><span>ola@lume.studio</span><span>Instagram</span></footer></section>",
+    "css": ".mn{background:var(--accent);color:var(--accent-fg);padding:2rem 2.4rem;min-height:28rem;display:flex;flex-direction:column}.mn header{display:flex;justify-content:space-between;font:600 1.1rem var(--font)}\n.mn nav{flex:1;display:grid;align-content:center;gap:.4rem}.mn a{font:800 4.4rem/1 var(--font);letter-spacing:-.04em;display:flex;gap:1.4rem;align-items:baseline}.mn a i{font:500 1rem var(--mono);font-style:normal}.mn a.on{font-style:italic;font-weight:400}\n.mn footer{display:flex;justify-content:space-between;font:500 1rem var(--font)}",
+    "height": 183,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "Barra mínima: logo + 'Menu'",
+    "Menu aberto: links gigantes numerados",
+    "Contato no rodapé do menu"
+  ],
+  "wireframe": "| LOGO                                     FECHAR  |\n| 01  Trabalhos                                    |\n| 02  Estúdio                                      |\n| 03  Contato                                      |\n| ola@estudio.com                     instagram    |",
+  "variations": [
+    "Menu entrando de cima com clip-path",
+    "Links com miniatura no hover"
+  ]
+}

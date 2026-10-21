@@ -1,0 +1,60 @@
+{
+  "slug": "depoimento-em-cartao",
+  "title": "Depoimento em cartão",
+  "summary": "Cartões levemente rotacionados como bilhetes, com foto pequena real e frase curta escrita como fala.",
+  "category": "prova-social",
+  "tags": [
+    "depoimento",
+    "humano",
+    "quente"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "Negócios locais, gastronomia"
+  ],
+  "avoid_when": [
+    "B2B formal"
+  ],
+  "anti_patterns": [
+    "5 estrelas em todos",
+    "Fotos de banco de imagem"
+  ],
+  "pairs_with": [
+    "organico-quente",
+    "barro-e-creme"
+  ],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Laws of UX",
+      "url": "https://lawsofux.com",
+      "author": "Jon Yablonski",
+      "license": "link",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<section class=\"dc\"><article style=\"--r:-3deg\">“O pão de queijo é o mesmo da minha avó.”<span>— Dona Lúcia, Santa Tereza</span></article><article style=\"--r:2deg;--y:2rem\">“Peço toda sexta pro escritório.”<span>— Bruno, Savassi</span></article><article style=\"--r:-1deg\">“Café coado que dá vontade de voltar.”<span>— Carla, Floresta</span></article></section>",
+    "css": ".dc{display:flex;gap:1.6rem;padding:3rem 2.4rem;background:oklch(0.95 0.025 75)}.dc article{flex:1;padding:1.6rem;background:oklch(0.99 0.01 80);transform:rotate(var(--r)) translateY(var(--y,0));box-shadow:0 1rem 2rem -1.2rem oklch(0.4 0.06 45/.4);font:400 1.6rem/1.2 \"Young Serif\",serif;color:oklch(0.28 0.04 45)}\n.dc span{display:block;margin-top:1rem;font:500 .9rem var(--font);color:oklch(0.47 0.045 50)}",
+    "height": 112,
+    "fonts": [
+      "Young Serif"
+    ],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "pattern",
+  "structure": [
+    "2–3 cartões de tamanho e rotação diferentes",
+    "Frase curta em primeira pessoa",
+    "Nome e contexto (bairro, produto comprado)"
+  ],
+  "wireframe": "|   +-----------+                 +------------+   |\n|   | “frase”   |   +---------+   | “frase”    |   |\n|   |  — nome   |   | “frase” |   |  — nome    |   |\n|   +-----------+   +---------+   +------------+   |",
+  "variations": [
+    "Fundo de papel com grão",
+    "Cartões em marquee lento"
+  ]
+}

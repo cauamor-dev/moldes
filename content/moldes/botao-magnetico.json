@@ -1,0 +1,65 @@
+{
+  "slug": "botao-magnetico",
+  "title": "Botão magnético",
+  "summary": "O botão é puxado alguns pixels em direção ao cursor e volta com mola quando ele sai.",
+  "category": "interação",
+  "tags": [
+    "cursor",
+    "mola",
+    "desktop"
+  ],
+  "sectors": [],
+  "boldness": 3,
+  "when_to_use": [
+    "CTA único no desktop",
+    "Portfólio criativo"
+  ],
+  "avoid_when": [
+    "Mobile (não tem cursor)",
+    "Vários botões lado a lado"
+  ],
+  "anti_patterns": [
+    "Animar tudo na página com o mesmo efeito",
+    "Duração acima de 600ms em interação direta",
+    "Ignorar prefers-reduced-motion"
+  ],
+  "pairs_with": [],
+  "component_refs": [],
+  "references": [
+    {
+      "title": "Motion for React",
+      "url": "https://motion.dev/docs/react",
+      "author": "Motion",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "title": "prefers-reduced-motion",
+      "url": "https://developer.mozilla.org/docs/Web/CSS/@media/prefers-reduced-motion",
+      "author": "MDN",
+      "license": "CC-BY-SA 2.5",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><button class=\"b\">Vamos conversar →</button></div>",
+    "css": ".w{display:grid;place-items:center;height:100vh}\n.b{font:600 1rem var(--font);padding:1rem 1.6rem;border-radius:99px;border:0;background:var(--fg);color:var(--bg);animation:mag 3s cubic-bezier(.34,1.56,.64,1) infinite}\n@keyframes mag{0%,100%{transform:none}25%{transform:translate(10px,-6px)}50%{transform:translate(-8px,5px)}75%{transform:translate(4px,4px)}}",
+    "height": 220,
+    "fonts": [],
+    "hover": true,
+    "dark": false
+  },
+  "code": [],
+  "kind": "motion",
+  "trigger": "hover",
+  "duration_ms": 400,
+  "easing": "spring(stiffness 300, damping 20)",
+  "stagger_ms": 0,
+  "props": [
+    "x",
+    "y"
+  ],
+  "reduced_motion": "Desligar; botão fica parado.",
+  "snippet": "const x = useSpring(0, { stiffness: 300, damping: 20 }); const y = useSpring(0, { stiffness: 300, damping: 20 });\n<motion.button style={{ x, y }}\n  onPointerMove={(e) => { const r = e.currentTarget.getBoundingClientRect(); x.set((e.clientX - r.left - r.width / 2) * 0.3); y.set((e.clientY - r.top - r.height / 2) * 0.3); }}\n  onPointerLeave={() => { x.set(0); y.set(0); }}>Vamos conversar</motion.button>"
+}

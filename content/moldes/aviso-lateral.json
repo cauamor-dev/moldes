@@ -1,0 +1,47 @@
+{
+  "slug": "aviso-lateral",
+  "title": "Aviso com barra lateral",
+  "summary": "Callout com barra grossa na esquerda, título curto e texto. Para notas em docs.",
+  "category": "feedback",
+  "tags": [
+    "callout",
+    "nota",
+    "docs"
+  ],
+  "sectors": [],
+  "boldness": 1,
+  "when_to_use": [
+    "Notas e avisos em documentação"
+  ],
+  "avoid_when": [
+    "Usar em todo parágrafo"
+  ],
+  "anti_patterns": [
+    "Copiar o visual padrão da biblioteca sem trocar tokens",
+    "Alvo de toque menor que 44px"
+  ],
+  "pairs_with": [],
+  "component_refs": [
+    "@shadcn/alert"
+  ],
+  "references": [
+    {
+      "title": "shadcn/ui",
+      "url": "https://ui.shadcn.com",
+      "author": "shadcn",
+      "license": "MIT",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "license": "MIT (conteúdo próprio)",
+  "demo": {
+    "html": "<div class=\"w\"><aside class=\"n\"><b>Atenção</b><p>A fonte precisa ser OFL para entrar no molde.</p></aside><aside class=\"n t\"><b>Dica</b><p>Use OKLCH para variar só a luminosidade.</p></aside></div>",
+    "css": ".w{display:grid;gap:10px;padding:1rem}.n{--c:oklch(0.7 0.15 75);padding:.7rem .9rem;border-left:4px solid var(--c);background:color-mix(in oklch,var(--c) 12%,var(--bg));font:400 .88rem/1.4 var(--font)}\n.n b{font-weight:700}.n p{margin:.15rem 0 0}.n.t{--c:oklch(0.6 0.12 200)}",
+    "height": 200,
+    "fonts": [],
+    "hover": false,
+    "dark": false
+  },
+  "code": [],
+  "kind": "component"
+}
