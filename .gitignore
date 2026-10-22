@@ -3,6 +3,7 @@ node_modules
 out
 *.tsbuildinfo
 next-env.d.ts
+# secrets: ignore every .env* file except the empty example
 .env*
 !.env.example
 lib/generated
